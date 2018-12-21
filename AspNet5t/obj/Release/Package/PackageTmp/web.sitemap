@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="" title="root" description="root" roles="*">
+    <siteMapNode url="~/Default.aspx" title="Início" description="Home" roles="*" />
+    <siteMapNode url="" title="Admin Master" description="Admin Master" roles="AdmMaster">
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/RoleAdmin.aspx" title="Permissões" description="Permissões" roles="AdmMaster" />
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/WebSiteMapAdmin.aspx" title="Site Map" description="Site Map" roles="AdmMaster" />
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/RelatoriosMobileAdmin.aspx" title="Relatórios Mobile" description="Relatórios Mobile" roles="AdmMaster" />
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/LogAdmin.aspx" title="Log Admin" description="Log Admin" roles="AdmMaster" />
+    </siteMapNode>
+    <siteMapNode url="" title="Admin" description="Admin" roles="AdmMaster,Admin BI4T">
+      <siteMapNode url="~/frmAdmMasterCadastro/Usuarios.aspx" title="Usuários" description="AdminUsuarios" roles="AdmMaster,Admin BI4T" />
+    </siteMapNode>
+    <siteMapNode url="" title="Acesso" description="Acesso" roles="AdmMaster,Admin BI4T,Log de Acesso ao BI">
+      <siteMapNode url="~/frmAviacao/cnAcesso/LogAcessoBI/LogAcessos.aspx" title="Log de Acesso ao BI" description="Log de Acesso ao BI" roles="AdmMaster,Admin BI4T,Log de Acesso ao BI" />
+    </siteMapNode>
+    <siteMapNode url="" title="Vendas Ano 2017" description="Vendas" roles="AdmMaster,Admin BI4T,Vendas">
+      <siteMapNode url="~/frmAviacao/cnVendas/PorClienteProduto/cnVendasVendasPorClienteProduto.aspx" title="Por Cliente / Produto" description="Vendas Cliente / Produto" roles="AdmMaster,Admin BI4T,Vendas Cliente / Produto" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PorClienteProdutoAgrup/cnVendasVendasPorClienteProdutoAgrup.aspx" title="Por Cliente / Produto Agrup" description="Vendas Cliente / Produto Agr" roles="AdmMaster,Admin BI4T,Vendas Cliente / Produto Agr" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendas/pivotVendas.aspx" title="Pivot Vendas (Cubo)" description="Vendas Pivot" roles="AdmMaster,Admin BI4T,Vendas Pivot" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendasAgrup/pivotVendasAgrup.aspx" title="Pivot Vendas (Cubo) Agrup" description="Vendas Pivot Agr" roles="AdmMaster,Admin BI4T,Vendas Pivot Agr" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendasComDevolucao/pivotVendasComDevolucao.aspx" title="Pivot Vendas com Devolução(Cubo)" description="Vendas Pivot com Devolução" roles="AdmMaster,Admin BI4T,Vendas Pivot com Devolução" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotPedidosXFaturamento/PivotPedidosXFaturamento.aspx" title="Pivot Pedidos X Faturamento (Cubo)" description="Pedidos X Faturamento" roles="AdmMaster,Admin BI4T,Pedidos X Faturamento" />
+      <siteMapNode url="~/frmAviacao/cnVendas/GridVendas/GridVendas.aspx" title="Grid Interativo de Vendas" description="Vendas Grid" roles="AdmMaster,Admin BI4T,Vendas Grid" />
+      <siteMapNode url="~/frmAviacao/cnVendas/Indicadores/cnProducaoProducaoIndicadores.aspx" title="Indicadores de Vendas (Visão Macro)" description="Vendas Indicadores" roles="AdmMaster,Admin BI4T,Vendas Indicadores" />
+      <siteMapNode url="~/frmAviacao/cnVendas/IndicadoresParaVendedor/cnVendasIndicadoresParaVendedor.aspx" title="Indicadores de Vendas por Vendedor (3 meses)" description="Vendas Indicadores Vendedor" roles="AdmMaster,Admin BI4T,Vendas Indicadores Vendedor" />
+      <siteMapNode url="~/frmAviacao/cnVendas/ComparativoClientesV2/cnVendasComparativoClientesV2.aspx" title="Comparativo de Vendas (Grandes Redes)" description="Vendas Comparativo Clientes" roles="AdmMaster,Admin BI4T,Vendas Comparativo Clientes" />
+      <siteMapNode url="~/frmAviacao/cnVendas/GerencialPorRegiaoGrupoproduto/cnGerencialPorRegiaoGrupoproduto.aspx" title="Faturamento Por Região e Grupo de Produtos" description="Faturamento Por Região e Grupo de Produtos" roles="AdmMaster,Admin BI4T,Faturamento Por Região e Grupo de Produtos" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PedidosVendas/PedidosVendas.aspx" title="Faturamento de Pedidos de Clientes" description="Faturamento de Pedidos de Clientes" roles="AdmMaster,Admin BI4T,Faturamento de Pedidos de Clientes" />
+      <siteMapNode url="~/frmAviacao/cnVendas/MapaVendas/cnMapaVendas.aspx" title="Mapa de Vendas" description="Mapa de Vendas" roles="AdmMaster,Admin BI4T,Mapa de Vendas" />
+      <siteMapNode url="~/frmAviacao/cnVendas/RelVendasDiariaVendedor/RelVendasDiariaVendedor.aspx" title="Relatório de Vendas Diária - Vendedor" description="Relatório de Vendas Diária - Vendedor" roles="AdmMaster,Admin BI4T,Relatório de Vendas Diária - Vendedor" />
+      <siteMapNode url="~/frmAviacao/cnVendas/VendasClienteFinal/VendasClienteFinal.aspx" title="Análise de Compras para Cliente Final" description="Compras Cliente Final" roles="AdmMaster,Admin BI4T,Compras Cliente Final" />
+    </siteMapNode>
+    <!--a-->
+    <!--C:\Sistemas\s5t aviacao\AspNet5t\frmAviacao\cnVendas\GerencialPorRegiaoGrupoproduto\cnGerencialPorRegiaoGrupoproduto.aspx-->
+    <siteMapNode url="" title="Vendas Ano 2016-2017" description="Vendas Ano -1" roles="AdmMaster,Admin BI4T,Vendas Ano -1">
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendasAnoMenos1/pivotVendasAnoMenos1.aspx" title="Pivot Vendas Ano 2016/17" description="Vendas Pivot Ano -1" roles="AdmMaster,Admin BI4T,Vendas Pivot Ano -1" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendasAgrupAnoMenos1/pivotVendasAgrupAnoMenos1.aspx" title="Pivot Vendas Agr Ano 2016/17" description="Vendas Pivot Agr Ano -1" roles="AdmMaster,Admin BI4T,Vendas Pivot Agr Ano -1" />
+      <siteMapNode url="~/frmAviacao/cnVendas/IndicadoresAnoMenos1/cnProducaoProducaoIndicadoresAnoMenos1.aspx" title="Indicadores de Vendas (Visão Macro)" description="Vendas Indicadores Ano -1" roles="AdmMaster,Admin BI4T,Vendas Indicadores Ano -1" />
+    </siteMapNode>
+    <siteMapNode url="" title="Vendas Ano 2015-2016-2017" description="Vendas Ano -2" roles="AdmMaster,Admin BI4T,Vendas Ano -2">
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendasAnoMenos2/pivotVendasAnoMenos2.aspx" title="Pivot Vendas Ano 2015/16/17" description="Vendas Pivot Ano -2" roles="AdmMaster,Admin BI4T,Vendas Pivot Ano -2" />
+      <siteMapNode url="~/frmAviacao/cnVendas/PivotVendasAgrupAnoMenos2/pivotVendasAgrupAnoMenos2.aspx" title="Pivot Vendas Agr Ano 2015/16/17" description="Vendas Pivot Agr Ano -2" roles="AdmMaster,Admin BI4T,Vendas Pivot Agr Ano -2" />
+    </siteMapNode>
+    <siteMapNode url="" title="Produção" description="Produção" roles="AdmMaster,Admin BI4T,Produção">
+      <siteMapNode url="~/frmAviacao/cnProducao/ProducaoPedidoLiveEtl/cnProducaoProducaoPedidoLiveEtl.aspx" title="Produção x Pedido (ON LINE)" description="Produção Produção x Pedido" roles="AdmMaster,Admin BI4T,Produção Produção x Pedido" />
+      <siteMapNode url="~/frmAviacao/cnProducao/ProducaoPedidoSemDetalheLiveEtl/cnProducaoProducaoPedidoSemDetalheLiveEtl.aspx" title="Produção x Pedido Sem Detalhe (ON LINE)" description="Produção Produção x Pedido Sem Detalhe" roles="AdmMaster,Admin BI4T,Produção Produção x Pedido Sem Detalhe" />
+      <siteMapNode url="~/frmAviacao/cnProducao/EstoqueMaturacao/cnEstoqueMaturacao.aspx" title="Estoque Maturação" description="Estoque Maturação" roles="AdmMaster,Admin BI4T,Estoque Maturação" />
+      <siteMapNode url="~/frmAviacao/cnProducao/EstoqueMaturacaoDashboard/cnEstoqueMaturacaoDashboard.aspx" title="Estoque Maturação - Dashboard" description="Estoque Maturação - Dashboard" roles="AdmMaster,Admin BI4T,Estoque Maturação - Dashboard" />
+      <siteMapNode url="~/frmAviacao/cnProducao/CadastroProduto/cnCadastroProduto.aspx" title="Cadastro de Produto" description="Cadastro de Produto" roles="AdmMaster,Admin BI4T,Cadastro de Produto" />
+    </siteMapNode>
+    <siteMapNode url="" title="Transporte" description="Transporte" roles="AdmMaster,Admin BI4T,Transporte">
+      <siteMapNode url="~/frmAviacao/cnTransporte/MovimentacaoDeViagem/cnTransporteMovimentacaoDeViagem.aspx" title="Movimentação de Viagem" description="Transporte Movimentação de Viagem" roles="AdmMaster,Admin BI4T,Transporte Movimentação de Viagem" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/MovimentacaoDeViagemPortaria/cnTransporteMovimentacaoDeViagemPortaria.aspx" title="Movimentação de Viagem - Portaria" description="Transporte Movimentação de Viagem Portaria" roles="AdmMaster,Admin BI4T,Transporte Movimentação de Viagem Portaria" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/PivotConhecimentoFrete/PivotConhecimentoFrete.aspx" title="Pivot Conhecimento Frete" description="Transporte Pivot Conhecimento Frete" roles="AdmMaster,Admin BI4T,Transporte Pivot Conhecimento Frete" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/PivotConhecimentoFreteAgrup/PivotConhecimentoFreteAgrup.aspx" title="Pivot Conhecimento Frete Agrupado" description="Transporte Pivot Conhecimento Frete Agrupado" roles="AdmMaster,Admin BI4T,Transporte Pivot Conhecimento Frete Agrupado" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/MovimentacaoDeViagemDash/cnTransporteMovimentacaoDeViagemDash.aspx" title="Movimentação de Viagem - Dashboard" description="Transporte Movimentação de Viagem Dash" roles="AdmMaster,Admin BI4T,Transporte Movimentação de Viagem Dash" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/MovimentacaoDeViagemDashEmail/cnTransporteMovimentacaoDeViagemDashEmail.aspx" title="Movimentação de Viagem - Dashboard Email" description="Transporte Movimentação de Viagem Dash Email" roles="AdmMaster,Admin BI4T,Transporte Movimentação de Viagem Dash Email" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/CadastroLocalLinha/cnCadastroLocalLinha.aspx" title="Cadastro de Local/Linha" description="Cadastro de Local/Linha" roles="AdmMaster,Admin BI4T,Cadastro de Local/Linha" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/CadastroCaminhao/cnCadastroCaminhao.aspx" title="Cadastro de Caminhão" description="Cadastro de Caminhão" roles="AdmMaster,Admin BI4T,Cadastro de Caminhão" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/CadastroCaminhao/cnCadastroMotorista.aspx" title="Cadastro de Motorista" description="Cadastro de Motorista" roles="AdmMaster,Admin BI4T,Cadastro de Motorista" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/ControleViagemAG/cnTransporteControleViagemAg.aspx" title="Controle de Viagem AG" description="Controle de Viagem AG" roles="AdmMaster,Admin BI4T,Controle de Viagem AG" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/ProdutosLiberados/cnProdutosLiberados.aspx" title="Listagem de Produtos Liberados" description="ProdutosLiberados" roles="AdmMaster,Admin BI4T,ProdutosLiberados" />
+      <siteMapNode url="~/frmAviacao/cnTransporte/OrdemCarregamento/cnOrdemCarregamento.aspx" title="Ordem de Carregamento" description="Ordem de Carregamento" roles="AdmMaster,Admin BI4T,Ordem de Carregamento" />
+
+    </siteMapNode>
+    <siteMapNode url="" title="Financeiro" description="Financeiro" roles="AdmMaster,Admin BI4T,Financeiro">
+      <siteMapNode url="~/frmAviacao/cnFinanceiro/TitulosAbertoPorVendedor/cnFinanceiroTitulosAbertoPorVendedor.aspx" title="Títulos em Aberto por Vendedor" description="Financeiro Títulos Aberto Vendedor" roles="AdmMaster,Admin BI4T,Financeiro Títulos Aberto Vendedor" />
+    </siteMapNode>
+    <siteMapNode url="" title="Indústria" description="Indústria" roles="AdmMaster,Admin BI4T,Indústria">
+      <siteMapNode url="~/frmAviacao/cnIndustria/RelEnvaseOverview/RelEnvaseOverview.aspx" title="Relatório Envase Overview" description="Indústria Envase Overview" roles="AdmMaster,Admin BI4T,Indústria Envase Overview" />
+      <siteMapNode url="~/frmAviacao/cnIndustria/EnvaseEventos/cnIndustriaEnvaseEventos.aspx" title="Dashboard Envase Eventos" description="Indústria Envase Eventos" roles="AdmMaster,Admin BI4T,Indústria Envase Eventos" />
+      <siteMapNode url="~/frmAviacao/cnIndustria/RelLeiteCamFriasOverview/RelLeiteCamFriasOverview.aspx" title="Relatório Leite &amp; Câmaras Frias Overview" description="Indústria Leite Cam Frias Overview" roles="AdmMaster,Admin BI4T,Indústria Leite Cam Frias Overview" />
+      <siteMapNode url="~/frmAviacao/cnIndustria/LeiteEventos/cnIndustriaLeiteEventos.aspx" title="Dashboard Leite Eventos" description="Indústria Leite Eventos" roles="AdmMaster,Admin BI4T,Indústria Leite Eventos" />
+      <siteMapNode url="~/frmAviacao/cnIndustria/CamarasFriasEventos/cnIndustriaCamarasFriasEventos.aspx" title="Dashboard Câmaras Frias Eventos" description="Indústria Câmaras Frias Eventos" roles="AdmMaster,Admin BI4T,Indústria Câmaras Frias Eventos" />
+    </siteMapNode>
+    <siteMapNode url="" title="Visita" description="Visita" roles="AdmMaster,Admin BI4T,Visita">
+      <siteMapNode url="~/frmAviacao/cnVisitas/CadastroVisitantes/cnCadastroVisitantes.aspx" title="Cadastro de Visitantes" description="Cadastro de Visitantes" roles="AdmMaster,Admin BI4T,Cadastro de Visitantes" />
+      <siteMapNode url="~/frmAviacao/cnVisitas/CadastroVisitas/cnCadastroVisitas.aspx" title="Cadastro de Visitas" description="Cadastro de Visitas" roles="AdmMaster,Admin BI4T,Cadastro de Visitas" />
+      <siteMapNode url="~/frmAviacao/cnVisitas/CadastroEmpresa/cnCadastroEmpresa.aspx" title="Cadastro de Empresas" description="Cadastro de Empresas" roles="AdmMaster,Admin BI4T,Cadastro de Empresas" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="s5taviacao" Class="DataClassesVisitaMovViewGridDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.50.39;Initial Catalog=s5taviacao;User ID=4t" SettingsObjectName="S5TWebCam.Settings" SettingsPropertyName="s5taviacaoConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.vVisitaMovVisitaViewGrid" Member="vVisitaMovVisitaViewGrids">
+    <Type Name="vVisitaMovVisitaViewGrid">
+      <Column Name="pId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="pDataVisita" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pVisitanteId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="pVisitanteNome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pFuncionarioId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="pFuncionarioNome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pSetorId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="pSetorNome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pEmpresaId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="pEmpresaNome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

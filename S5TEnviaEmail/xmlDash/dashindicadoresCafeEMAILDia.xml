@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="pt-BR">
+  <Title Text=" Indicadores de Vendas - Café" Alignment="Left">iVBORw0KGgoAAAANSUhEUgAAALoAAABuCAYAAACQoQnIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUU2MDU3MkNBRTI1MTFFM0JFMzJBOTNGNEIyNDdCMDAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUU2MDU3MkRBRTI1MTFFM0JFMzJBOTNGNEIyNDdCMDAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRTYwNTcyQUFFMjUxMUUzQkUzMkE5M0Y0QjI0N0IwMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRTYwNTcyQkFFMjUxMUUzQkUzMkE5M0Y0QjI0N0IwMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pp90o5gAACT9SURBVHja7F0HeFNV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</Title>
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="192.168.50.39_s5taviacao_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="192.168.50.39" />
+          <Parameter Name="database" Value="s5taviacao" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>select "AviacaoVendas"."pNUMERO_NF", "AviacaoVendas"."pSERIE",
+       "AviacaoVendas"."pCLIENTE", "AviacaoVendas"."pFILIAL",
+       "AviacaoVendas"."pLOJA", "AviacaoVendas"."pNOME_CLIENTE",
+       "AviacaoVendas"."pCIDADE_CLIENTE", "AviacaoVendas"."pESTADO",
+       "AviacaoVendas"."pREGIAO", "AviacaoVendas"."pPERCENT_DESCONTO",
+       "AviacaoVendas"."pPORCENT_COMISSAO",
+       "AviacaoVendas"."pCODIGO_VENDEDOR",
+       "AviacaoVendas"."pNOME_VENDEDOR",
+       "AviacaoVendas"."pCIDADE_VENDEDOR",
+       "AviacaoVendas"."pVALOR_COMISSAO",
+       "AviacaoVendas"."pDATA_EMISSAO",
+       "AviacaoVendas"."pDIA_EMISSAO", "AviacaoVendas"."pMES_EMISSAO",
+       "AviacaoVendas"."pMES_EXTENSO", "AviacaoVendas"."pANO_EMISSAO",
+       "AviacaoVendas"."pTRIMESTRE", "AviacaoVendas"."pCODIGO_TRANSP",
+       "AviacaoVendas"."pNOME_TRANSP", "AviacaoVendas"."pREDESPACHO",
+       "AviacaoVendas"."pNOME_REDESPACHO", "AviacaoVendas"."pPRODUTO",
+       "AviacaoVendas"."pGRUPO_PRODUTO",
+       "AviacaoVendas"."pPESO_PRODUTO",
+       "AviacaoVendas"."pQTD_P_CAIXA",
+       "AviacaoVendas"."pQTD_EM_CAIXA", "AviacaoVendas"."pPESO_TOTAL",
+       "AviacaoVendas"."pPESO_BRUTO", "AviacaoVendas"."pDESCRICAO",
+       "AviacaoVendas"."pQUANTIDADE", "AviacaoVendas"."pPRECO_TABELA",
+       "AviacaoVendas"."pVLR_TOTAL_PRODUTO",
+       "AviacaoVendas"."pPRECO_DE_VENDA",
+       "AviacaoVendas"."pVLR_DESCONTO",
+       "AviacaoVendas"."pVLR_BASE_ICM",
+       "AviacaoVendas"."pVLR_TOTAL_NOTA",
+       "AviacaoVendas"."pVLR_SEM_ICMSST", "AviacaoVendas"."pVLR_ICM",
+       "AviacaoVendas"."pVLR_COFINS", "AviacaoVendas"."pVLR_PIS",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO_UNIT",
+       "AviacaoVendas"."pIMPOSTO_TOTAL_NOTA",
+       "AviacaoVendas"."pB1_QE", "AviacaoVendas"."pB1_CONV",
+       "AviacaoVendas"."pPLACA", "AviacaoVendas"."pCFOP",
+       "AviacaoVendas"."pMARCA", "AviacaoVendas"."pGRUPO_CLIENTE",
+       "AviacaoVendas"."pDT_ENTRADA", "AviacaoVendas"."pDIA_ENTRADA",
+       "AviacaoVendas"."pMES_ENTRADA", "AviacaoVendas"."pANO_ENTRADA",
+       "AviacaoVendas"."pDESCON_FINAN",
+       "AviacaoVendas"."pCUSTO_PRODUTO",
+       "AviacaoVendas"."pCUSTO_PROD_QTD",
+       "AviacaoVendas"."pNRO_PEDIDO_CLIENTE",
+       "AviacaoVendas"."pPEDIDO", "AviacaoVendas"."pENDERECO_CLI",
+       "AviacaoVendas"."pBAIRRO_CLIE",
+       "AviacaoVendas"."pULTIMA_COMPRA",
+       "AviacaoVendas"."pCIDADE_CLIENTE_IBGE"
+  from "dbo"."AviacaoVendas" "AviacaoVendas"
+where
+  pDATA_EMISSAO &gt;= DATEADD(month, DATEDIFF(month, 0, GETDATE()), 0)
+  and pfilial = 4
+  and pcfop in ('5101','5401','5405','5501','6101','6102','6107','6109','6401','6403','6501') </Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Query">
+            <Field Name="pNUMERO_NF" Type="String" />
+            <Field Name="pSERIE" Type="String" />
+            <Field Name="pCLIENTE" Type="String" />
+            <Field Name="pFILIAL" Type="Int32" />
+            <Field Name="pLOJA" Type="String" />
+            <Field Name="pNOME_CLIENTE" Type="String" />
+            <Field Name="pCIDADE_CLIENTE" Type="String" />
+            <Field Name="pESTADO" Type="String" />
+            <Field Name="pREGIAO" Type="String" />
+            <Field Name="pPERCENT_DESCONTO" Type="Double" />
+            <Field Name="pPORCENT_COMISSAO" Type="Double" />
+            <Field Name="pCODIGO_VENDEDOR" Type="String" />
+            <Field Name="pNOME_VENDEDOR" Type="String" />
+            <Field Name="pCIDADE_VENDEDOR" Type="String" />
+            <Field Name="pVALOR_COMISSAO" Type="Double" />
+            <Field Name="pDATA_EMISSAO" Type="DateTime" />
+            <Field Name="pDIA_EMISSAO" Type="String" />
+            <Field Name="pMES_EMISSAO" Type="String" />
+            <Field Name="pMES_EXTENSO" Type="String" />
+            <Field Name="pANO_EMISSAO" Type="String" />
+            <Field Name="pTRIMESTRE" Type="String" />
+            <Field Name="pCODIGO_TRANSP" Type="String" />
+            <Field Name="pNOME_TRANSP" Type="String" />
+            <Field Name="pREDESPACHO" Type="String" />
+            <Field Name="pNOME_REDESPACHO" Type="String" />
+            <Field Name="pPRODUTO" Type="String" />
+            <Field Name="pGRUPO_PRODUTO" Type="String" />
+            <Field Name="pPESO_PRODUTO" Type="Double" />
+            <Field Name="pQTD_P_CAIXA" Type="String" />
+            <Field Name="pQTD_EM_CAIXA" Type="Double" />
+            <Field Name="pPESO_TOTAL" Type="Double" />
+            <Field Name="pPESO_BRUTO" Type="Double" />
+            <Field Name="pDESCRICAO" Type="String" />
+            <Field Name="pQUANTIDADE" Type="Double" />
+            <Field Name="pPRECO_TABELA" Type="Double" />
+            <Field Name="pVLR_TOTAL_PRODUTO" Type="Double" />
+            <Field Name="pPRECO_DE_VENDA" Type="Double" />
+            <Field Name="pVLR_DESCONTO" Type="Double" />
+            <Field Name="pVLR_BASE_ICM" Type="Double" />
+            <Field Name="pVLR_TOTAL_NOTA" Type="Double" />
+            <Field Name="pVLR_SEM_ICMSST" Type="Double" />
+            <Field Name="pVLR_ICM" Type="Double" />
+            <Field Name="pVLR_COFINS" Type="Double" />
+            <Field Name="pVLR_PIS" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO_UNIT" Type="Double" />
+            <Field Name="pIMPOSTO_TOTAL_NOTA" Type="Double" />
+            <Field Name="pB1_QE" Type="String" />
+            <Field Name="pB1_CONV" Type="String" />
+            <Field Name="pPLACA" Type="String" />
+            <Field Name="pCFOP" Type="String" />
+            <Field Name="pMARCA" Type="String" />
+            <Field Name="pGRUPO_CLIENTE" Type="String" />
+            <Field Name="pDT_ENTRADA" Type="DateTime" />
+            <Field Name="pDIA_ENTRADA" Type="String" />
+            <Field Name="pMES_ENTRADA" Type="String" />
+            <Field Name="pANO_ENTRADA" Type="String" />
+            <Field Name="pDESCON_FINAN" Type="Double" />
+            <Field Name="pCUSTO_PRODUTO" Type="Double" />
+            <Field Name="pCUSTO_PROD_QTD" Type="Double" />
+            <Field Name="pNRO_PEDIDO_CLIENTE" Type="String" />
+            <Field Name="pPEDIDO" Type="String" />
+            <Field Name="pENDERECO_CLI" Type="String" />
+            <Field Name="pBAIRRO_CLIE" Type="String" />
+            <Field Name="pULTIMA_COMPRA" Type="DateTime" />
+            <Field Name="pCIDADE_CLIENTE_IBGE" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>SQL Data Source 2</Name>
+      <Connection Name="192.168.50.39_s5taviacao_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="192.168.50.39" />
+          <Parameter Name="database" Value="s5taviacao" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>select "AviacaoVendas"."pNUMERO_NF", "AviacaoVendas"."pSERIE",
+       "AviacaoVendas"."pCLIENTE", "AviacaoVendas"."pFILIAL",
+       "AviacaoVendas"."pLOJA", "AviacaoVendas"."pNOME_CLIENTE",
+       "AviacaoVendas"."pCIDADE_CLIENTE", "AviacaoVendas"."pESTADO",
+       "AviacaoVendas"."pREGIAO", "AviacaoVendas"."pPERCENT_DESCONTO",
+       "AviacaoVendas"."pPORCENT_COMISSAO",
+       "AviacaoVendas"."pCODIGO_VENDEDOR",
+       "AviacaoVendas"."pNOME_VENDEDOR",
+       "AviacaoVendas"."pCIDADE_VENDEDOR",
+       "AviacaoVendas"."pVALOR_COMISSAO",
+       "AviacaoVendas"."pDATA_EMISSAO",
+       "AviacaoVendas"."pDIA_EMISSAO", "AviacaoVendas"."pMES_EMISSAO",
+       "AviacaoVendas"."pMES_EXTENSO", "AviacaoVendas"."pANO_EMISSAO",
+       "AviacaoVendas"."pTRIMESTRE", "AviacaoVendas"."pCODIGO_TRANSP",
+       "AviacaoVendas"."pNOME_TRANSP", "AviacaoVendas"."pREDESPACHO",
+       "AviacaoVendas"."pNOME_REDESPACHO", "AviacaoVendas"."pPRODUTO",
+       "AviacaoVendas"."pGRUPO_PRODUTO",
+       "AviacaoVendas"."pPESO_PRODUTO",
+       "AviacaoVendas"."pQTD_P_CAIXA",
+       "AviacaoVendas"."pQTD_EM_CAIXA", "AviacaoVendas"."pPESO_TOTAL",
+       "AviacaoVendas"."pPESO_BRUTO", "AviacaoVendas"."pDESCRICAO",
+       "AviacaoVendas"."pQUANTIDADE", "AviacaoVendas"."pPRECO_TABELA",
+       "AviacaoVendas"."pVLR_TOTAL_PRODUTO",
+       "AviacaoVendas"."pPRECO_DE_VENDA",
+       "AviacaoVendas"."pVLR_DESCONTO",
+       "AviacaoVendas"."pVLR_BASE_ICM",
+       "AviacaoVendas"."pVLR_TOTAL_NOTA",
+       "AviacaoVendas"."pVLR_SEM_ICMSST", "AviacaoVendas"."pVLR_ICM",
+       "AviacaoVendas"."pVLR_COFINS", "AviacaoVendas"."pVLR_PIS",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO_UNIT",
+       "AviacaoVendas"."pIMPOSTO_TOTAL_NOTA",
+       "AviacaoVendas"."pB1_QE", "AviacaoVendas"."pB1_CONV",
+       "AviacaoVendas"."pPLACA", "AviacaoVendas"."pCFOP",
+       "AviacaoVendas"."pMARCA", "AviacaoVendas"."pGRUPO_CLIENTE",
+       "AviacaoVendas"."pDT_ENTRADA", "AviacaoVendas"."pDIA_ENTRADA",
+       "AviacaoVendas"."pMES_ENTRADA", "AviacaoVendas"."pANO_ENTRADA",
+       "AviacaoVendas"."pDESCON_FINAN",
+       "AviacaoVendas"."pCUSTO_PRODUTO",
+       "AviacaoVendas"."pCUSTO_PROD_QTD",
+       "AviacaoVendas"."pNRO_PEDIDO_CLIENTE",
+       "AviacaoVendas"."pPEDIDO", "AviacaoVendas"."pENDERECO_CLI",
+       "AviacaoVendas"."pBAIRRO_CLIE",
+       "AviacaoVendas"."pULTIMA_COMPRA",
+       "AviacaoVendas"."pCIDADE_CLIENTE_IBGE"
+  from "dbo"."AviacaoVendas" "AviacaoVendas"
+  where
+  pDATA_EMISSAO &gt;= DATEADD(yy, DATEDIFF(yy,0,getdate()), 0)
+  and pfilial = 4
+  and pcfop in ('5101','5401','5405','5501','6101','6102','6107','6109','6401','6403','6501') </Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 2">
+          <View Name="Query">
+            <Field Name="pNUMERO_NF" Type="String" />
+            <Field Name="pSERIE" Type="String" />
+            <Field Name="pCLIENTE" Type="String" />
+            <Field Name="pFILIAL" Type="Int32" />
+            <Field Name="pLOJA" Type="String" />
+            <Field Name="pNOME_CLIENTE" Type="String" />
+            <Field Name="pCIDADE_CLIENTE" Type="String" />
+            <Field Name="pESTADO" Type="String" />
+            <Field Name="pREGIAO" Type="String" />
+            <Field Name="pPERCENT_DESCONTO" Type="Double" />
+            <Field Name="pPORCENT_COMISSAO" Type="Double" />
+            <Field Name="pCODIGO_VENDEDOR" Type="String" />
+            <Field Name="pNOME_VENDEDOR" Type="String" />
+            <Field Name="pCIDADE_VENDEDOR" Type="String" />
+            <Field Name="pVALOR_COMISSAO" Type="Double" />
+            <Field Name="pDATA_EMISSAO" Type="DateTime" />
+            <Field Name="pDIA_EMISSAO" Type="String" />
+            <Field Name="pMES_EMISSAO" Type="String" />
+            <Field Name="pMES_EXTENSO" Type="String" />
+            <Field Name="pANO_EMISSAO" Type="String" />
+            <Field Name="pTRIMESTRE" Type="String" />
+            <Field Name="pCODIGO_TRANSP" Type="String" />
+            <Field Name="pNOME_TRANSP" Type="String" />
+            <Field Name="pREDESPACHO" Type="String" />
+            <Field Name="pNOME_REDESPACHO" Type="String" />
+            <Field Name="pPRODUTO" Type="String" />
+            <Field Name="pGRUPO_PRODUTO" Type="String" />
+            <Field Name="pPESO_PRODUTO" Type="Double" />
+            <Field Name="pQTD_P_CAIXA" Type="String" />
+            <Field Name="pQTD_EM_CAIXA" Type="Double" />
+            <Field Name="pPESO_TOTAL" Type="Double" />
+            <Field Name="pPESO_BRUTO" Type="Double" />
+            <Field Name="pDESCRICAO" Type="String" />
+            <Field Name="pQUANTIDADE" Type="Double" />
+            <Field Name="pPRECO_TABELA" Type="Double" />
+            <Field Name="pVLR_TOTAL_PRODUTO" Type="Double" />
+            <Field Name="pPRECO_DE_VENDA" Type="Double" />
+            <Field Name="pVLR_DESCONTO" Type="Double" />
+            <Field Name="pVLR_BASE_ICM" Type="Double" />
+            <Field Name="pVLR_TOTAL_NOTA" Type="Double" />
+            <Field Name="pVLR_SEM_ICMSST" Type="Double" />
+            <Field Name="pVLR_ICM" Type="Double" />
+            <Field Name="pVLR_COFINS" Type="Double" />
+            <Field Name="pVLR_PIS" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO_UNIT" Type="Double" />
+            <Field Name="pIMPOSTO_TOTAL_NOTA" Type="Double" />
+            <Field Name="pB1_QE" Type="String" />
+            <Field Name="pB1_CONV" Type="String" />
+            <Field Name="pPLACA" Type="String" />
+            <Field Name="pCFOP" Type="String" />
+            <Field Name="pMARCA" Type="String" />
+            <Field Name="pGRUPO_CLIENTE" Type="String" />
+            <Field Name="pDT_ENTRADA" Type="DateTime" />
+            <Field Name="pDIA_ENTRADA" Type="String" />
+            <Field Name="pMES_ENTRADA" Type="String" />
+            <Field Name="pANO_ENTRADA" Type="String" />
+            <Field Name="pDESCON_FINAN" Type="Double" />
+            <Field Name="pCUSTO_PRODUTO" Type="Double" />
+            <Field Name="pCUSTO_PROD_QTD" Type="Double" />
+            <Field Name="pNRO_PEDIDO_CLIENTE" Type="String" />
+            <Field Name="pPEDIDO" Type="String" />
+            <Field Name="pENDERECO_CLI" Type="String" />
+            <Field Name="pBAIRRO_CLIE" Type="String" />
+            <Field Name="pULTIMA_COMPRA" Type="DateTime" />
+            <Field Name="pCIDADE_CLIENTE_IBGE" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="FATURAMENTO DIÁRIO (MÊS ATUAL) - R$" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="pDATA_EMISSAO" DateTimeGroupInterval="Day" UniqueName="DataItem0" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" UniqueName="DataItem1">
+          <NumericFormat FormatType="Currency" Unit="Thousands" IncludeGroupSeparator="true" />
+        </Measure>
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem1" />
+              <PointLabelOptions Visible="true" />
+            </Simple>
+          </Series>
+        </Pane>
+        <Pane Name="Pane 2" />
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="TOP 10 PRODUTOS (MÊS ATUAL) - R$" DataSource="dashboardSqlDataSource1" DataMember="Query" Rotated="true">
+      <DataItems>
+        <Dimension DataMember="pDESCRICAO" ColoringMode="None" SortByMeasure="DataItem3" TopNEnabled="true" TopNCount="10" TopNMeasure="DataItem3" UniqueName="DataItem2" />
+        <Dimension DataMember="pDESCRICAO" SortByMeasure="DataItem1" TopNCount="3" TopNMeasure="DataItem3" UniqueName="DataItem0" />
+        <Measure DataMember="pVLR_TOTAL_NOTA" UniqueName="DataItem3" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" UniqueName="DataItem1">
+          <NumericFormat FormatType="Currency" Unit="Thousands" IncludeGroupSeparator="true" />
+        </Measure>
+      </DataItems>
+      <HiddenMeasures>
+        <Measure UniqueName="DataItem3" />
+      </HiddenMeasures>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem2" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple SeriesType="StackedBar">
+              <Value UniqueName="DataItem1" />
+              <PointLabelOptions Visible="true" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="VENDAS POR ESTADO (MÊS ATUAL) - R$" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="pESTADO" SortOrder="Descending" SortByMeasure="DataItem0" UniqueName="DataItem1" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" UniqueName="DataItem0">
+          <NumericFormat FormatType="Currency" Unit="Thousands" IncludeGroupSeparator="true" />
+        </Measure>
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem0" />
+              <PointLabelOptions Visible="true" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+    <Chart ComponentName="chartDashboardItem4" Name="FATURAMENTO MENSAL (ANO ATUAL) - R$" DataSource="dashboardSqlDataSource2" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="pDATA_EMISSAO" DateTimeGroupInterval="Month" UniqueName="DataItem1" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" UniqueName="DataItem2">
+          <NumericFormat FormatType="Currency" Unit="Thousands" IncludeGroupSeparator="true" />
+        </Measure>
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem2" />
+              <PointLabelOptions Visible="true" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="28.024193548387096" />
+      <LayoutItem DashboardItem="chartDashboardItem2" Weight="22.580645161290324" />
+      <LayoutItem DashboardItem="chartDashboardItem3" Weight="24.39516129032258" />
+      <LayoutItem DashboardItem="chartDashboardItem4" Weight="25" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesFuncionarioVisita">
+  <DataContextMoniker Name="/DataClassesFuncionarioVisitaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8e0d04ec-0904-43c6-885c-6c1cbbc07365" absoluteBounds="4.75, 2, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/DataClassesFuncionarioVisitaDataContext/FuncionarioVisita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e8985e3-2604-4017-82e3-7fd76f26291a" absoluteBounds="4.765, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

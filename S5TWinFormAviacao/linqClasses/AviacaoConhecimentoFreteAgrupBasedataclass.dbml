@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="s5taviacao" Class="AviacaoConhecimentoFreteAgrupBasedataclassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.50.39;Initial Catalog=s5taviacao;User ID=4t" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="s5taviacaoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AviacaoConhecimentoFreteAgrup" Member="AviacaoConhecimentoFreteAgrups">
+    <Type Name="AviacaoConhecimentoFreteAgrup">
+      <Column Name="pId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pGW1_FILIAL" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_EMISDC" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_CDTPDC" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGV5_DSTPDC" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DTEMIS" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="pGW1_DTEMIS_DIA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DTEMIS_MES" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DTEMIS_ANO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_SERDC" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_NRDC" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_CDREM" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGU3_NMEMIT_REM" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGU3_CDERP_REM" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGU3_CDCERP_REM" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_CDDEST" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGU3_NMEMIT" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGU3_CDERP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGU3_CDCERP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_NRROM" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_TPFRET" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DTSAI" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="pGW1_DTSAI_DIA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DTSAI_MES" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DTSAI_ANO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_DSESP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGW1_QTVOL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pGW8_VALOR_TOTAL_NOTA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pGW8_VALOR_BRUTO_TOTAL_NOTA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVALOR_TOTAL_NF_FRETE_AGRUPADO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[_trackLastWriteTime]" Member="_trackLastWriteTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackCreationTime]" Member="_trackCreationTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackLastWriteUser]" Member="_trackLastWriteUser" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackCreationUser]" Member="_trackCreationUser" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="pVALOR_FRETE_TOTAL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPERC_NF_FRETE_AGRUPADO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pGWM_VLFRET_CFRT_CCAR_NOVOFRETE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pGW3_NRDF" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pSTATUS_GFE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGWM_VLFRET_RTDCCAR_TOTALNRDC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pF2_PBRUTO_TOTALNRDC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pF2_PLIQUI_TOTALNRDC" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

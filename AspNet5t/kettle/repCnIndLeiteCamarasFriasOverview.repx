@@ -1,0 +1,1209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="17.1.5.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="repCnIndLeiteCamarasFriasOverview" Margins="50, 47, 41, 57" PageWidth="850" PageHeight="1100" Version="17.1">
+  <Parameters>
+    <Item1 Ref="2" Visible="false" ValueInfo="20171010_AUTOGEN" Name="repParIdTag" />
+  </Parameters>
+  <CalculatedFields>
+    <Item1 Ref="3" Name="calculatedField1" DisplayName="cfPeriodoINIData" Expression="Substring([periodoINI], 8, 2) + '/' + Substring([periodoINI], 5, 2) + '/' + Substring([periodoINI], 0, 4)" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="TopMargin" HeightF="41" />
+    <Item2 Ref="5" ControlType="DetailBand" Name="Detail" HeightF="209.541748">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRLabel" Name="label8" Multiline="true" Text="Resumo Máquina Creme" TextAlignment="MiddleCenter" SizeF="753,21.8750019" LocationFloat="0, 139.666687" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="7" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="8" ControlType="XRLabel" Name="label7" Multiline="true" Text="Resumo Máquina Soro de Queijo" TextAlignment="MiddleCenter" SizeF="753,21.8750019" LocationFloat="0, 92.7916641" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="9" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="10" ControlType="XRLabel" Name="label6" Multiline="true" Text="Resumo Máquina Leitelho" TextAlignment="MiddleCenter" SizeF="753,21.8750019" LocationFloat="0, 47.9166679" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="11" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="12" ControlType="XRLabel" Name="label5" Multiline="true" Text="Resumo Máquina Leite" TextAlignment="MiddleCenter" SizeF="753,21.8750019" LocationFloat="0, 1.04166663" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="13" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="14" ControlType="XRPageBreak" Name="pageBreak1" LocationFloat="0, 45.9166527" />
+        <Item6 Ref="15" ControlType="XRSubreport" Name="subreport1" SizeF="753,22.9999981" LocationFloat="0, 22.916666">
+          <ParameterBindings>
+            <Item1 Ref="17" ParameterName="repParIdTag" Parameter="#Ref-2" />
+          </ParameterBindings>
+          <ReportSource Ref="19" ControlType="AspNet5t.repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos, AspNet5t, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos1" Margins="55, 55, 35, 36" PageWidth="850" PageHeight="1100" Version="17.1" EventsInfo="repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos1,BeforePrint,repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos_BeforePrint" DataSource="#Ref-18">
+            <Parameters>
+              <Item1 Ref="20" Visible="false" ValueInfo="20171004_AUTOGEN" Name="repParIdTag" />
+            </Parameters>
+            <Bands>
+              <Item1 Ref="21" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="35" />
+              <Item2 Ref="22" ControlType="DetailBand" Name="detailBand1" HeightF="20" />
+              <Item3 Ref="23" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="36" />
+              <Item4 Ref="24" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="846">
+                <Controls>
+                  <Item1 Ref="25" ControlType="XRChart" Name="chart5TempDesnatacao" SizeF="370,282" LocationFloat="370.0001, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="26" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="27">
+                        <SeriesSerializable>
+                          <Item1 Ref="28" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="29" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="30" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="31" ColumnNameSerializable="tag" InvariantValueSerializable="desnatacaofora" />
+                            </DataFilters>
+                            <Label Ref="32" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="33" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="34">
+                          <View Ref="35" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="36" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="37" Text="Tempo Temperatura Desnatação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="38" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="39" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="40" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="41" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item1>
+                  <Item2 Ref="42" ControlType="XRChart" Name="chart4TempPasteurizacao" SizeF="370,282" LocationFloat="0, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="43" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="44">
+                        <SeriesSerializable>
+                          <Item1 Ref="45" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="46" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="47" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="48" ColumnNameSerializable="tag" InvariantValueSerializable="pasteurizacaofora" />
+                            </DataFilters>
+                            <Label Ref="49" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="50" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="51">
+                          <View Ref="52" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="53" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="54" Text="Tempo Temperatura Pasteurização" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="55" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="56" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="57" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="58" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item2>
+                  <Item3 Ref="59" ControlType="XRChart" Name="chart3Limpeza" SizeF="370,282" LocationFloat="193.75, 282" BorderColor="Black" Borders="None">
+                    <Chart Ref="60" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="61">
+                        <SeriesSerializable>
+                          <Item1 Ref="62" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Descending" LegendTextPattern="{A}">
+                            <View Ref="63" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="64" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="65" ColumnNameSerializable="tag" InvariantValueSerializable="limpeza" />
+                            </DataFilters>
+                            <Label Ref="66" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="67" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="68">
+                          <View Ref="69" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="70" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="71" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="72" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="73" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="74" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="75" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item3>
+                  <Item4 Ref="76" ControlType="XRChart" Name="chart2Automatico" SizeF="370,282" LocationFloat="370.0001, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="77" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="78">
+                        <SeriesSerializable>
+                          <Item1 Ref="79" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="80" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="81" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="82" ColumnNameSerializable="tag" InvariantValueSerializable="automatico" />
+                            </DataFilters>
+                            <Label Ref="83" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="84" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="85">
+                          <View Ref="86" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="87" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="88" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="89" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="90" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="91" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="92" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item4>
+                  <Item5 Ref="93" ControlType="XRChart" Name="chart1MaqLigada" SizeF="370,282" LocationFloat="6.357829E-05, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="94" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="95">
+                        <SeriesSerializable>
+                          <Item1 Ref="96" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="97" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="98" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="99" ColumnNameSerializable="tag" InvariantValueSerializable="maqligada" />
+                            </DataFilters>
+                            <Label Ref="100" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="101" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="102">
+                          <View Ref="103" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="104" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="105" Indent="0" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="106" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="107" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="108" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="109" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item5>
+                </Controls>
+              </Item4>
+            </Bands>
+            <StyleSheet>
+              <Item1 Ref="110" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+              <Item2 Ref="111" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item3 Ref="112" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item4 Ref="113" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+              <Item5 Ref="114" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+              <Item6 Ref="115" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+            </StyleSheet>
+            <ComponentStorage>
+              <Item1 Ref="18" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsLeiteEvento" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNMZWl0ZUV2ZW50bzwvTmFtZT48RGF0YVNvdXJjZSBUeXBlPSJBc3BOZXQ1dC5kc0luZHVzdHJpYSwgQXNwTmV0NXQsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjxEYXRhTWVtYmVyPkdldFRlbXBvRXZlbnRvc0xlaXRlPC9EYXRhTWVtYmVyPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0icGFySWRUYWciIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5KShbUGFyYW1ldGVycy5yZXBQYXJJZFRhZ10pPC9QYXJhbWV0ZXI+PC9QYXJhbWV0ZXJzPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+            </ComponentStorage>
+          </ReportSource>
+        </Item6>
+        <Item7 Ref="116" ControlType="XRSubreport" Name="subreport2" SizeF="753,23" LocationFloat="0, 69.7916641">
+          <ParameterBindings>
+            <Item1 Ref="117" ParameterName="repParIdTag" Parameter="#Ref-2" />
+          </ParameterBindings>
+          <ReportSource Ref="119" ControlType="AspNet5t.repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos, AspNet5t, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos1" DisplayName="repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos" Margins="55, 55, 35, 36" PageWidth="850" PageHeight="1100" Version="17.1" EventsInfo="repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos1,BeforePrint,repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos_BeforePrint" DataSource="#Ref-118">
+            <Parameters>
+              <Item1 Ref="120" Visible="false" ValueInfo="20171010_AUTOGEN" Name="repParIdTag" />
+            </Parameters>
+            <Bands>
+              <Item1 Ref="121" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="35" />
+              <Item2 Ref="122" ControlType="DetailBand" Name="detailBand1" HeightF="20" />
+              <Item3 Ref="123" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="36" />
+              <Item4 Ref="124" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="846">
+                <Controls>
+                  <Item1 Ref="125" ControlType="XRChart" Name="chart5TempDesnatacao" SizeF="370,282" LocationFloat="370.0001, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="126" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="127">
+                        <SeriesSerializable>
+                          <Item1 Ref="128" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="129" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="130" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="131" ColumnNameSerializable="tag" InvariantValueSerializable="desnatacaofora" />
+                            </DataFilters>
+                            <Label Ref="132" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="133" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="134">
+                          <View Ref="135" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="136" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="137" Text="Tempo Temperatura Desnatação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="138" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="139" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="140" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="141" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item1>
+                  <Item2 Ref="142" ControlType="XRChart" Name="chart4TempPasteurizacao" SizeF="370,282" LocationFloat="0, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="143" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="144">
+                        <SeriesSerializable>
+                          <Item1 Ref="145" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="146" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="147" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="148" ColumnNameSerializable="tag" InvariantValueSerializable="pasteurizacaofora" />
+                            </DataFilters>
+                            <Label Ref="149" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="150" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="151">
+                          <View Ref="152" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="153" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="154" Text="Tempo Temperatura Pasteurização" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="155" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="156" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="157" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="158" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item2>
+                  <Item3 Ref="159" ControlType="XRChart" Name="chart3Limpeza" SizeF="370,282" LocationFloat="193.75, 282" BorderColor="Black" Borders="None">
+                    <Chart Ref="160" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="161">
+                        <SeriesSerializable>
+                          <Item1 Ref="162" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Descending" LegendTextPattern="{A}">
+                            <View Ref="163" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="164" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="165" ColumnNameSerializable="tag" InvariantValueSerializable="limpeza" />
+                            </DataFilters>
+                            <Label Ref="166" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="167" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="168">
+                          <View Ref="169" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="170" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="171" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="172" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="173" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="174" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="175" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item3>
+                  <Item4 Ref="176" ControlType="XRChart" Name="chart2Automatico" SizeF="370,282" LocationFloat="370.0001, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="177" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="178">
+                        <SeriesSerializable>
+                          <Item1 Ref="179" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="180" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="181" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="182" ColumnNameSerializable="tag" InvariantValueSerializable="automatico" />
+                            </DataFilters>
+                            <Label Ref="183" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="184" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="185">
+                          <View Ref="186" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="187" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="188" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="189" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="190" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="191" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="192" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item4>
+                  <Item5 Ref="193" ControlType="XRChart" Name="chart1MaqLigada" SizeF="370,282" LocationFloat="6.357829E-05, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="194" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="195">
+                        <SeriesSerializable>
+                          <Item1 Ref="196" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="197" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="198" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="199" ColumnNameSerializable="tag" InvariantValueSerializable="maqligada" />
+                            </DataFilters>
+                            <Label Ref="200" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="201" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="202">
+                          <View Ref="203" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="204" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="205" Indent="0" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="206" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="207" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="208" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="209" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item5>
+                </Controls>
+              </Item4>
+            </Bands>
+            <StyleSheet>
+              <Item1 Ref="210" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+              <Item2 Ref="211" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item3 Ref="212" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item4 Ref="213" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+              <Item5 Ref="214" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+              <Item6 Ref="215" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+            </StyleSheet>
+            <ComponentStorage>
+              <Item1 Ref="118" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsLeiteEvento" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNMZWl0ZUV2ZW50bzwvTmFtZT48RGF0YVNvdXJjZSBUeXBlPSJBc3BOZXQ1dC5kc0luZHVzdHJpYSwgQXNwTmV0NXQsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjxEYXRhTWVtYmVyPkdldFRlbXBvRXZlbnRvc0xlaXRlbGhvPC9EYXRhTWVtYmVyPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0icGFySWRUYWciIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5KShbUGFyYW1ldGVycy5yZXBQYXJJZFRhZ10pPC9QYXJhbWV0ZXI+PC9QYXJhbWV0ZXJzPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+            </ComponentStorage>
+          </ReportSource>
+        </Item7>
+        <Item8 Ref="216" ControlType="XRPageBreak" Name="pageBreak2" LocationFloat="0, 90.79164" />
+        <Item9 Ref="217" ControlType="XRSubreport" Name="subreport3" SizeF="753,23" LocationFloat="0, 114.666687">
+          <ParameterBindings>
+            <Item1 Ref="218" ParameterName="repParIdTag" Parameter="#Ref-2" />
+          </ParameterBindings>
+          <ReportSource Ref="220" ControlType="AspNet5t.repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos, AspNet5t, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos1" DisplayName="repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos" Margins="55, 55, 35, 36" PageWidth="850" PageHeight="1100" Version="17.1" EventsInfo="repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos1,BeforePrint,repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos_BeforePrint" DataSource="#Ref-219">
+            <Parameters>
+              <Item1 Ref="221" Visible="false" ValueInfo="20171010_AUTOGEN" Name="repParIdTag" />
+            </Parameters>
+            <Bands>
+              <Item1 Ref="222" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="35" />
+              <Item2 Ref="223" ControlType="DetailBand" Name="detailBand1" HeightF="20" />
+              <Item3 Ref="224" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="36" />
+              <Item4 Ref="225" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="846">
+                <Controls>
+                  <Item1 Ref="226" ControlType="XRChart" Name="chart5TempDesnatacao" SizeF="370,282" LocationFloat="370.0001, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="227" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="228">
+                        <SeriesSerializable>
+                          <Item1 Ref="229" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="230" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="231" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="232" ColumnNameSerializable="tag" InvariantValueSerializable="desnatacaofora" />
+                            </DataFilters>
+                            <Label Ref="233" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="234" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="235">
+                          <View Ref="236" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="237" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="238" Text="Tempo Temperatura Desnatação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="239" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="240" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="241" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="242" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item1>
+                  <Item2 Ref="243" ControlType="XRChart" Name="chart4TempPasteurizacao" SizeF="370,282" LocationFloat="0, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="244" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="245">
+                        <SeriesSerializable>
+                          <Item1 Ref="246" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="247" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="248" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="249" ColumnNameSerializable="tag" InvariantValueSerializable="pasteurizacaofora" />
+                            </DataFilters>
+                            <Label Ref="250" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="251" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="252">
+                          <View Ref="253" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="254" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="255" Text="Tempo Temperatura Pasteurização" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="256" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="257" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="258" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="259" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item2>
+                  <Item3 Ref="260" ControlType="XRChart" Name="chart3Limpeza" SizeF="370,282" LocationFloat="193.75, 282" BorderColor="Black" Borders="None">
+                    <Chart Ref="261" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="262">
+                        <SeriesSerializable>
+                          <Item1 Ref="263" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Descending" LegendTextPattern="{A}">
+                            <View Ref="264" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="265" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="266" ColumnNameSerializable="tag" InvariantValueSerializable="limpeza" />
+                            </DataFilters>
+                            <Label Ref="267" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="268" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="269">
+                          <View Ref="270" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="271" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="272" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="273" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="274" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="275" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="276" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item3>
+                  <Item4 Ref="277" ControlType="XRChart" Name="chart2Automatico" SizeF="370,282" LocationFloat="370.0001, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="278" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="279">
+                        <SeriesSerializable>
+                          <Item1 Ref="280" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="281" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="282" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="283" ColumnNameSerializable="tag" InvariantValueSerializable="automatico" />
+                            </DataFilters>
+                            <Label Ref="284" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="285" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="286">
+                          <View Ref="287" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="288" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="289" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="290" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="291" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="292" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="293" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item4>
+                  <Item5 Ref="294" ControlType="XRChart" Name="chart1MaqLigada" SizeF="370,282" LocationFloat="6.357829E-05, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="295" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="296">
+                        <SeriesSerializable>
+                          <Item1 Ref="297" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="298" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="299" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="300" ColumnNameSerializable="tag" InvariantValueSerializable="maqligada" />
+                            </DataFilters>
+                            <Label Ref="301" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="302" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="303">
+                          <View Ref="304" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="305" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="306" Indent="0" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="307" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="308" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="309" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="310" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item5>
+                </Controls>
+              </Item4>
+            </Bands>
+            <StyleSheet>
+              <Item1 Ref="311" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+              <Item2 Ref="312" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item3 Ref="313" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item4 Ref="314" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+              <Item5 Ref="315" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+              <Item6 Ref="316" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+            </StyleSheet>
+            <ComponentStorage>
+              <Item1 Ref="219" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsLeiteEvento" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNMZWl0ZUV2ZW50bzwvTmFtZT48RGF0YVNvdXJjZSBUeXBlPSJBc3BOZXQ1dC5kc0luZHVzdHJpYSwgQXNwTmV0NXQsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjxEYXRhTWVtYmVyPkdldFRlbXBvRXZlbnRvc1Nvcm9EZVF1ZWlqbzwvRGF0YU1lbWJlcj48UGFyYW1ldGVycz48UGFyYW1ldGVyIE5hbWU9InBhcklkVGFnIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSkoW1BhcmFtZXRlcnMucmVwUGFySWRUYWddKTwvUGFyYW1ldGVyPjwvUGFyYW1ldGVycz48L09iamVjdERhdGFTb3VyY2U+" />
+            </ComponentStorage>
+          </ReportSource>
+        </Item9>
+        <Item10 Ref="317" ControlType="XRPageBreak" Name="pageBreak3" LocationFloat="0, 137.6667" />
+        <Item11 Ref="318" ControlType="XRSubreport" Name="subreport4" SizeF="753,23" LocationFloat="0, 161.541687">
+          <ParameterBindings>
+            <Item1 Ref="319" ParameterName="repParIdTag" Parameter="#Ref-2" />
+          </ParameterBindings>
+          <ReportSource Ref="321" ControlType="AspNet5t.repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos, AspNet5t, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos1" DisplayName="repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos" Margins="55, 55, 35, 36" PageWidth="850" PageHeight="1100" Version="17.1" EventsInfo="repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos1,BeforePrint,repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos_BeforePrint" DataSource="#Ref-320">
+            <Parameters>
+              <Item1 Ref="322" Visible="false" ValueInfo="20171010_AUTOGEN" Name="repParIdTag" />
+            </Parameters>
+            <Bands>
+              <Item1 Ref="323" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="35" />
+              <Item2 Ref="324" ControlType="DetailBand" Name="detailBand1" HeightF="20" />
+              <Item3 Ref="325" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="36" />
+              <Item4 Ref="326" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="846">
+                <Controls>
+                  <Item1 Ref="327" ControlType="XRChart" Name="chart4TempPasteurizacao" SizeF="370,282" LocationFloat="0, 564" BorderColor="Black" Borders="None">
+                    <Chart Ref="328" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="329">
+                        <SeriesSerializable>
+                          <Item1 Ref="330" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="331" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="332" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="333" ColumnNameSerializable="tag" InvariantValueSerializable="pasteurizacaofora" />
+                            </DataFilters>
+                            <Label Ref="334" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="335" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="336">
+                          <View Ref="337" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="338" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="339" Text="Tempo Temperatura Pasteurização" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="340" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="341" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="342" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="343" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item1>
+                  <Item2 Ref="344" ControlType="XRChart" Name="chart3Limpeza" SizeF="370,282" LocationFloat="193.75, 282" BorderColor="Black" Borders="None">
+                    <Chart Ref="345" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="346">
+                        <SeriesSerializable>
+                          <Item1 Ref="347" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Descending" LegendTextPattern="{A}">
+                            <View Ref="348" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="349" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="350" ColumnNameSerializable="tag" InvariantValueSerializable="limpeza" />
+                            </DataFilters>
+                            <Label Ref="351" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="352" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="353">
+                          <View Ref="354" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="355" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="356" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="357" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="358" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="359" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="360" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item2>
+                  <Item3 Ref="361" ControlType="XRChart" Name="chart2Automatico" SizeF="370,282" LocationFloat="370.0001, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="362" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="363">
+                        <SeriesSerializable>
+                          <Item1 Ref="364" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="365" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="366" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="367" ColumnNameSerializable="tag" InvariantValueSerializable="automatico" />
+                            </DataFilters>
+                            <Label Ref="368" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="369" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="370">
+                          <View Ref="371" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="372" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="373" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="374" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="375" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="376" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="377" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item3>
+                  <Item4 Ref="378" ControlType="XRChart" Name="chart1MaqLigada" SizeF="370,282" LocationFloat="6.357829E-05, 0" BorderColor="Black" Borders="None">
+                    <Chart Ref="379" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="380">
+                        <SeriesSerializable>
+                          <Item1 Ref="381" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" LegendTextPattern="{A}">
+                            <View Ref="382" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="383" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="384" ColumnNameSerializable="tag" InvariantValueSerializable="maqligada" />
+                            </DataFilters>
+                            <Label Ref="385" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="386" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="387">
+                          <View Ref="388" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="389" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="390" Indent="0" Text="Tempo de Operação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="391" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="392" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="393" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="394" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item4>
+                </Controls>
+              </Item4>
+            </Bands>
+            <StyleSheet>
+              <Item1 Ref="395" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+              <Item2 Ref="396" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item3 Ref="397" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item4 Ref="398" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+              <Item5 Ref="399" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+              <Item6 Ref="400" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+            </StyleSheet>
+            <ComponentStorage>
+              <Item1 Ref="320" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsLeiteEvento" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNMZWl0ZUV2ZW50bzwvTmFtZT48RGF0YVNvdXJjZSBUeXBlPSJBc3BOZXQ1dC5kc0luZHVzdHJpYSwgQXNwTmV0NXQsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjxEYXRhTWVtYmVyPkdldFRlbXBvRXZlbnRvc0NyZW1lPC9EYXRhTWVtYmVyPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0icGFySWRUYWciIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5KShbUGFyYW1ldGVycy5yZXBQYXJJZFRhZ10pPC9QYXJhbWV0ZXI+PC9QYXJhbWV0ZXJzPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+            </ComponentStorage>
+          </ReportSource>
+        </Item11>
+        <Item12 Ref="401" ControlType="XRPageBreak" Name="pageBreak4" LocationFloat="0, 184.5417" />
+        <Item13 Ref="402" ControlType="XRSubreport" Name="subreport5" SizeF="753,23" LocationFloat="0, 186.541748">
+          <ParameterBindings>
+            <Item1 Ref="403" ParameterName="repParIdTag" Parameter="#Ref-2" />
+          </ParameterBindings>
+          <ReportSource Ref="405" ControlType="AspNet5t.repCnIndLeiteCamarasFriasOverviewSubCamarasFriasTempoEventos, AspNet5t, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="55, 55, 35, 36" PageWidth="850" PageHeight="1100" Version="17.1" DataSource="#Ref-404">
+            <Parameters>
+              <Item1 Ref="406" Visible="false" ValueInfo="20171009_AUTOGEN" Name="repParIdTag" />
+            </Parameters>
+            <Bands>
+              <Item1 Ref="407" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="35" />
+              <Item2 Ref="408" ControlType="DetailBand" Name="detailBand1" HeightF="20" />
+              <Item3 Ref="409" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="36" />
+              <Item4 Ref="410" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="1173.75">
+                <Controls>
+                  <Item1 Ref="411" ControlType="XRLabel" Name="label1" Multiline="true" Text="Resumo Câmaras Frias - Tempo da Temperatura de Operação" TextAlignment="MiddleCenter" SizeF="739.9999,21.875" LocationFloat="0, 869.8751" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+                    <StylePriority Ref="412" UseFont="false" UseTextAlignment="false" />
+                  </Item1>
+                  <Item2 Ref="413" ControlType="XRLabel" Name="label9" Multiline="true" Text="Resumo Câmaras Frias - Tempo da Temperatura de Operação" TextAlignment="MiddleCenter" SizeF="739.9999,21.875" LocationFloat="6.763648E-05, 0" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+                    <StylePriority Ref="414" UseFont="false" UseTextAlignment="false" />
+                  </Item2>
+                  <Item3 Ref="415" ControlType="XRChart" Name="chart3" SizeF="370,282" LocationFloat="370, 891.7501" BorderColor="Black" Borders="None">
+                    <Chart Ref="416" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="417">
+                        <SeriesSerializable>
+                          <Item1 Ref="418" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="419" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="420" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="421" ColumnNameSerializable="tag" InvariantValueSerializable="secagem1fora" />
+                            </DataFilters>
+                            <Label Ref="422" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="423" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="424">
+                          <View Ref="425" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="426" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="427" Text="Secagem 1" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="428" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="429" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="430" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="431" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item3>
+                  <Item4 Ref="432" ControlType="XRChart" Name="chart2" SizeF="370,282" LocationFloat="0, 891.7501" BorderColor="Black" Borders="None">
+                    <Chart Ref="433" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="434">
+                        <SeriesSerializable>
+                          <Item1 Ref="435" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="436" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="437" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="438" ColumnNameSerializable="tag" InvariantValueSerializable="secagemfora" />
+                            </DataFilters>
+                            <Label Ref="439" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="440" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="441">
+                          <View Ref="442" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="443" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="444" Text="Secagem" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="445" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="446" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="447" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="448" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item4>
+                  <Item5 Ref="449" ControlType="XRChart" Name="chart1" SizeF="370,282" LocationFloat="370, 303.875" BorderColor="Black" Borders="None">
+                    <Chart Ref="450" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="451">
+                        <SeriesSerializable>
+                          <Item1 Ref="452" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="453" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="454" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="455" ColumnNameSerializable="tag" InvariantValueSerializable="minasricotafora" />
+                            </DataFilters>
+                            <Label Ref="456" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="457" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="458">
+                          <View Ref="459" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="460" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="461" Text="Minas Ricota" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="462" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="463" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="464" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="465" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item5>
+                  <Item6 Ref="466" ControlType="XRChart" Name="chart5TempDesnatacao" SizeF="370,282" LocationFloat="369.9999, 585.875" BorderColor="Black" Borders="None">
+                    <Chart Ref="467" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="468">
+                        <SeriesSerializable>
+                          <Item1 Ref="469" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="470" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="471" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="472" ColumnNameSerializable="tag" InvariantValueSerializable="requeijaofora" />
+                            </DataFilters>
+                            <Label Ref="473" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="474" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="475">
+                          <View Ref="476" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="477" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="478" Text="Requeijão" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="479" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="480" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="481" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="482" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item6>
+                  <Item7 Ref="483" ControlType="XRChart" Name="chart4TempPasteurizacao" SizeF="370,282" LocationFloat="0, 585.875" BorderColor="Black" Borders="None">
+                    <Chart Ref="484" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="485">
+                        <SeriesSerializable>
+                          <Item1 Ref="486" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="487" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="488" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="489" ColumnNameSerializable="tag" InvariantValueSerializable="produtoacabadofora" />
+                            </DataFilters>
+                            <Label Ref="490" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="491" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="492">
+                          <View Ref="493" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="494" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="495" Text="Produto Acabado" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="496" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="497" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="498" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="499" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item7>
+                  <Item8 Ref="500" ControlType="XRChart" Name="chart3Limpeza" SizeF="370,282" LocationFloat="0, 303.875" BorderColor="Black" Borders="None">
+                    <Chart Ref="501" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="502">
+                        <SeriesSerializable>
+                          <Item1 Ref="503" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="504" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="505" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="506" ColumnNameSerializable="tag" InvariantValueSerializable="maturacaofora" />
+                            </DataFilters>
+                            <Label Ref="507" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="508" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="509">
+                          <View Ref="510" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="511" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="512" Text="Maturação" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="513" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="514" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="515" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="516" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item8>
+                  <Item9 Ref="517" ControlType="XRChart" Name="chart2Automatico" SizeF="370,282" LocationFloat="370, 21.87502" BorderColor="Black" Borders="None">
+                    <Chart Ref="518" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="519">
+                        <SeriesSerializable>
+                          <Item1 Ref="520" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="521" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="522" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="523" ColumnNameSerializable="tag" InvariantValueSerializable="salgadafora" />
+                            </DataFilters>
+                            <Label Ref="524" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="525" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="526">
+                          <View Ref="527" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="528" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="529" Text="Salgada" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="530" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="531" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="532" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="533" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item9>
+                  <Item10 Ref="534" ControlType="XRChart" Name="chart1MaqLigada" SizeF="370,282" LocationFloat="0, 21.87499" BorderColor="Black" Borders="None">
+                    <Chart Ref="535" PaletteName="GreenRedCustom">
+                      <DataContainer Ref="536">
+                        <SeriesSerializable>
+                          <Item1 Ref="537" Name="Series 1" LegendName="Default Legend" ArgumentDataMember="description" ToolTipHintDataMember="tempo_hhmmss" ValueDataMembersSerializable="tempo_segundos" LabelsVisibility="True" SeriesPointsSorting="Ascending" LegendTextPattern="{A}">
+                            <View Ref="538" TypeNameSerializable="PieSeriesView">
+                              <Titles>
+                                <Item1 Ref="539" Dock="Bottom" Indent="0" Text="tempo total: " Font="Tahoma, 8.25pt, charSet=0" />
+                              </Titles>
+                            </View>
+                            <DataFilters>
+                              <Item1 Ref="540" ColumnNameSerializable="tag" InvariantValueSerializable="montanhesfora" />
+                            </DataFilters>
+                            <Label Ref="541" TypeNameSerializable="PieSeriesLabel" LineVisibility="True" TextPattern="{HINT} ({VP:0.00%})">
+                              <Border Ref="542" Visibility="True" />
+                            </Label>
+                          </Item1>
+                        </SeriesSerializable>
+                        <SeriesTemplate Ref="543">
+                          <View Ref="544" TypeNameSerializable="PieSeriesView" />
+                        </SeriesTemplate>
+                      </DataContainer>
+                      <Legend Ref="545" Visibility="True" AlignmentHorizontal="Center" AlignmentVertical="TopOutside" Name="Default Legend" />
+                      <Titles>
+                        <Item1 Ref="546" Indent="0" Text="Montanhês" Font="Tahoma, 9.75pt, style=Bold, charSet=0" />
+                      </Titles>
+                      <OptionsPrint Ref="547" ImageFormat="Metafile" />
+                      <XtraPaletteRepository>
+                        <Item1 Ref="548" Name="GreenRedCustom" ScaleMode="Repeat">
+                          <Palette>
+                            <Item1 Ref="549" Color="255,0,179,0" Color2="255,0,179,0" />
+                            <Item2 Ref="550" Color="Red" Color2="Red" />
+                          </Palette>
+                        </Item1>
+                      </XtraPaletteRepository>
+                    </Chart>
+                  </Item10>
+                  <Item11 Ref="551" ControlType="XRPageBreak" Name="pageBreak1" LocationFloat="0, 867.8751" />
+                </Controls>
+              </Item4>
+            </Bands>
+            <StyleSheet>
+              <Item1 Ref="552" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+              <Item2 Ref="553" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item3 Ref="554" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+              <Item4 Ref="555" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+              <Item5 Ref="556" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+              <Item6 Ref="557" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+            </StyleSheet>
+            <ComponentStorage>
+              <Item1 Ref="404" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsLeiteEvento" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNMZWl0ZUV2ZW50bzwvTmFtZT48RGF0YVNvdXJjZSBUeXBlPSJBc3BOZXQ1dC5kc0luZHVzdHJpYSwgQXNwTmV0NXQsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjxEYXRhTWVtYmVyPkdldFRlbXBvRXZlbnRvc0NhbWFyYXNGcmlhczwvRGF0YU1lbWJlcj48UGFyYW1ldGVycz48UGFyYW1ldGVyIE5hbWU9InBhcklkVGFnIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSkoW1BhcmFtZXRlcnMucmVwUGFySWRUYWddKTwvUGFyYW1ldGVyPjwvUGFyYW1ldGVycz48L09iamVjdERhdGFTb3VyY2U+" />
+            </ComponentStorage>
+          </ReportSource>
+        </Item13>
+      </Controls>
+    </Item2>
+    <Item3 Ref="558" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="57" />
+    <Item4 Ref="559" ControlType="PageHeaderBand" Name="PageHeader" HeightF="117.708344">
+      <Controls>
+        <Item1 Ref="560" ControlType="XRLabel" Name="label1" Multiline="true" Text="GONÇALVES SALLES S.A. IND. E COM." TextAlignment="TopCenter" SizeF="476.0416,31.25001" LocationFloat="224.286, 0" Font="Arial, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="561" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="562" ControlType="XRPictureBox" Name="pictureBox1" Image="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" Sizing="AutoSize" SizeF="203.125,117.708336" LocationFloat="0.3277496, 0" />
+        <Item3 Ref="563" ControlType="XRLabel" Name="label2" Multiline="true" Text="INDÚSTRIA DE LATICÍNIOS" TextAlignment="TopCenter" SizeF="476.0416,21.87501" LocationFloat="224.286, 31.25001" Font="Arial, 12pt" Padding="2,2,0,0,100">
+          <StylePriority Ref="564" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="565" ControlType="XRLabel" Name="label3" Multiline="true" Text="Linha Leite e Câmaras Frias - Overview Diário" TextAlignment="TopCenter" SizeF="476.0416,21.87501" LocationFloat="224.286, 53.12502" Font="Arial, 12pt" Padding="2,2,0,0,100">
+          <StylePriority Ref="566" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="567" ControlType="XRLabel" Name="label4" Multiline="true" Text="Data:" TextAlignment="MiddleRight" SizeF="208.3333,21.875" LocationFloat="224.286, 84.83334" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="568" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="569" ControlType="XRLabel" Name="labelData" Text="labelData" TextAlignment="MiddleLeft" SizeF="129.1667,21.875" LocationFloat="432.6195, 84.83334" Font="Arial, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="570" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+      </Controls>
+    </Item4>
+  </Bands>
+</XtraReportsLayoutSerializer>

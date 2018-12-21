@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s0="http://192.168.50.35:9595/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://192.168.50.35:9595/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.50.35:9595/">
+      <s:element name="AJUSTAPESOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ORDEM" type="s0:GSORDPES" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AJUSTAPESOSRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AJUSTAPESOSRESULT" type="s0:GSRESORD" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GSORDPES">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ITEM" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ITENS" type="s0:ARRAYOFGSITMORDPES" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SEQUENCIA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSRESORD">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ITEM" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ITENS" type="s0:ARRAYOFGSITMRESORD" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SEQUENCIA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSITMORDPES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LOTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QUANTIDADE" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSITMRESORD">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ERRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QUANTIDADE" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFGSITMORDPES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GSITMORDPES" type="s0:GSITMORDPES" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFGSITMRESORD">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GSITMRESORD" type="s0:GSITMRESORD" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="AJUSTAPESOSSOAPIN">
+    <part name="parameters" element="s0:AJUSTAPESOS" />
+  </message>
+  <message name="AJUSTAPESOSSOAPOUT">
+    <part name="parameters" element="s0:AJUSTAPESOSRESPONSE" />
+  </message>
+  <portType name="GSORDEMPESAGEMSOAP">
+    <operation name="AJUSTAPESOS">
+      <documentation>Ajusta pesos das ordens de pesagem.</documentation>
+      <input message="s0:AJUSTAPESOSSOAPIN" />
+      <output message="s0:AJUSTAPESOSSOAPOUT" />
+    </operation>
+  </portType>
+  <binding name="GSORDEMPESAGEMSOAP" type="s0:GSORDEMPESAGEMSOAP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="AJUSTAPESOS">
+      <soap:operation soapAction="http://192.168.50.35:9595/AJUSTAPESOS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="GSORDEMPESAGEM">
+    <documentation>Serviço de Integração de Ordens de Pesagem.</documentation>
+    <port name="GSORDEMPESAGEMSOAP" binding="s0:GSORDEMPESAGEMSOAP">
+      <soap:address location="http://192.168.50.35:9595/ws/GSORDEMPESAGEM.apw" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,75 @@
+
+17/10/2017 11:18:42 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 415 
+17/10/2017 11:19:53 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 415 
+17/10/2017 16:53:21 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 16:55:27 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 16:55:40 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 16:56:30 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:02:18 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:02:56 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:04:08 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:04:53 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:07:03 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:07:30 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:09:39 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:13:04 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:14:22 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:26:15 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:26:51 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:31:26 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:32:04 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:40:39 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:47:27 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:47:37 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:47:48 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+17/10/2017 17:48:38 System.Exception: Exceção do tipo 'System.Exception' foi acionada.
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 421 
+30/11/2017 18:23:43 System.ServiceModel.EndpointNotFoundException: Não havia um ponto de extremidade em escuta em http://192.168.50.35:9595/ws/GSINCORC.apw capaz de aceitar a mensagem. Em geral, isso é causado por um endereço ou ação de SOAP incorreta. Consulte InnerException, se presente, para obter mais detalhes. ---> System.Net.WebException: Impossível conectar-se ao servidor remoto ---> System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 192.168.50.35:9595
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   em System.Net.HttpWebRequest.GetRequestStream()
+   em System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   em System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   em System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em AspNet5t.ServiceOrcamentoProtheusReference.GSINCORCSOAP.INCLUI(INCLUIRequest request)
+   em AspNet5t.ServiceOrcamentoProtheusReference.GSINCORCSOAPClient.ServiceOrcamentoProtheusReference_GSINCORCSOAP_INCLUI(INCLUIRequest request) na C:\sistemas\s5twebAviacao\AspNet5t\Service References\ServiceOrcamentoProtheusReference\Reference.vb:linha 549
+   em AspNet5t.ServiceOrcamentoProtheusReference.GSINCORCSOAPClient.INCLUI(GSORCAMENTO ORCAMENTO) na C:\sistemas\s5twebAviacao\AspNet5t\Service References\ServiceOrcamentoProtheusReference\Reference.vb:linha 555
+   em AspNet5t.webapiControllers.PedidoController.PostValue(S5TPedido oPedido) na C:\sistemas\s5twebAviacao\AspNet5t\webapiControllers\PedidoController.vb:linha 607 

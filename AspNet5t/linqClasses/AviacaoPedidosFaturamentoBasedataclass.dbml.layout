@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.5" name="AviacaoPedidosFaturamentoBasedataclass">
+  <DataContextMoniker Name="/AviacaoPedidosFaturamentoBasedataclassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="588374e2-9cc6-40a3-895a-899ed62265cb" absoluteBounds="2.375, 1, 2, 9.2706526692708326">
+      <DataClassMoniker Name="/AviacaoPedidosFaturamentoBasedataclassDataContext/AviacaoPedidosFaturamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02aba150-ad77-4a73-be6c-794409e6273f" absoluteBounds="2.3899999999999997, 1.46, 1.9700000000000002, 8.7106526692708321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

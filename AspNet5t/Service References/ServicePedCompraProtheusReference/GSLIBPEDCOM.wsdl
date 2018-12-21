@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s0="http://192.168.50.35:9595/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://192.168.50.35:9595/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.50.35:9595/">
+      <s:element name="BLOQUEAR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PEDIDOSCOMPRA" type="s0:GSPEDLIB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BLOQUEARRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BLOQUEARRESULT" type="s0:ARRAYOFGSCONFPED" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LIBERAR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PEDIDOSCOMPRA" type="s0:GSPEDLIB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LIBERARRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LIBERARRESULT" type="s0:ARRAYOFGSCONFPED" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GSPEDLIB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="APROVADOR" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PEDIDOS" type="s0:ARRAYOFGSPEDCOM" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSCONFPED">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRICAO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FILPED" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PEDIDO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="STATUS" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSPEDCOM">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FILPED" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PEDIDO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFGSCONFPED">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GSCONFPED" type="s0:GSCONFPED" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFGSPEDCOM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GSPEDCOM" type="s0:GSPEDCOM" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="BLOQUEARSOAPIN">
+    <part name="parameters" element="s0:BLOQUEAR" />
+  </message>
+  <message name="BLOQUEARSOAPOUT">
+    <part name="parameters" element="s0:BLOQUEARRESPONSE" />
+  </message>
+  <message name="LIBERARSOAPIN">
+    <part name="parameters" element="s0:LIBERAR" />
+  </message>
+  <message name="LIBERARSOAPOUT">
+    <part name="parameters" element="s0:LIBERARRESPONSE" />
+  </message>
+  <portType name="GSLIBPEDCOMSOAP">
+    <operation name="BLOQUEAR">
+      <documentation>Bloquear pedidos de compra.</documentation>
+      <input message="s0:BLOQUEARSOAPIN" />
+      <output message="s0:BLOQUEARSOAPOUT" />
+    </operation>
+    <operation name="LIBERAR">
+      <documentation>Libera pedidos de compra.</documentation>
+      <input message="s0:LIBERARSOAPIN" />
+      <output message="s0:LIBERARSOAPOUT" />
+    </operation>
+  </portType>
+  <binding name="GSLIBPEDCOMSOAP" type="s0:GSLIBPEDCOMSOAP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="BLOQUEAR">
+      <soap:operation soapAction="http://192.168.50.35:9595/BLOQUEAR" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="LIBERAR">
+      <soap:operation soapAction="http://192.168.50.35:9595/LIBERAR" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="GSLIBPEDCOM">
+    <documentation>Serviço de liberação de pedidos de compras.</documentation>
+    <port name="GSLIBPEDCOMSOAP" binding="s0:GSLIBPEDCOMSOAP">
+      <soap:address location="http://192.168.50.35:9595/ws/GSLIBPEDCOM.apw" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,3 @@
+﻿Public Class repMovimentacaoDeEstoquesEntradaPorProducao
+
+End Class

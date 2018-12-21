@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="pt-BR">
+  <Title Text="Acompanhamento Produção x Pedidos" Url="D:\Users\RENATO\Google Drive\Aviacao\LogoUAMpequeno.jpg" />
+  <DataSources>
+    <ObjectDataSource ComponentName="dashboardObjectDataSource1">
+      <Name>Object Data Source 1</Name>
+      <DataSource Type="S5TDashDesigner.stubProducaoPedido, S5TDashDesigner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+      <DataMember>getProducaoPedido</DataMember>
+      <Constructor />
+      <CalculatedFields>
+        <CalculatedField Name="Status" Expression="Iif([B2_QATU] &lt;= [QTDVEN], 'Falta Produzir', 'Sobra Produção')" DataType="Auto" />
+        <CalculatedField Name="Resultado" Expression="[QtdeEstoqueConv] - [QtdePedidoConv]" DataType="Decimal" />
+        <CalculatedField Name="QtdePedidoConv" Expression="Sum([QTDVEN]) / Avg([FATOR_CONV])" DataType="Decimal" />
+        <CalculatedField Name="QtdeEstoqueConv" Expression="(Avg([B2_QATU]) - Avg([B2_QEMP])) / Avg([FATOR_CONV])" DataType="Decimal" />
+        <CalculatedField Name="PedidoDataCalc" Expression="Concat('Pedido:', [C5_NUM], ' - Emissão: ', Substring([C5_EMISSAO], 6, 2), '/', Substring([C5_EMISSAO], 4, 2), '/', Substring([C5_EMISSAO], 0, 4))" DataType="Auto" />
+        <CalculatedField Name="QtdeEmpenhadaConv" Expression="Avg([B2_QEMP]) / Avg([FATOR_CONV])" DataType="Decimal" />
+        <CalculatedField Name="IndicadorStatusCimaBaixo" Expression="Iif([QtdePedidoConv] &gt;= [QtdeEstoqueConv], 'BAIXO', 'CIMA')" DataType="Auto" />
+        <CalculatedField Name="IndicadorStatus" Expression="Iif([QtdeEmpenhadaConv] &gt; 0 And [QtdeEstoqueConv] + [QtdeEmpenhadaConv] - [QtdePedidoConv] &gt; 0 And [QtdePedidoConv] &gt;= [QtdeEstoqueConv], 'NEUTRO', [IndicadorStatusCimaBaixo])" DataType="Auto" />
+      </CalculatedFields>
+    </ObjectDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Produção" DataSource="dashboardObjectDataSource1">
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <DataItems>
+        <Dimension DataMember="C6_FILIAL" UniqueName="DataItem0" />
+        <Dimension DataMember="C6_DESCRI" UniqueName="DataItem1" />
+        <Measure DataMember="QtdePedidoConv" Name="Quantidade em Pedido Conv." UniqueName="DataItem5">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="QtdeEstoqueConv" UniqueName="DataItem6">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="Resultado" Name="Qtde Estoque - Qtde Pedido" UniqueName="DataItem4">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="B2_QATU" SummaryType="Average" UniqueName="DataItem3">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="QTDVEN" UniqueName="DataItem2">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="QtdeEmpenhadaConv" Name="Quantidade Empenhada" UniqueName="DataItem7">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="IndicadorStatus" SummaryType="Count" UniqueName="DataItem8" />
+      </DataItems>
+      <HiddenMeasures>
+        <Measure UniqueName="DataItem3" />
+        <Measure UniqueName="DataItem2" />
+        <Measure UniqueName="DataItem8" />
+      </HiddenMeasures>
+      <FormatRules>
+        <GridItemFormatRule Name="FormatRule 1" DataItem="DataItem3" DataItemApplyTo="DataItem4">
+          <FormatConditionExpression Expression="[DataItem8] = 'CIMA'">
+            <AppearanceSettings AppearanceType="Green" />
+          </FormatConditionExpression>
+        </GridItemFormatRule>
+        <GridItemFormatRule Name="FormatRule 2" DataItem="DataItem3" DataItemApplyTo="DataItem4">
+          <FormatConditionExpression Expression="[DataItem8] = 'BAIXO'">
+            <AppearanceSettings AppearanceType="Red" />
+          </FormatConditionExpression>
+        </GridItemFormatRule>
+        <GridItemFormatRule Name="FormatRule 3" DataItem="DataItem8" DataItemApplyTo="DataItem4">
+          <FormatConditionValue>
+            <AppearanceSettings AppearanceType="Yellow" />
+            <Value1 Type="System.String" Value="NEUTRO" />
+          </FormatConditionValue>
+        </GridItemFormatRule>
+      </FormatRules>
+      <GridColumns>
+        <GridDimensionColumn Name="Filial">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="Produto">
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn Name="Quantidade em Estoque">
+          <Measure UniqueName="DataItem6" />
+        </GridMeasureColumn>
+        <GridMeasureColumn Name="Quantidade em Pedido">
+          <Measure UniqueName="DataItem5" />
+        </GridMeasureColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem7" />
+        </GridMeasureColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem4" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutItem DashboardItem="gridDashboardItem1" Weight="44.57593688362919" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

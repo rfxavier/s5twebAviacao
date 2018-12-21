@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 15.75" name="AviacaoVendasAnoMenos1Basedataclass">
+  <DataContextMoniker Name="/AviacaoVendasAnoMenos1BasedataclassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ac4ff7c6-e881-4ba0-a29a-70862d16265b" absoluteBounds="1.875, 1, 2, 14.462791341145833">
+      <DataClassMoniker Name="/AviacaoVendasAnoMenos1BasedataclassDataContext/AviacaoVendasAnoMenos1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc7e051b-a106-4aef-b7a5-5278d2fa9c62" absoluteBounds="1.8900000000000001, 1.46, 1.9700000000000002, 13.902791341145832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

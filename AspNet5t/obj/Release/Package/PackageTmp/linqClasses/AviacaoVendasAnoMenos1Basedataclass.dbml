@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="s5taviacao" Class="AviacaoVendasAnoMenos1BasedataclassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=GIOVANA-LAPTOP\SQLEXPRESS;Initial Catalog=s5taviacao;User ID=rx" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="s5taviacaoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AviacaoVendasAnoMenos1" Member="AviacaoVendasAnoMenos1s">
+    <Type Name="AviacaoVendasAnoMenos1">
+      <Column Name="pId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pNUMERO_NF" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pSERIE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCLIENTE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pFILIAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pLOJA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pNOME_CLIENTE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCIDADE_CLIENTE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCIDADE_CLIENTE_IBGE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pESTADO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pREGIAO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pPERCENT_DESCONTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPORCENT_COMISSAO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pCODIGO_VENDEDOR" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pNOME_VENDEDOR" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCIDADE_VENDEDOR" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pVALOR_COMISSAO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pDATA_EMISSAO" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="pDIA_EMISSAO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pMES_EMISSAO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pMES_EXTENSO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pANO_EMISSAO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pTRIMESTRE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCODIGO_TRANSP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pNOME_TRANSP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pREDESPACHO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pNOME_REDESPACHO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pPRODUTO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGRUPO_PRODUTO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pPESO_PRODUTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pQTD_P_CAIXA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pQTD_EM_CAIXA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPESO_TOTAL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPESO_BRUTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pDESCRICAO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pQUANTIDADE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPRECO_TABELA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_TOTAL_PRODUTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPRECO_DE_VENDA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_DESCONTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_BASE_ICM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_TOTAL_NOTA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_SEM_ICMSST" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_ICM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_COFINS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pVLR_PIS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPRECO_FORA_IMPOSTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pPRECO_FORA_IMPOSTO_UNIT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pIMPOSTO_TOTAL_NOTA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pB1_QE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pB1_CONV" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pPLACA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCFOP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pMARCA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pGRUPO_CLIENTE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pDT_ENTRADA" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="pDIA_ENTRADA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pMES_ENTRADA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pANO_ENTRADA" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pDESCON_FINAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pCUSTO_PRODUTO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pCUSTO_PROD_QTD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pNRO_PEDIDO_CLIENTE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pPEDIDO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pENDERECO_CLI" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pBAIRRO_CLIE" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pULTIMA_COMPRA" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[_trackLastWriteTime]" Member="_trackLastWriteTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackCreationTime]" Member="_trackCreationTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackLastWriteUser]" Member="_trackLastWriteUser" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackCreationUser]" Member="_trackCreationUser" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

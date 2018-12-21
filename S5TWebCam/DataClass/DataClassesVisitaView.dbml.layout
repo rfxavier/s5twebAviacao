@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesVisita">
+  <DataContextMoniker Name="/DataClassesVisitaMovViewGridDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bef4832e-3951-487f-95a0-62349d36b5e7" absoluteBounds="4.25, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesVisitaMovViewGridDataContext/vVisitaMovVisitaViewGrid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16d54b10-cdfd-490f-bb59-8f4f4e99946d" absoluteBounds="4.265, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

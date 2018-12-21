@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="s5taviacao" Class="AviacaoCidadebasedataclassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=GUILHERME-PC\SQLEXPRESS;Initial Catalog=s5taviacao;User ID=4t" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="s5taviacaoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cidade" Member="cidades">
+    <Type Name="cidade">
+      <Column Name="pId" Type="System.String" DbType="NVarChar(256)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="true" />
+      <Column Name="pNome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCodigo" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pCodigoIbge" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="oUF_pId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="xDataHoraReg" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="xLoginReg" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="[_trackLastWriteTime]" Member="_trackLastWriteTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackCreationTime]" Member="_trackCreationTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackLastWriteUser]" Member="_trackLastWriteUser" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="[_trackCreationUser]" Member="_trackCreationUser" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

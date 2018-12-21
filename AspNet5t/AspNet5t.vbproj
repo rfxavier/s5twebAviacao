@@ -1,0 +1,2265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AspNet5t</RootNamespace>
+    <AssemblyName>AspNet5t</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CodeFluent.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeFluent.Runtime.MySQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.MySQL.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\DevExpress 17.2\Components\Bin\Framework\DevExpress.CodeParser.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.Mvc5.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v17.2.Web, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\DevExpress 17.2\Components\Bin\Framework\DevExpress.Web.ASPxThemes.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Web, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Web, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\DevExpress 17.2\Components\Bin\Framework\DevExpress.XtraScheduler.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\DevExpress 17.2\Components\Bin\Framework\DevExpress.XtraTreeMap.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.3.0.1\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.5.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <HintPath>C:\oraclexe\app\oracle\product\11.2.0\server\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="appForcaVendas\AppForcaVendas.aspx" />
+    <Content Include="bin\pt-BR\DevExpress.Charts.Designer.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Dashboard.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Dashboard.v17.2.Web.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Dashboard.v17.2.Win.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Data.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.DataAccess.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.DataAccess.v17.2.UI.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Diagram.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Dialogs.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.AuditTrail.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Chart.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.CloneObject.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Dashboards.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Dashboards.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Dashboards.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Demos.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.FileAttachment.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.FileAttachment.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Kpi.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Maps.Mobile.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Mobile.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Notifications.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Notifications.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Objects.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.PivotChart.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.PivotChart.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.PivotChart.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.PivotGrid.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.PivotGrid.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Reports.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Reports.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Reports.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.ReportsV2.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.ReportsV2.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Scheduler.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Scheduler.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Scheduler.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.ScriptRecorder.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.ScriptRecorder.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Security.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.StateMachine.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Validation.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Validation.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.ViewVariantsModule.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Workflow.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.ExpressApp.Workflow.Win.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Map.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Office.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Pdf.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.PivotGrid.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Printing.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.RichEdit.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Snap.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Snap.v17.2.Extensions.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Snap.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Sparkline.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Spreadsheet.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Utils.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Utils.v17.2.UI.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.ASPxHtmlEditor.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.ASPxRichEdit.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.ASPxScheduler.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.ASPxSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.ASPxSpreadsheet.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.ASPxTreeList.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.Resources.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Web.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Charts.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Controls.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Core.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Docking.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.DocumentViewer.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Gauges.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Grid.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.LayoutControl.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.NavBar.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.PdfViewer.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Printing.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.PropertyGrid.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.ReportDesigner.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Ribbon.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.RichEdit.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Scheduler.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Scheduling.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.SpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpf.Spreadsheet.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.Xpo.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraBars.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraCharts.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraCharts.v17.2.Wizard.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraEditors.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraGauges.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraGauges.v17.2.Presets.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraGrid.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraLayout.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraNavBar.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraPdfViewer.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraPivotGrid.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraPrinting.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraReports.v17.2.Extensions.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraReports.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraReports.v17.2.Web.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraRichEdit.v17.2.Extensions.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraRichEdit.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraScheduler.v17.2.Core.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraScheduler.v17.2.Extensions.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraScheduler.v17.2.Reporting.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraScheduler.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraSpreadsheet.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraTreeList.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraVerticalGrid.v17.2.resources.dll" />
+    <Content Include="bin\pt-BR\DevExpress.XtraWizard.v17.2.resources.dll" />
+    <Content Include="Content\4t\css\cnIndDesempMobIndAgricolasFrenteTipo.css" />
+    <Content Include="Content\4t\css\loginAux.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dx.android5.light.css" />
+    <Content Include="Content\dx.common.css" />
+    <Content Include="Content\dx.contrast.compact.css" />
+    <Content Include="Content\dx.contrast.css" />
+    <Content Include="Content\dx.dark.compact.css" />
+    <Content Include="Content\dx.dark.css" />
+    <Content Include="Content\dx.ios7.default.css" />
+    <Content Include="Content\dx.light.compact.css" />
+    <Content Include="Content\dx.light.css" />
+    <Content Include="Content\dx.spa.css" />
+    <Content Include="Content\dx.win10.black.css" />
+    <Content Include="Content\dx.win10.white.css" />
+    <Content Include="Content\dx.win8.black.css" />
+    <Content Include="Content\dx.win8.white.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\dnArrowRed.jpg" />
+    <Content Include="Content\Images\DOWNarrowRedSMALL.jpg" />
+    <Content Include="Content\Images\stSit\sit0.jpg" />
+    <Content Include="Content\Images\stSit\sit1.jpg" />
+    <Content Include="Content\Images\stSit\sit2.jpg" />
+    <Content Include="Content\Images\stSit\sit3.jpg" />
+    <Content Include="Content\Images\stSit\sit4.jpg" />
+    <Content Include="Content\Images\stSit\sit5.jpg" />
+    <Content Include="Content\Images\uam_bg.jpg" />
+    <Content Include="Content\Images\upArrowGreen.jpg" />
+    <Content Include="Content\Images\UParrowGreenSMALL.jpg" />
+    <Content Include="Content\4t\css\styles4tmain.css" />
+    <Content Include="Content\layouts\Desktop\DesktopLayout.css" />
+    <Content Include="Content\layouts\Desktop\DesktopLayout.html" />
+    <Content Include="Content\layouts\Desktop\DesktopLayout.js" />
+    <Content Include="Content\layouts\Empty\EmptyLayout.css" />
+    <Content Include="Content\layouts\Empty\EmptyLayout.html" />
+    <Content Include="Content\layouts\Empty\EmptyLayout.js" />
+    <Content Include="Content\layouts\Popup\PopupLayout.css" />
+    <Content Include="Content\layouts\Popup\PopupLayout.html" />
+    <Content Include="Content\layouts\Popup\PopupLayout.js" />
+    <Content Include="dashClasses\objDatasource\dashXmls\dashCnProducaoProducaoPedidoObjDs.xml" />
+    <Content Include="dashClasses\objDatasource\dashXmls\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.xml" />
+    <Content Include="dashXmls\dashCnEntCanaEntradasCanaMapa.xml" />
+    <Content Include="dashXmls\dashCnEntCanaEntradasCanaMapaMSSQL.xml" />
+    <Content Include="dashXmls\dashCnEntCanaEntradasCanaMapaPropriedades.xml" />
+    <Content Include="dashXmls\dashCnEntCanaEntradasCanaMapaPropriedadesMSSQL.xml" />
+    <Content Include="dashXmls\dashCnEntCanaEntradasSequencialColheita.xml" />
+    <Content Include="dashXmls\dashCnEntCanaEntradasSequencialColheitaMSSQL.xml" />
+    <Content Include="dashXmls\dashCnEntCanaPlanejamentoColheitaMapa.xml" />
+    <Content Include="dashXmls\dashCnEntCanaPlanejamentoColheitaMapaMSSQL.xml" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmAdmMasterCadastro\frmAdmMaster\LogAdmin.aspx" />
+    <Content Include="frmAdmMasterCadastro\frmAdmMaster\RelatoriosMobileAdmin.aspx" />
+    <Content Include="frmAviacao\cnFinanceiro\TitulosAbertoPorVendedor\cnFinanceiroTitulosAbertoPorVendedor.aspx" />
+    <Content Include="frmAviacao\cnIndustria\LeiteEventos\cnIndustriaLeiteEventos.aspx" />
+    <Content Include="frmAviacao\cnIndustria\CamarasFriasEventos\cnIndustriaCamarasFriasEventos.aspx" />
+    <Content Include="frmAviacao\cnIndustria\EnvaseEventos\cnIndustriaEnvaseEventos.aspx" />
+    <Content Include="frmAviacao\cnIndustria\RelEnvaseOverview\RelEnvaseOverview.aspx" />
+    <Content Include="frmAviacao\cnIndustria\RelLeiteCamFriasOverview\RelLeiteCamFriasOverview.aspx" />
+    <Content Include="frmAviacao\cnIndustria\TempPastLeiteJS\cnIndustriaTempPastLeiteJS.aspx" />
+    <Content Include="frmAviacao\cnIndustria\TempPastLeiteJS\css\pageTempPastLeite.css" />
+    <Content Include="frmAviacao\cnIndustria\TempPastLeiteJS\js\tempPastLeite.js" />
+    <Content Include="frmAviacao\cnProducao\CadastroProduto\cnCadastroProduto.aspx" />
+    <Content Include="frmAviacao\cnProducao\EstoqueMaturacaoDashboard\cnEstoqueMaturacaoDashboard.aspx" />
+    <Content Include="frmAviacao\cnProducao\EstoqueMaturacao\cnEstoqueMaturacao.aspx" />
+    <Content Include="frmAviacao\cnProducao\ProducaoPedidoLiveEtl\cnProducaoProducaoPedidoLiveEtl.aspx" />
+    <Content Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalheLiveEtl\cnProducaoProducaoPedidoSemDetalheLiveEtl.aspx" />
+    <Content Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalhe\cnProducaoProducaoPedidoSemDetalhe.aspx" />
+    <Content Include="frmAviacao\cnTransporte\CadastroCaminhao\cnCadastroCaminhao.aspx" />
+    <Content Include="frmAviacao\cnTransporte\CadastroLocalLinha\cnCadastroLocalLinha.aspx" />
+    <Content Include="frmAviacao\cnTransporte\CadastroMotorista\cnCadastroMotorista.aspx" />
+    <Content Include="frmAviacao\cnTransporte\ControleViagemAG\cnTransporteControleViagemAg.aspx" />
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDashEmail\cnTransporteMovimentacaoDeViagemDashEmail.aspx" />
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDash\cnTransporteMovimentacaoDeViagemDash.aspx" />
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagemPortaria\cnTransporteMovimentacaoDeViagemPortaria.aspx" />
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagem\cnTransporteMovimentacaoDeViagem.aspx" />
+    <Content Include="frmAviacao\cnTransporte\PivotConhecimentoFreteAgrup\PivotConhecimentoFreteAgrup.aspx" />
+    <Content Include="frmAviacao\cnTransporte\PivotConhecimentoFrete\PivotConhecimentoFrete.aspx" />
+    <Content Include="frmAviacao\cnTransporte\ProdutosLiberados\cnProdutosLiberados.aspx" />
+    <Content Include="frmAviacao\cnVendas\ComparativoClientesV2\cnVendasComparativoClientesV2.aspx" />
+    <Content Include="frmAviacao\cnVendas\ComparativoClientes\cnVendasComparativoClientes.aspx" />
+    <Content Include="frmAviacao\cnVendas\GerencialPorRegiaoGrupoproduto\cnGerencialPorRegiaoGrupoproduto.aspx" />
+    <Content Include="frmAviacao\cnVendas\IndicadoresAnoMenos1\cnProducaoProducaoIndicadoresAnoMenos1.aspx" />
+    <Content Include="frmAviacao\cnVendas\IndicadoresParaVendedorDual\cnVendasIndicadoresParaVendedorDual.aspx" />
+    <Content Include="frmAviacao\cnVendas\IndicadoresParaVendedor\cnVendasIndicadoresParaVendedor.aspx" />
+    <Content Include="frmAviacao\cnVendas\Indicadores\cnProducaoProducaoIndicadores.aspx" />
+    <Content Include="frmAviacao\cnProducao\ProducaoPedido\cnProducaoProducaoPedido.aspx" />
+    <Content Include="frmAviacao\cnVendas\GridVendas\gridVendas.aspx" />
+    <Content Include="frmAviacao\cnVendas\MapaVendas\cnMapaVendas.aspx" />
+    <Content Include="frmAviacao\cnVendas\PedidosVendas\PedidosVendas.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotPedidosXFaturamento\PivotPedidosXFaturamento.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasComDevolucao\pivotVendasComDevolucao.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos2\pivotVendasAgrupAnoMenos2.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos1\pivotVendasAgrupAnoMenos1.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasAnoMenos2\pivotVendasAnoMenos2.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasAnoMenos1\pivotVendasAnoMenos1.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasAgrup\pivotVendasAgrup.aspx" />
+    <Content Include="frmAviacao\cnVendas\PivotVendas\pivotVendas.aspx" />
+    <Content Include="frmAviacao\cnVendas\RelVendasDiariaVendedor\RelVendasDiariaVendedor.aspx" />
+    <Content Include="frmAviacao\cnVendas\VendasClienteFinal\VendasClienteFinal.aspx" />
+    <Content Include="frmAviacao\cnVendas\PorClienteProdutoAgrup\cnVendasVendasPorClienteProdutoAgrup.aspx" />
+    <Content Include="frmAviacao\cnVendas\PorClienteProduto\cnVendasVendasPorClienteProduto.aspx" />
+    <Content Include="frmAviacao\cnVisitas\CadastroVisitantes\cnCadastroVisitantes.aspx" />
+    <Content Include="frmAviacao\cnTransporte\OrdemCarregamento\cnOrdemCarregamento.aspx" />
+    <Content Include="frmAviacao\cnVisitas\CadastroVisitas\cnCadastroVisitas.aspx" />
+    <Content Include="Content\Images\hover.png" />
+    <Content Include="Content\Images\RoomColButton.png" />
+    <Content Include="Content\Images\RoomExpButton.png" />
+    <Content Include="Content\Images\stInd\std0.png" />
+    <Content Include="Content\Images\stInd\std2.png" />
+    <Content Include="Content\Images\stInd\std3.png" />
+    <Content Include="Content\Images\stInd\std4.png" />
+    <Content Include="frmAviacao\cnAcesso\LogAcessoBI\LogAcessos.aspx" />
+    <Content Include="frmAdmMasterCadastro\frmAdmMaster\WebSiteMapAdmin.aspx" />
+    <Content Include="LoginAux.aspx" />
+    <Content Include="MainNoForm.master" />
+    <Content Include="RootNoForm.master" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-sanitize.js" />
+    <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular-sanitize.min.js.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\icons\dxiconsios.woff" />
+    <Content Include="Content\icons\dxiconsios.ttf" />
+    <Content Include="Content\icons\dxiconsios.eot" />
+    <Content Include="Content\icons\dxicons.woff" />
+    <Content Include="Content\icons\dxicons.ttf" />
+    <Content Include="Content\icons\dxicons.eot" />
+    <Content Include="Scripts\cldr.js" />
+    <Content Include="Scripts\cldr\event.js" />
+    <Content Include="Scripts\cldr\supplemental.js" />
+    <Content Include="Scripts\cldr\unresolved.js" />
+    <Content Include="Scripts\devextreme-localization\dx.web.de.js" />
+    <Content Include="Scripts\devextreme-localization\dx.web.ja.js" />
+    <Content Include="Scripts\devextreme-localization\dx.web.ru.js" />
+    <Content Include="Scripts\devextreme-localization\dx.webappjs.de.js" />
+    <Content Include="Scripts\devextreme-localization\dx.webappjs.ja.js" />
+    <Content Include="Scripts\devextreme-localization\dx.webappjs.ru.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-core.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-core.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-framework.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-framework.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-charts.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-charts.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-core.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-core.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-gauges.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-gauges.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-rangeselector.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-rangeselector.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-sparklines.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-sparklines.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-vectormap.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-vectormap.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-base.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-base.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-web.debug.js" />
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-web.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="frmAviacao\cnVendas\PorClienteProduto\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotVendas\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PorClienteProdutoAgrup\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\GridVendas\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotVendasAgrup\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnProducao\ProducaoPedido\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\Indicadores\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\IndicadoresParaVendedor\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotVendasAnoMenos1\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotVendasAnoMenos2\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos1\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos2\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\ComparativoClientes\Web.config" />
+    <Content Include="linqClasses\AviacaoVendasAnoMenos2Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAnoMenos2Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAgrupBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAgrupBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAnoMenos1Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAnoMenos1Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAgrupAnoMenos1Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAgrupAnoMenos1Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAgrupAnoMenos2Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAgrupAnoMenos2Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\IndicadoresParaVendedorDual\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnFinanceiro\TitulosAbertoPorVendedor\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\IndicadoresAnoMenos1\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalhe\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\ComparativoClientesV2\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnProducao\ProducaoPedidoLiveEtl\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\GerencialPorRegiaoGrupoproduto\Web.config" />
+    <Content Include="frmAviacao\cnVendas\PivotVendasComDevolucao\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\PivotPedidosXFaturamento\Web.config" />
+    <Content Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalheLiveEtl\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoPedidosFaturamentoBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoPedidosFaturamentoBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagem\Web.config" />
+    <Content Include="linqClasses\AviacaoVendasBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagemPortaria\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\PivotConhecimentoFrete\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\PivotConhecimentoFrete\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDash\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\PivotConhecimentoFreteAgrup\Web.config" />
+    <Content Include="linqClasses\AviacaoConhecimentoFreteAgrupBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoConhecimentoFreteAgrupBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnProducao\EstoqueMaturacaoDashboard\Web.config" />
+    <Content Include="frmAviacao\cnProducao\EstoqueMaturacao\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\CadastroLocalLinha\Web.config" />
+    <Content Include="frmAviacao\cnVendas\MapaVendas\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDashEmail\Web.config" />
+    <Content Include="linqClasses\AviacaoVendasComDevolucaoBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasComDevolucaoBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnTransporte\ControleViagemAG\Web.config" />
+    <Content Include="Scripts\dx.all.js" />
+    <Content Include="Scripts\dx.viz-web.debug.js" />
+    <Content Include="Scripts\dx.viz-web.js" />
+    <Content Include="Scripts\dx.viz.debug.js" />
+    <Content Include="Scripts\dx.viz.js" />
+    <Content Include="Scripts\dx.web.debug.js" />
+    <Content Include="Scripts\dx.web.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\globalize\currency.js" />
+    <Content Include="Scripts\globalize\date.js" />
+    <Content Include="Scripts\globalize\message.js" />
+    <Content Include="Scripts\globalize\number.js" />
+    <Content Include="Scripts\globalize\plural.js" />
+    <Content Include="Scripts\globalize\relative-time.js" />
+    <Content Include="Scripts\globalize\unit.js" />
+    <Content Include="frmAviacao\cnIndustria\TempPastLeiteJS\Web.config" />
+    <Content Include="frmAviacao\cnIndustria\RelEnvaseOverview\Web.config" />
+    <Content Include="frmAviacao\cnVisitas\CadastroVisitantes\Web.config" />
+    <Content Include="frmAviacao\cnVisitas\CadastroVisitas\Web.config" />
+    <Content Include="frmAviacao\cnIndustria\EnvaseEventos\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnTransporte\ProdutosLiberados\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoCidadebasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoCidadebasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\VendasClienteFinal\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnTransporte\OrdemCarregamento\Web.config" />
+    <Content Include="frmAviacao\cnIndustria\RelLeiteCamFriasOverview\Web.config" />
+    <Content Include="frmAviacao\cnIndustria\CamarasFriasEventos\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnIndustria\LeiteEventos\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnVendas\RelVendasDiariaVendedor\Web.config" />
+    <Content Include="linqClasses\AviacaoConhecimentoFreteBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoConhecimentoFreteBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAviacao\cnTransporte\CadastroCaminhao\Web.config" />
+    <Content Include="frmAviacao\cnTransporte\CadastroMotorista\Web.config" />
+    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.3.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Scripts\jszip.js" />
+    <Content Include="Scripts\jszip.min.js" />
+    <Content Include="Scripts\knockout-3.4.2.debug.js" />
+    <Content Include="Scripts\knockout-3.4.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Content\Images\LogoUAMpequeno.png" />
+    <Content Include="Content\Images\Logo4T.png" />
+    <Content Include="Content\Images\Logo4TLetters.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="frmAdmMasterCadastro\Usuarios.aspx" />
+    <Content Include="frmAdmMasterCadastro\frmAdmMaster\RoleAdmin.aspx" />
+    <Content Include="blank.aspx" />
+    <Content Include="frmAdmMasterCadastro\Cadastro.aspx" />
+    <Content Include="Content\Images\CmdImprimir.Image.png" />
+    <Content Include="Content\Images\CmdPesquisa.Image.png" />
+    <Content Include="Content\Images\Desistir.Image.png" />
+    <Content Include="Content\Images\Excluir.Image.png" />
+    <Content Include="Content\Images\Header.png" />
+    <Content Include="Content\Images\Sair.Image.png" />
+    <Content Include="Content\Images\Salvar.Image.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginRedirect.aspx" />
+    <Content Include="Account\Web.config" />
+    <Content Include="frmAdmMasterCadastro\Web.config" />
+    <Content Include="Scripts\utils4t\app4t.zabbixapi.client.js" />
+    <Content Include="Scripts\utils4t\appUtils4t.js" />
+    <Content Include="Scripts\utils4t\db.js" />
+    <Content Include="Scripts\utils4t\zabbixConfig.js" />
+    <Content Include="Scripts\vectormap-data\africa.js" />
+    <Content Include="Scripts\vectormap-data\canada.js" />
+    <Content Include="Scripts\vectormap-data\eurasia.js" />
+    <Content Include="Scripts\vectormap-data\europe.js" />
+    <Content Include="Scripts\vectormap-data\usa.js" />
+    <Content Include="Scripts\vectormap-data\world.js" />
+    <Content Include="Scripts\vectormap-utils\dx.vectormaputils.debug.js" />
+    <Content Include="Scripts\vectormap-utils\dx.vectormaputils.js" />
+    <Content Include="Scripts\vectormap-utils\dx.vectormaputils.node.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Service References\ServiceOrcamentoProtheusReference\AspNet5t.ServiceOrcamentoProtheusReference.INCLUIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceOrcamentoProtheusReference\AspNet5t.ServiceOrcamentoProtheusReference.GSCONFIRMACAO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <None Include="Service References\ServiceOrcamentoProtheusReference\configuration91.svcinfo" />
+    <None Include="Service References\ServiceOrcamentoProtheusReference\configuration.svcinfo" />
+    <None Include="Service References\ServiceOrcamentoProtheusReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Service References\ServicePedCompraEmpresa02ProtheusReference\AspNet5t.ServicePedCompraEmpresa02ProtheusReference.ARRAYOFGSCONFPED.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServicePedCompraEmpresa02ProtheusReference\AspNet5t.ServicePedCompraEmpresa02ProtheusReference.BLOQUEARResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServicePedCompraEmpresa02ProtheusReference\AspNet5t.ServicePedCompraEmpresa02ProtheusReference.LIBERARResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServicePedCompraEmpresa02ProtheusReference\configuration91.svcinfo" />
+    <None Include="Service References\ServicePedCompraEmpresa02ProtheusReference\configuration.svcinfo" />
+    <None Include="Service References\ServicePedCompraEmpresa02ProtheusReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Service References\ServicePedCompraProtheusReference\AspNet5t.ServicePedCompraProtheusReference.ARRAYOFGSCONFPED.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServicePedCompraProtheusReference\AspNet5t.ServicePedCompraProtheusReference.BLOQUEARResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServicePedCompraProtheusReference\AspNet5t.ServicePedCompraProtheusReference.LIBERARResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServicePedCompraEmpresa02ProtheusReference\GSLIBPEDCOM.wsdl" />
+    <None Include="Service References\ServicePedCompraProtheusReference\configuration91.svcinfo" />
+    <None Include="Service References\ServicePedCompraProtheusReference\configuration.svcinfo">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicePedCompraProtheusReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="frmAdmMasterCadastro\frmAdmMaster\Web.config" />
+    <Content Include="Main.master" />
+    <Content Include="Light.master" />
+    <Content Include="frmAviacao\cnAcesso\LogAcessoBI\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Login.master" />
+    <None Include="My Project\PublishProfiles\Default Settings.pubxml" />
+    <None Include="My Project\PublishProfiles\FTP SmarterAspNet.pubxml" />
+    <Content Include="Root.master" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Project_Readme.html" />
+    <None Include="Service References\ServiceOrcamentoProtheusReference\GSINCORC.wsdl" />
+    <None Include="Service References\ServicePedCompraProtheusReference\GSLIBPEDCOM.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.vb">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.vb">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.vb">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.vb">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.vb">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.vb">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.vb">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.vb">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.vb">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.vb">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.vb">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.vb">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.vb">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.vb">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appForcaVendas\AppForcaVendas.aspx.designer.vb">
+      <DependentUpon>AppForcaVendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appForcaVendas\AppForcaVendas.aspx.vb">
+      <DependentUpon>AppForcaVendas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AppHelper.vb" />
+    <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioP.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoP.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoPF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoPF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoPorFazenda.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoPorFazenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoPorFazenda.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoSemanalDeProdutividade.Designer.vb">
+      <DependentUpon>dash-ResumoSemanalDeProdutividade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoSemanalDeProdutividade.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaCamarasFriasEventos.Designer.vb">
+      <DependentUpon>dashCnIndustriaCamarasFriasEventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaCamarasFriasEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaEnvaseEventos.Designer.vb">
+      <DependentUpon>dashCnIndustriaEnvaseEventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaEnvaseEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaLeiteEventos.Designer.vb">
+      <DependentUpon>dashCnIndustriaLeiteEventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaLeiteEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoEstoqueMaturacao.Designer.vb">
+      <DependentUpon>dashCnProducaoEstoqueMaturacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoEstoqueMaturacao.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadoresAnoMenos1.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoIndicadoresAnoMenos1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadoresAnoMenos1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagem.Designer.vb">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagemDashEmail.Designer.vb">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagemDashEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagemDashEmail.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesComProdutoV2.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientesComProdutoV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesComProdutoV2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesV2.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientesV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesV2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasMapaVendas.Designer.vb">
+      <DependentUpon>dashCnVendasMapaVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasMapaVendas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasClienteFinal.Designer.vb">
+      <DependentUpon>dashCnVendasVendasClienteFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasClienteFinal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashGerencialPorRegiaoGrupoproduto.Designer.vb">
+      <DependentUpon>dashGerencialPorRegiaoGrupoproduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashGerencialPorRegiaoGrupoproduto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoObjDs.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoObjDs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoObjDs.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedor.Designer.vb">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedorSeparado.Designer.vb">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedorSeparado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedorSeparado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedido.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedido.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadores.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoIndicadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientes.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesProduto.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientesProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesProduto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasIndicadoresParaVendedor3Meses.Designer.vb">
+      <DependentUpon>dashCnVendasIndicadoresParaVendedor3Meses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasIndicadoresParaVendedor3Meses.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoAgrupMSSQL.Designer.vb">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoAgrupMSSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoAgrupMSSQL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoMSSQL.Designer.vb">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoMSSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoMSSQL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalhe.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalhe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalhe.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashProdutosLiberados.Designer.vb">
+      <DependentUpon>dashProdutosLiberados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashProdutosLiberados.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dataObjClasses\dsAppForcaVendas.vb" />
+    <Compile Include="dataObjClasses\dsFinanceiro.vb" />
+    <Compile Include="dataObjClasses\dsIndustria.vb" />
+    <Compile Include="dataObjClasses\dsProducaoPedido.vb" />
+    <Compile Include="dataObjClasses\dsVendas.vb" />
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\LogAdmin.aspx.designer.vb">
+      <DependentUpon>LogAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\LogAdmin.aspx.vb">
+      <DependentUpon>LogAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\RelatoriosMobileAdmin.aspx.designer.vb">
+      <DependentUpon>RelatoriosMobileAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\RelatoriosMobileAdmin.aspx.vb">
+      <DependentUpon>RelatoriosMobileAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnFinanceiro\TitulosAbertoPorVendedor\cnFinanceiroTitulosAbertoPorVendedor.aspx.designer.vb">
+      <DependentUpon>cnFinanceiroTitulosAbertoPorVendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnFinanceiro\TitulosAbertoPorVendedor\cnFinanceiroTitulosAbertoPorVendedor.aspx.vb">
+      <DependentUpon>cnFinanceiroTitulosAbertoPorVendedor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\LeiteEventos\cnIndustriaLeiteEventos.aspx.designer.vb">
+      <DependentUpon>cnIndustriaLeiteEventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\LeiteEventos\cnIndustriaLeiteEventos.aspx.vb">
+      <DependentUpon>cnIndustriaLeiteEventos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\CamarasFriasEventos\cnIndustriaCamarasFriasEventos.aspx.designer.vb">
+      <DependentUpon>cnIndustriaCamarasFriasEventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\CamarasFriasEventos\cnIndustriaCamarasFriasEventos.aspx.vb">
+      <DependentUpon>cnIndustriaCamarasFriasEventos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\EnvaseEventos\cnIndustriaEnvaseEventos.aspx.designer.vb">
+      <DependentUpon>cnIndustriaEnvaseEventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\EnvaseEventos\cnIndustriaEnvaseEventos.aspx.vb">
+      <DependentUpon>cnIndustriaEnvaseEventos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\RelEnvaseOverview\RelEnvaseOverview.aspx.designer.vb">
+      <DependentUpon>RelEnvaseOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\RelEnvaseOverview\RelEnvaseOverview.aspx.vb">
+      <DependentUpon>RelEnvaseOverview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\RelLeiteCamFriasOverview\RelLeiteCamFriasOverview.aspx.designer.vb">
+      <DependentUpon>RelLeiteCamFriasOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\RelLeiteCamFriasOverview\RelLeiteCamFriasOverview.aspx.vb">
+      <DependentUpon>RelLeiteCamFriasOverview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\TempPastLeiteJS\cnIndustriaTempPastLeiteJS.aspx.designer.vb">
+      <DependentUpon>cnIndustriaTempPastLeiteJS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnIndustria\TempPastLeiteJS\cnIndustriaTempPastLeiteJS.aspx.vb">
+      <DependentUpon>cnIndustriaTempPastLeiteJS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\CadastroProduto\cnCadastroProduto.aspx.designer.vb">
+      <DependentUpon>cnCadastroProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\CadastroProduto\cnCadastroProduto.aspx.vb">
+      <DependentUpon>cnCadastroProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\EstoqueMaturacaoDashboard\cnEstoqueMaturacaoDashboard.aspx.designer.vb">
+      <DependentUpon>cnEstoqueMaturacaoDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\EstoqueMaturacaoDashboard\cnEstoqueMaturacaoDashboard.aspx.vb">
+      <DependentUpon>cnEstoqueMaturacaoDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\EstoqueMaturacao\cnEstoqueMaturacao.aspx.designer.vb">
+      <DependentUpon>cnEstoqueMaturacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\EstoqueMaturacao\cnEstoqueMaturacao.aspx.vb">
+      <DependentUpon>cnEstoqueMaturacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedidoLiveEtl\cnProducaoProducaoPedidoLiveEtl.aspx.designer.vb">
+      <DependentUpon>cnProducaoProducaoPedidoLiveEtl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedidoLiveEtl\cnProducaoProducaoPedidoLiveEtl.aspx.vb">
+      <DependentUpon>cnProducaoProducaoPedidoLiveEtl.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalheLiveEtl\cnProducaoProducaoPedidoSemDetalheLiveEtl.aspx.designer.vb">
+      <DependentUpon>cnProducaoProducaoPedidoSemDetalheLiveEtl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalheLiveEtl\cnProducaoProducaoPedidoSemDetalheLiveEtl.aspx.vb">
+      <DependentUpon>cnProducaoProducaoPedidoSemDetalheLiveEtl.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalhe\cnProducaoProducaoPedidoSemDetalhe.aspx.designer.vb">
+      <DependentUpon>cnProducaoProducaoPedidoSemDetalhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedidoSemDetalhe\cnProducaoProducaoPedidoSemDetalhe.aspx.vb">
+      <DependentUpon>cnProducaoProducaoPedidoSemDetalhe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\CadastroCaminhao\cnCadastroCaminhao.aspx.designer.vb">
+      <DependentUpon>cnCadastroCaminhao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\CadastroCaminhao\cnCadastroCaminhao.aspx.vb">
+      <DependentUpon>cnCadastroCaminhao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\CadastroLocalLinha\cnCadastroLocalLinha.aspx.designer.vb">
+      <DependentUpon>cnCadastroLocalLinha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\CadastroLocalLinha\cnCadastroLocalLinha.aspx.vb">
+      <DependentUpon>cnCadastroLocalLinha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\CadastroMotorista\cnCadastroMotorista.aspx.designer.vb">
+      <DependentUpon>cnCadastroMotorista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\CadastroMotorista\cnCadastroMotorista.aspx.vb">
+      <DependentUpon>cnCadastroMotorista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\ControleViagemAG\cnTransporteControleViagemAg.aspx.designer.vb">
+      <DependentUpon>cnTransporteControleViagemAg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\ControleViagemAG\cnTransporteControleViagemAg.aspx.vb">
+      <DependentUpon>cnTransporteControleViagemAg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDashEmail\cnTransporteMovimentacaoDeViagemDashEmail.aspx.designer.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagemDashEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDashEmail\cnTransporteMovimentacaoDeViagemDashEmail.aspx.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagemDashEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDash\cnTransporteMovimentacaoDeViagemDash.aspx.designer.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagemDash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagemDash\cnTransporteMovimentacaoDeViagemDash.aspx.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagemDash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagemPortaria\cnTransporteMovimentacaoDeViagemPortaria.aspx.designer.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagemPortaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagemPortaria\cnTransporteMovimentacaoDeViagemPortaria.aspx.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagemPortaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagem\cnTransporteMovimentacaoDeViagem.aspx.designer.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\MovimentacaoDeViagem\cnTransporteMovimentacaoDeViagem.aspx.vb">
+      <DependentUpon>cnTransporteMovimentacaoDeViagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\PivotConhecimentoFreteAgrup\PivotConhecimentoFreteAgrup.aspx.designer.vb">
+      <DependentUpon>PivotConhecimentoFreteAgrup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\PivotConhecimentoFreteAgrup\PivotConhecimentoFreteAgrup.aspx.vb">
+      <DependentUpon>PivotConhecimentoFreteAgrup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\PivotConhecimentoFrete\PivotConhecimentoFrete.aspx.designer.vb">
+      <DependentUpon>PivotConhecimentoFrete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\PivotConhecimentoFrete\PivotConhecimentoFrete.aspx.vb">
+      <DependentUpon>PivotConhecimentoFrete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\ProdutosLiberados\cnProdutosLiberados.aspx.designer.vb">
+      <DependentUpon>cnProdutosLiberados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\ProdutosLiberados\cnProdutosLiberados.aspx.vb">
+      <DependentUpon>cnProdutosLiberados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\ComparativoClientesV2\cnVendasComparativoClientesV2.aspx.designer.vb">
+      <DependentUpon>cnVendasComparativoClientesV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\ComparativoClientesV2\cnVendasComparativoClientesV2.aspx.vb">
+      <DependentUpon>cnVendasComparativoClientesV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\ComparativoClientes\cnVendasComparativoClientes.aspx.designer.vb">
+      <DependentUpon>cnVendasComparativoClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\ComparativoClientes\cnVendasComparativoClientes.aspx.vb">
+      <DependentUpon>cnVendasComparativoClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\GerencialPorRegiaoGrupoproduto\cnGerencialPorRegiaoGrupoproduto.aspx.designer.vb">
+      <DependentUpon>cnGerencialPorRegiaoGrupoproduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\GerencialPorRegiaoGrupoproduto\cnGerencialPorRegiaoGrupoproduto.aspx.vb">
+      <DependentUpon>cnGerencialPorRegiaoGrupoproduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\IndicadoresAnoMenos1\cnProducaoProducaoIndicadoresAnoMenos1.aspx.designer.vb">
+      <DependentUpon>cnProducaoProducaoIndicadoresAnoMenos1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\IndicadoresAnoMenos1\cnProducaoProducaoIndicadoresAnoMenos1.aspx.vb">
+      <DependentUpon>cnProducaoProducaoIndicadoresAnoMenos1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\IndicadoresParaVendedorDual\cnVendasIndicadoresParaVendedorDual.aspx.designer.vb">
+      <DependentUpon>cnVendasIndicadoresParaVendedorDual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\IndicadoresParaVendedorDual\cnVendasIndicadoresParaVendedorDual.aspx.vb">
+      <DependentUpon>cnVendasIndicadoresParaVendedorDual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\IndicadoresParaVendedor\cnVendasIndicadoresParaVendedor.aspx.designer.vb">
+      <DependentUpon>cnVendasIndicadoresParaVendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\IndicadoresParaVendedor\cnVendasIndicadoresParaVendedor.aspx.vb">
+      <DependentUpon>cnVendasIndicadoresParaVendedor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\Indicadores\cnProducaoProducaoIndicadores.aspx.designer.vb">
+      <DependentUpon>cnProducaoProducaoIndicadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\Indicadores\cnProducaoProducaoIndicadores.aspx.vb">
+      <DependentUpon>cnProducaoProducaoIndicadores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedido\cnProducaoProducaoPedido.aspx.designer.vb">
+      <DependentUpon>cnProducaoProducaoPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnProducao\ProducaoPedido\cnProducaoProducaoPedido.aspx.vb">
+      <DependentUpon>cnProducaoProducaoPedido.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\GridVendas\gridVendas.aspx.designer.vb">
+      <DependentUpon>gridVendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\GridVendas\gridVendas.aspx.vb">
+      <DependentUpon>gridVendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\MapaVendas\cnMapaVendas.aspx.designer.vb">
+      <DependentUpon>cnMapaVendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\MapaVendas\cnMapaVendas.aspx.vb">
+      <DependentUpon>cnMapaVendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PedidosVendas\PedidosVendas.aspx.designer.vb">
+      <DependentUpon>PedidosVendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PedidosVendas\PedidosVendas.aspx.vb">
+      <DependentUpon>PedidosVendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotPedidosXFaturamento\PivotPedidosXFaturamento.aspx.designer.vb">
+      <DependentUpon>PivotPedidosXFaturamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotPedidosXFaturamento\PivotPedidosXFaturamento.aspx.vb">
+      <DependentUpon>PivotPedidosXFaturamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasComDevolucao\pivotVendasComDevolucao.aspx.designer.vb">
+      <DependentUpon>pivotVendasComDevolucao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasComDevolucao\pivotVendasComDevolucao.aspx.vb">
+      <DependentUpon>pivotVendasComDevolucao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos2\pivotVendasAgrupAnoMenos2.aspx.designer.vb">
+      <DependentUpon>pivotVendasAgrupAnoMenos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos2\pivotVendasAgrupAnoMenos2.aspx.vb">
+      <DependentUpon>pivotVendasAgrupAnoMenos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos1\pivotVendasAgrupAnoMenos1.aspx.designer.vb">
+      <DependentUpon>pivotVendasAgrupAnoMenos1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAgrupAnoMenos1\pivotVendasAgrupAnoMenos1.aspx.vb">
+      <DependentUpon>pivotVendasAgrupAnoMenos1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAnoMenos2\pivotVendasAnoMenos2.aspx.designer.vb">
+      <DependentUpon>pivotVendasAnoMenos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAnoMenos2\pivotVendasAnoMenos2.aspx.vb">
+      <DependentUpon>pivotVendasAnoMenos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAnoMenos1\pivotVendasAnoMenos1.aspx.designer.vb">
+      <DependentUpon>pivotVendasAnoMenos1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAnoMenos1\pivotVendasAnoMenos1.aspx.vb">
+      <DependentUpon>pivotVendasAnoMenos1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAgrup\pivotVendasAgrup.aspx.designer.vb">
+      <DependentUpon>pivotVendasAgrup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendasAgrup\pivotVendasAgrup.aspx.vb">
+      <DependentUpon>pivotVendasAgrup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendas\pivotVendas.aspx.designer.vb">
+      <DependentUpon>pivotVendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PivotVendas\pivotVendas.aspx.vb">
+      <DependentUpon>pivotVendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\RelVendasDiariaVendedor\RelVendasDiariaVendedor.aspx.designer.vb">
+      <DependentUpon>RelVendasDiariaVendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\RelVendasDiariaVendedor\RelVendasDiariaVendedor.aspx.vb">
+      <DependentUpon>RelVendasDiariaVendedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\VendasClienteFinal\VendasClienteFinal.aspx.designer.vb">
+      <DependentUpon>VendasClienteFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\VendasClienteFinal\VendasClienteFinal.aspx.vb">
+      <DependentUpon>VendasClienteFinal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PorClienteProdutoAgrup\cnVendasVendasPorClienteProdutoAgrup.aspx.designer.vb">
+      <DependentUpon>cnVendasVendasPorClienteProdutoAgrup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PorClienteProdutoAgrup\cnVendasVendasPorClienteProdutoAgrup.aspx.vb">
+      <DependentUpon>cnVendasVendasPorClienteProdutoAgrup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PorClienteProduto\cnVendasVendasPorClienteProduto.aspx.designer.vb">
+      <DependentUpon>cnVendasVendasPorClienteProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVendas\PorClienteProduto\cnVendasVendasPorClienteProduto.aspx.vb">
+      <DependentUpon>cnVendasVendasPorClienteProduto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVisitas\CadastroVisitantes\cnCadastroVisitantes.aspx.designer.vb">
+      <DependentUpon>cnCadastroVisitantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVisitas\CadastroVisitantes\cnCadastroVisitantes.aspx.vb">
+      <DependentUpon>cnCadastroVisitantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\OrdemCarregamento\cnOrdemCarregamento.aspx.designer.vb">
+      <DependentUpon>cnOrdemCarregamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnTransporte\OrdemCarregamento\cnOrdemCarregamento.aspx.vb">
+      <DependentUpon>cnOrdemCarregamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnVisitas\CadastroVisitas\cnCadastroVisitas.aspx.designer.vb">
+      <DependentUpon>cnCadastroVisitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnVisitas\CadastroVisitas\cnCadastroVisitas.aspx.vb">
+      <DependentUpon>cnCadastroVisitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashClasses\dashLogUsuarios.Designer.vb">
+      <DependentUpon>dashLogUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\dashLogUsuarios.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAviacao\cnAcesso\LogAcessoBI\LogAcessos.aspx.designer.vb">
+      <DependentUpon>LogAcessos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviacao\cnAcesso\LogAcessoBI\LogAcessos.aspx.vb">
+      <DependentUpon>LogAcessos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\WebSiteMapAdmin.aspx.designer.vb">
+      <DependentUpon>WebSiteMapAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\WebSiteMapAdmin.aspx.vb">
+      <DependentUpon>WebSiteMapAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoCidadebasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoCidadebasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoConhecimentoFreteAgrupBasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoConhecimentoFreteAgrupBasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoConhecimentoFreteBasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoConhecimentoFreteBasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoPedidosFaturamentoBasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoPedidosFaturamentoBasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasAgrupAnoMenos1Basedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasAgrupAnoMenos1Basedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasAgrupAnoMenos2Basedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasAgrupAnoMenos2Basedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasAgrupBasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasAgrupBasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasAnoMenos1Basedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasAnoMenos1Basedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasAnoMenos2Basedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasAnoMenos2Basedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasBasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasBasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linqClasses\AviacaoVendasComDevolucaoBasedataclass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviacaoVendasComDevolucaoBasedataclass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.master.designer.vb">
+      <DependentUpon>Login.master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.master.vb">
+      <DependentUpon>Login.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAux.aspx.designer.vb">
+      <DependentUpon>LoginAux.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAux.aspx.vb">
+      <DependentUpon>LoginAux.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainNoForm.master.designer.vb">
+      <DependentUpon>MainNoForm.master</DependentUpon>
+    </Compile>
+    <Compile Include="MainNoForm.master.vb">
+      <DependentUpon>MainNoForm.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\AccountBindingModels.vb" />
+    <Compile Include="Providers\ApplicationOAuthProvider.vb" />
+    <Compile Include="reportClasses\Controllers\WebDocumentViewerController.vb" />
+    <Compile Include="reportClasses\repCnFinanceiroTitulosVendedorCliente.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndEnvaseOverview.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndEnvaseOverview.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndEnvaseOverviewSubEnvaseEvento.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndEnvaseOverviewSubEnvaseInfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndEnvaseOverviewSubPesoMedio.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndEnvaseOverviewSubPesoMedioDifDesejado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverview.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverview.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubCamarasFriasTempoEventos.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubCamarasFriasTempoEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos.partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasPedidosAbertosVendedorClienteLive.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasClientesBloqueadosVendedor.Designer.vb">
+      <DependentUpon>repCnVendasClientesBloqueadosVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasClientesBloqueadosVendedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasVendasDiariaVendedor.Designer.vb">
+      <DependentUpon>repCnVendasVendasDiariaVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasVendasDiariaVendedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasVendasDiariaVendedorClienteLive.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repCnVendasVendasDiariaVendedorLive.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repEtiqueta.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repPedidoAppForcaVendas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\Services\CustomReportResolver.vb" />
+    <Compile Include="Results\ChallengeResult.vb" />
+    <Compile Include="RootNoForm.master.designer.vb">
+      <DependentUpon>RootNoForm.master</DependentUpon>
+    </Compile>
+    <Compile Include="RootNoForm.master.vb">
+      <DependentUpon>RootNoForm.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service References\ServiceOrcamentoProtheusReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicePedCompraEmpresa02ProtheusReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicePedCompraProtheusReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\Usuarios.aspx.designer.vb">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\Usuarios.aspx.vb">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\RoleAdmin.aspx.designer.vb">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\frmAdmMaster\RoleAdmin.aspx.vb">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AppUtils.vb" />
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\IdentityConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="blank.aspx.vb">
+      <DependentUpon>blank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\Cadastro.aspx.designer.vb">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmMasterCadastro\Cadastro.aspx.vb">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Light.master.designer.vb">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.vb">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LoginRedirect.aspx.designer.vb">
+      <DependentUpon>LoginRedirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRedirect.aspx.vb">
+      <DependentUpon>LoginRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.vb">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.vb">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\IdentityModels.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Root.master.designer.vb">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root.master.vb">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startup.vb" />
+    <Compile Include="webapiControllers\AccountController.vb" />
+    <Compile Include="webapiControllers\ClienteController.vb" />
+    <Compile Include="webapiControllers\NotaController.vb" />
+    <Compile Include="webapiControllers\PedidoCompraController.vb" />
+    <Compile Include="webapiControllers\PedidoCompraItemController.vb" />
+    <Compile Include="webapiControllers\PedidoController.vb" />
+    <Compile Include="webapiControllers\PedidoSubstTribController.vb" />
+    <Compile Include="webapiControllers\ProdutoController.vb" />
+    <Compile Include="webapiControllers\shared\PedidoSubstTrib.vb" />
+    <Compile Include="webapiControllers\UsuarioAppPedidosController.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioP.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoP.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoPF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoPF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoPorFazenda.resx">
+      <DependentUpon>dash-ResumoDoFechamentoPorFazenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoSemanalDeProdutividade.resx">
+      <DependentUpon>dash-ResumoSemanalDeProdutividade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnIndustriaCamarasFriasEventos.resx">
+      <DependentUpon>dashCnIndustriaCamarasFriasEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnIndustriaEnvaseEventos.resx">
+      <DependentUpon>dashCnIndustriaEnvaseEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnIndustriaLeiteEventos.resx">
+      <DependentUpon>dashCnIndustriaLeiteEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnProducaoEstoqueMaturacao.resx">
+      <DependentUpon>dashCnProducaoEstoqueMaturacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnProducaoProducaoIndicadoresAnoMenos1.resx">
+      <DependentUpon>dashCnProducaoProducaoIndicadoresAnoMenos1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagem.resx">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagemDashEmail.resx">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagemDashEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientesComProdutoV2.resx">
+      <DependentUpon>dashCnVendasComparativoClientesComProdutoV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientesV2.resx">
+      <DependentUpon>dashCnVendasComparativoClientesV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasMapaVendas.resx">
+      <DependentUpon>dashCnVendasMapaVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasVendasClienteFinal.resx">
+      <DependentUpon>dashCnVendasVendasClienteFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashGerencialPorRegiaoGrupoproduto.resx">
+      <DependentUpon>dashGerencialPorRegiaoGrupoproduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoObjDs.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoObjDs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedor.resx">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedorSeparado.resx">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedorSeparado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnProducaoProducaoPedido.resx">
+      <DependentUpon>dashCnProducaoProducaoPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\dashLogUsuarios.resx">
+      <DependentUpon>dashLogUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnProducaoProducaoIndicadores.resx">
+      <DependentUpon>dashCnProducaoProducaoIndicadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientes.resx">
+      <DependentUpon>dashCnVendasComparativoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientesProduto.resx">
+      <DependentUpon>dashCnVendasComparativoClientesProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasIndicadoresParaVendedor3Meses.resx">
+      <DependentUpon>dashCnVendasIndicadoresParaVendedor3Meses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoAgrupMSSQL.resx">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoAgrupMSSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoMSSQL.resx">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoMSSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashProdutosLiberados.resx">
+      <DependentUpon>dashProdutosLiberados.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="linqClasses\AviacaoConhecimentoFreteBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoConhecimentoFreteBasedataclass.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="reportClasses\repCnFinanceiroTitulosVendedorCliente.resx">
+      <DependentUpon>repCnFinanceiroTitulosVendedorCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnVendasPedidosAbertosVendedorClienteLive.resx">
+      <DependentUpon>repCnVendasPedidosAbertosVendedorClienteLive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnVendasClientesBloqueadosVendedor.resx">
+      <DependentUpon>repCnVendasClientesBloqueadosVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnVendasVendasDiariaVendedorClienteLive.resx">
+      <DependentUpon>repCnVendasVendasDiariaVendedorClienteLive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnVendasVendasDiariaVendedorLive.resx">
+      <DependentUpon>repCnVendasVendasDiariaVendedorLive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repPedidoAppForcaVendas.resx">
+      <DependentUpon>repPedidoAppForcaVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="linqClasses\AviacaoCidadebasedataclass.dbml.layout">
+      <DependentUpon>AviacaoCidadebasedataclass.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="reportClasses\repCnIndEnvaseOverview.resx">
+      <DependentUpon>repCnIndEnvaseOverview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndEnvaseOverviewSubEnvaseEvento.resx">
+      <DependentUpon>repCnIndEnvaseOverviewSubEnvaseEvento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndEnvaseOverviewSubEnvaseInfo.resx">
+      <DependentUpon>repCnIndEnvaseOverviewSubEnvaseInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndEnvaseOverviewSubPesoMedio.resx">
+      <DependentUpon>repCnIndEnvaseOverviewSubPesoMedio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndEnvaseOverviewSubPesoMedioDifDesejado.resx">
+      <DependentUpon>repCnIndEnvaseOverviewSubPesoMedioDifDesejado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndLeiteCamarasFriasOverview.resx">
+      <DependentUpon>repCnIndLeiteCamarasFriasOverview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubCamarasFriasTempoEventos.resx">
+      <DependentUpon>repCnIndLeiteCamarasFriasOverviewSubCamarasFriasTempoEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos.resx">
+      <DependentUpon>repCnIndLeiteCamarasFriasOverviewSubCremeTempoEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos.resx">
+      <DependentUpon>repCnIndLeiteCamarasFriasOverviewSubLeitelhoTempoEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos.resx">
+      <DependentUpon>repCnIndLeiteCamarasFriasOverviewSubLeiteTempoEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos.resx">
+      <DependentUpon>repCnIndLeiteCamarasFriasOverviewSubSoroDeQueijoTempoEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repCnVendasVendasDiariaVendedor.resx">
+      <DependentUpon>repCnVendasVendasDiariaVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repEtiqueta.resx">
+      <DependentUpon>repEtiqueta.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="linqClasses\AviacaoVendasAnoMenos2Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAnoMenos2Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAgrupBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAgrupBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAnoMenos1Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAnoMenos1Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAgrupAnoMenos1Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAgrupAnoMenos1Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAgrupAnoMenos2Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAgrupAnoMenos2Basedataclass.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalhe.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalhe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="linqClasses\AviacaoPedidosFaturamentoBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoPedidosFaturamentoBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoConhecimentoFreteAgrupBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoConhecimentoFreteAgrupBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasComDevolucaoBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasComDevolucaoBasedataclass.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceOrcamentoProtheusReference\" />
+    <WCFMetadataStorage Include="Service References\ServicePedCompraEmpresa02ProtheusReference\" />
+    <WCFMetadataStorage Include="Service References\ServicePedCompraProtheusReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\S5TBom\S5TBom.vbproj">
+      <Project>{d654a0b0-1e18-454b-8857-dd300fc0681d}</Project>
+      <Name>S5TBom</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13304</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:13304/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="pt-BR">
+  <Title Text="Acompanhamento Produção x Pedidos" Url="D:\Users\RENATO\Google Drive\Aviacao\LogoUAMpequeno.jpg" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="192.168.50.36/PROTHEUSPROD_PROTHEUSPROD_Connection" ProviderKey="Oracle">
+        <Parameters>
+          <Parameter Name="server" Value="192.168.50.36/PROTHEUSPROD" />
+          <Parameter Name="database" Value="" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>select * from
+(
+SELECT
+  C6_FILIAL,
+  C6_PRODUTO,
+  C6_DESCRI,
+  C5_NUM,
+  C5_EMISSAO,
+  SUM(C6_QTDVEN) AS QTDVEN,
+  SC5.C5_AGREG   AS LOTE_AVIACAO ,
+  SC5.C5_CLIENTE AS CLIENTE,
+  SC5.C5_LOJACLI AS LOJA,
+  A1.A1_NOME     AS DESCRICAO,
+  A1_EST         AS ESTADO,
+  A1_COD_MUN     AS COD_MUNICIPIO,
+DECODE(TRIM(C6_PRODUTO),'325001',20,DECODE(SUBSTR(C6_PRODUTO,1,1),'3',1,B1.B1_CONV)) AS FATOR_CONV ,
+  B1.B1_TIPCONV  AS TIPO_CONV
+FROM
+  SC6010 SC6
+INNER JOIN SC5010 SC5
+ON
+  SC5.D_E_L_E_T_&lt;&gt;'*'
+AND C5_FILIAL    = C6_FILIAL
+AND C5_NUM       = C6_NUM
+INNER JOIN SB1010 B1
+ON
+  B1_FILIAL       = C6_FILIAL
+AND B1_COD        = C6_PRODUTO
+AND B1.D_E_L_E_T_ = ' '
+INNER JOIN SA1010 A1
+ON
+  A1.A1_FILIAL    = SC5.C5_FILIAL
+AND A1.A1_COD     = SC5.C5_CLIENTE
+AND A1.A1_LOJA    = SC5.C5_LOJACLI
+AND A1.D_E_L_E_T_ = ' '
+WHERE
+  SC6.D_E_L_E_T_  &lt;&gt;'*'
+AND C5_NOTA        = '         '
+AND C5_EMISSAO    &gt;= TO_CHAR(SYSDATE - 30,'YYYYMMDD')
+AND C5_FILIAL NOT IN ('02','03')
+and NVL(LENGTH(TRIM(TRANSLATE(SUBSTR(SC5.C5_AGREG,1,5), ' +-.0123456789', ' '))),0) = 0
+AND SC5.C5_AGREG &lt;&gt; '        '
+GROUP BY
+  C6_FILIAL,
+  C6_PRODUTO,
+  C6_DESCRI,
+  C5_NUM,
+  C5_EMISSAO,
+  SC5.C5_AGREG,
+  B1.B1_CONV ,
+  B1.B1_TIPCONV,
+  SC5.C5_CLIENTE,
+  SC5.C5_LOJACLI,
+  A1.A1_NOME,
+  A1_EST,
+  A1_COD_MUN
+ORDER BY
+  C6_FILIAL,
+  C6_PRODUTO,
+  C6_DESCRI,
+  C5_NUM,
+  C5_EMISSAO,
+  SC6.C6_AGREG,
+  B1.B1_CONV ,
+  B1.B1_TIPCONV,
+  SC5.C5_CLIENTE,
+  SC5.C5_LOJACLI,
+  A1.A1_NOME,
+  A1_EST,
+  A1_COD_MUN
+) a left join 
+(
+SELECT
+  B2_FILIAL,
+  B2_COD,
+  B1.B1_DESC,
+  B2_QATU,
+  B2_QEMP
+  FROM
+  SB2010 SB2
+INNER JOIN SB1010 B1
+ON
+  B1.B1_FILIAL    = SB2.B2_FILIAL
+AND B1.B1_COD     = SB2.B2_COD
+AND B1.D_E_L_E_T_ = ' '
+WHERE
+  SB2.D_E_L_E_T_  &lt;&gt;'*'
+AND SB2.B2_LOCAL  IN ('01','04')
+AND SB2.B2_FILIAL IN ('01','04')
+AND B1.B1_TIPO     = 'PA'
+) b
+on a.c6_produto = b.b2_cod
+order by a.c6_produto
+
+</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Query">
+            <Field Name="C6_FILIAL" Type="String" />
+            <Field Name="C6_PRODUTO" Type="String" />
+            <Field Name="C6_DESCRI" Type="String" />
+            <Field Name="C5_NUM" Type="String" />
+            <Field Name="C5_EMISSAO" Type="String" />
+            <Field Name="QTDVEN" Type="Decimal" />
+            <Field Name="LOTE_AVIACAO" Type="String" />
+            <Field Name="CLIENTE" Type="String" />
+            <Field Name="LOJA" Type="String" />
+            <Field Name="DESCRICAO" Type="String" />
+            <Field Name="ESTADO" Type="String" />
+            <Field Name="COD_MUNICIPIO" Type="String" />
+            <Field Name="FATOR_CONV" Type="Decimal" />
+            <Field Name="TIPO_CONV" Type="String" />
+            <Field Name="B2_FILIAL" Type="String" />
+            <Field Name="B2_COD" Type="String" />
+            <Field Name="B1_DESC" Type="String" />
+            <Field Name="B2_QATU" Type="Decimal" />
+            <Field Name="B2_QEMP" Type="Decimal" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+      <CalculatedFields>
+        <CalculatedField Name="Status" Expression="Iif([B2_QATU] &lt;= [QTDVEN], 'Falta Produzir', 'Sobra Produção')" DataType="Auto" DataMember="Query" />
+        <CalculatedField Name="Resultado" Expression="[QtdeEstoqueConv] - [QtdePedidoConv]" DataType="Decimal" DataMember="Query" />
+        <CalculatedField Name="QtdePedidoConv" Expression="Sum([QTDVEN]) / Avg([FATOR_CONV])" DataType="Decimal" DataMember="Query" />
+        <CalculatedField Name="QtdeEstoqueConv" Expression="(Avg([B2_QATU]) - Avg([B2_QEMP])) / Avg([FATOR_CONV])" DataType="Decimal" DataMember="Query" />
+        <CalculatedField Name="PedidoDataCalc" Expression="Concat('Pedido:', [C5_NUM], ' - Emissão: ', Substring([C5_EMISSAO], 6, 2), '/', Substring([C5_EMISSAO], 4, 2), '/', Substring([C5_EMISSAO], 0, 4))" DataType="Auto" DataMember="Query" />
+        <CalculatedField Name="QtdeEmpenhadaConv" Expression="Avg([B2_QEMP]) / Avg([FATOR_CONV])" DataType="Decimal" DataMember="Query" />
+      </CalculatedFields>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Produção" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <DataItems>
+        <Dimension DataMember="C6_FILIAL" UniqueName="DataItem0" />
+        <Dimension DataMember="C6_DESCRI" UniqueName="DataItem1" />
+        <Measure DataMember="QtdePedidoConv" Name="Quantidade em Pedido Conv." UniqueName="DataItem5">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="QtdeEstoqueConv" UniqueName="DataItem6">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="Resultado" Name="Qtde Estoque - Qtde Pedido" UniqueName="DataItem4">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="B2_QATU" SummaryType="Average" UniqueName="DataItem3">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="QTDVEN" UniqueName="DataItem2">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+        <Measure DataMember="QtdeEmpenhadaConv" Name="Quantidade Empenhada" UniqueName="DataItem7">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" />
+        </Measure>
+      </DataItems>
+      <HiddenMeasures>
+        <Measure UniqueName="DataItem3" />
+        <Measure UniqueName="DataItem2" />
+      </HiddenMeasures>
+      <FormatRules>
+        <GridItemFormatRule Name="FormatRule 1" DataItem="DataItem3" DataItemApplyTo="DataItem4">
+          <FormatConditionExpression Expression="[DataItem5] &gt;= [DataItem6]">
+            <AppearanceSettings AppearanceType="Red" />
+          </FormatConditionExpression>
+        </GridItemFormatRule>
+        <GridItemFormatRule Name="FormatRule 2" DataItem="DataItem3" DataItemApplyTo="DataItem4">
+          <FormatConditionExpression Expression="[DataItem5] &lt; [DataItem6]">
+            <AppearanceSettings AppearanceType="Green" />
+          </FormatConditionExpression>
+        </GridItemFormatRule>
+      </FormatRules>
+      <GridColumns>
+        <GridDimensionColumn Name="Filial">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="Produto">
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn Name="Quantidade em Estoque">
+          <Measure UniqueName="DataItem6" />
+        </GridMeasureColumn>
+        <GridMeasureColumn Name="Quantidade em Pedido">
+          <Measure UniqueName="DataItem5" />
+        </GridMeasureColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem7" />
+        </GridMeasureColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem4" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutItem DashboardItem="gridDashboardItem1" Weight="44.57593688362919" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

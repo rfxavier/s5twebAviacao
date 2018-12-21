@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesTaraFracionamento">
+  <DataContextMoniker Name="/DataClassesTaraFracionamentoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6334e351-28a8-4c17-b24e-d447eb981113" absoluteBounds="3.875, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesTaraFracionamentoDataContext/vTaraFracionamentoTaraFracionamentoView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec6f5e66-81fc-4125-8333-d0d1cfa4b9ad" absoluteBounds="3.8899999999999997, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

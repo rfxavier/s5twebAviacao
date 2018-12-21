@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="DevExpress.Data.v17.2" name="DevExpress.Data.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="XrLabel15.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 101.7014</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="XrLabel25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GroupNF.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLine1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>425.3382, 23</value>
+  </data>
+  <data name="XrLabel30.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>69.24532, 47.2083244</value>
+  </data>
+  <data name="XrLabel24.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel13.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="XrLabel1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>48.9535332, 174.772064</value>
+  </data>
+  <data name="XrLabel10.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrCrossBandBox2.EndPointFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>0, 37.5</value>
+  </data>
+  <data name="XrLabel24.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>553.069946, 180.688736</value>
+  </data>
+  <data name="XrLabel8.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 17.0000019</value>
+  </data>
+  <data name="XrLabel2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>227.083313, 23</value>
+  </data>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>0, 0, 162, 38</value>
+  </data>
+  <data name="XrLabel14.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 81.98488</value>
+  </data>
+  <data name="XrLabel35.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>508.6859, 30.208334</value>
+  </data>
+  <data name="xrTituloRelatorio.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 123.128</value>
+  </data>
+  <data name="GroupLoja.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="xrTituloRelatorio.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="TopMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="XrLabel29.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrAno.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>374.291748, 7.37492371</value>
+  </data>
+  <data name="XrLabel12.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel21.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>78, 13.5833282</value>
+  </data>
+  <data name="ReportFooter.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="XrLabel10.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 19</value>
+  </data>
+  <data name="XrPageInfo2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>217.6997, 14.75</value>
+  </data>
+  <data name="XrLabel13.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="p.Width" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="XrLabel12.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="XrLabel31.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>135.911987, 47.2083244</value>
+  </data>
+  <data name="XrLabel28.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrCrossBandBox2.StartPointFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>0, 0</value>
+  </data>
+  <data name="XrLine4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>809.6299, 2</value>
+  </data>
+  <data name="PageFooter.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel26.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel14.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="XrLabel18.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>837.088, 23</value>
+  </data>
+  <data name="infoNomeEmpresa.Description" xml:space="preserve">
+    <value>Nome Empresa</value>
+  </data>
+  <data name="XrLabel15.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>837.088, 17.71653</value>
+  </data>
+  <data name="XrPageInfo1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="XrPageInfo1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="XrLabel25.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>48.91199, 14.75</value>
+  </data>
+  <data name="$this.PageWidth" type="System.Int32, mscorlib">
+    <value>1100</value>
+  </data>
+  <data name="fieldpCadastroNome1.FieldName" xml:space="preserve">
+    <value>pCadastroNome</value>
+  </data>
+  <data name="XrLabel9.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel31.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>77.79161, 13.5833282</value>
+  </data>
+  <data name="infoUsuarioRel.Description" xml:space="preserve">
+    <value>Usuario Rel</value>
+  </data>
+  <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="XrLabel23.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>177.491028, 16</value>
+  </data>
+  <data name="XrLabel7.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="fieldpCadastroNome1.Caption" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="XrLabel14.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>837.088, 17.71654</value>
+  </data>
+  <data name="GroupFooter3.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="GroupNomeCliente.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="xrMesRelatorio.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="XrLabel15.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="fieldpCadastroNome1.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="XrLabel3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 63.26834</value>
+  </data>
+  <data name="xrMesRelatorio.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>93.39701, 124.147</value>
+  </data>
+  <data name="XrLabel26.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>192.694916, 0</value>
+  </data>
+  <data name="XrLabel3.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel30.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>66.6666641, 13.5833282</value>
+  </data>
+  <data name="XrLabel33.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>741.6218, 39.41664</value>
+  </data>
+  <data name="XrLabel16.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>248.953537, 0.208377838</value>
+  </data>
+  <data name="XrLabel35.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="xrTituloRelatorio.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>837.088, 16.64408</value>
+  </data>
+  <data name="TopMargin.HeightF" type="System.Single, mscorlib">
+    <value>162.3554</value>
+  </data>
+  <data name="XrPageInfo1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>1004.855, 25.83332</value>
+  </data>
+  <data name="XrLabel25.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="XrLabel17.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>325.338135, 20</value>
+  </data>
+  <data name="SubProntuario_DadosPaciente1.PageHeight" type="System.Int32, mscorlib">
+    <value>1100</value>
+  </data>
+  <data name="Detail.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel14.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="fieldpValor.Caption" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="xrMesRelatorio.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="XrLabel22.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>520.903259, 0</value>
+  </data>
+  <data name="XrLabel33.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>67.06415, 16</value>
+  </data>
+  <data name="XrLabel12.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>475.000031, 40</value>
+  </data>
+  <data name="PageFooter.HeightF" type="System.Single, mscorlib">
+    <value>47.08335</value>
+  </data>
+  <data name="XrLabel17.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>248.953537, 210.0637</value>
+  </data>
+  <data name="XrLabel31.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="XrLabel16.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>325.338135, 15.7916222</value>
+  </data>
+  <data name="fieldpDataMov1.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="XrLabel7.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 17.0000019</value>
+  </data>
+  <data name="XrLabel20.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="XrLabel15.Text" xml:space="preserve">
+    <value>XrLabel4</value>
+  </data>
+  <data name="GroupHeaderCheque.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel17.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel9.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="XrPageInfo2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel34.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>741.6218, 21.2916565</value>
+  </data>
+  <data name="fieldpValor.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="XrLabel8.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrPictureBox1.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel30.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="SubProntuario_DadosPaciente1.PageWidth" type="System.Int32, mscorlib">
+    <value>850</value>
+  </data>
+  <data name="XrLabel18.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>148.953568, 174.772064</value>
+  </data>
+  <data name="XrLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="XrLabel24.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>177.491028, 13.5833282</value>
+  </data>
+  <data name="XrLabel5.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="XrLabel14.Text" xml:space="preserve">
+    <value>XrLabel3</value>
+  </data>
+  <data name="XrLine2.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLine4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>18.12024, 149.701416</value>
+  </data>
+  <data name="XrLabel4.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLine5.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>18.1202164, 23.166666</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>86.45834</value>
+  </data>
+  <data name="XrLabel29.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>108.138412, 13.5833282</value>
+  </data>
+  <data name="xrMesRelatorio.Text" xml:space="preserve">
+    <value>xrMesRelatorio</value>
+  </data>
+  <data name="XrLabel35.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="XrLabel33.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel10.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>474.291748, 10</value>
+  </data>
+  <data name="TopMargin.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel27.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>22.4166565, 16</value>
+  </data>
+  <data name="XrCrossBandBox2.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gold</value>
+  </data>
+  <data name="XrCrossBandBox2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>0, 0</value>
+  </data>
+  <data name="XrLabel4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>113.7036, 0</value>
+  </data>
+  <data name="BottomMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="XrLabel3.Text" xml:space="preserve">
+    <value>XrLabel2</value>
+  </data>
+  <data name="XrLabel28.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>108.138412, 16</value>
+  </data>
+  <data name="XrLabel18.Text" xml:space="preserve">
+    <value>XrLabel1</value>
+  </data>
+  <data name="XrLabel34.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>67.06415, 13.5833282</value>
+  </data>
+  <data name="XrLabel18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 16pt</value>
+  </data>
+  <data name="XrLabel26.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>78.125, 16</value>
+  </data>
+  <data name="XrLine3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>739.4407, 2</value>
+  </data>
+  <data name="XrPictureBox1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>53.12019, 35</value>
+  </data>
+  <data name="fieldpDataMov1.Caption" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="XrLabel32.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel20.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 0</value>
+  </data>
+  <data name="XrLabel5.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 0</value>
+  </data>
+  <data name="GroupFooter1.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel21.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrAno.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 15.6250763</value>
+  </data>
+  <data name="XrLabel11.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="infoCNPJ.Description" xml:space="preserve">
+    <value>CNPJ</value>
+  </data>
+  <data name="infoEnderecoTelefone.Description" xml:space="preserve">
+    <value>Endereço/Telefone</value>
+  </data>
+  <data name="XrLabel7.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>113.7036, 26.0000134</value>
+  </data>
+  <data name="XrLabel6.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>220.30661, 20</value>
+  </data>
+  <data name="$this.PageHeight" type="System.Int32, mscorlib">
+    <value>850</value>
+  </data>
+  <data name="XrLine4.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel13.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>148.953537, 210.0637</value>
+  </data>
+  <data name="$this.PaperKind" type="System.Drawing.Printing.PaperKind, System.Drawing">
+    <value>LetterRotated</value>
+  </data>
+  <data name="XrLine5.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="infoCepCidadeUF.Description" xml:space="preserve">
+    <value>Cep/Cidade/Uf</value>
+  </data>
+  <data name="XrLine2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>48.9536743, 16</value>
+  </data>
+  <data name="XrLine3.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="Detail.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="XrLine5.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>809.6299, 2</value>
+  </data>
+  <data name="XrLabel8.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.703613, 26.0000134</value>
+  </data>
+  <data name="XrLabel20.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrPictureBox1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>160.5834, 84.41794</value>
+  </data>
+  <data name="SubBand1.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel32.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>464.093933, 13.5833282</value>
+  </data>
+  <data name="XrLabel25.Text" xml:space="preserve">
+    <value>Pág.:</value>
+  </data>
+  <data name="p.MinWidth" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BottomMargin.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel21.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>520.903259, 180.688736</value>
+  </data>
+  <data name="XrLabel32.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>344.592041, 47.2083244</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="XrLabel2.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel34.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrPageInfo2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>53.1202, 25.83334</value>
+  </data>
+  <data name="XrPivotGrid1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>35.25, 10.00001</value>
+  </data>
+  <data name="XrLabel15.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="XrLabel3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>837.088, 17.71654</value>
+  </data>
+  <data name="XrLabel11.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>274.999969, 40</value>
+  </data>
+  <data name="XrLabel23.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrPageInfo2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="XrLabel9.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>274.2917, 9</value>
+  </data>
+  <data name="XrLabel27.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>214.036987, 0</value>
+  </data>
+  <data name="XrLabel1.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="infoParametroRel.Description" xml:space="preserve">
+    <value>Parametros</value>
+  </data>
+  <data name="fieldpValor.FieldName" xml:space="preserve">
+    <value>pValor</value>
+  </data>
+  <data name="XrLabel16.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="XrLabel18.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>213.7036, 35</value>
+  </data>
+  <data name="XrLabel22.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>73, 16</value>
+  </data>
+  <data name="XrLine3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>69.24532, 60.7916527</value>
+  </data>
+  <data name="XrLabel4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="XrLabel6.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>93.39701, 0</value>
+  </data>
+  <data name="xrTituloRelatorio.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="XrPivotGrid1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1031.542, 54.14791</value>
+  </data>
+  <data name="XrPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="fieldpDataMov1.FieldName" xml:space="preserve">
+    <value>pDataMov</value>
+  </data>
+  <data name="XrLabel19.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="GroupFooter2.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel28.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>236.453629, 0</value>
+  </data>
+  <data name="XrLabel6.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel29.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>236.453629, 47.2083244</value>
+  </data>
+  <data name="XrLabel22.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel19.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>574.291748, 9.999974</value>
+  </data>
+  <data name="XrLabel5.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel27.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v17.2" name="DevExpress.Utils.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ImageCollection1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v17.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNi4xLCBWZXJzaW9uPTE2LjEu
+        NS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAAChE
+        ZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0cmVhbWVyAAAAAAIAAAAL
+</value>
+  </data>
+  <data name="XrLine1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>48.9535332, 0</value>
+  </data>
+  <data name="XrLabel23.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>553.069946, 0</value>
+  </data>
+  <data name="XrPageInfo2.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrPageInfo1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>45.93634, 14.75</value>
+  </data>
+  <data name="xrTituloRelatorio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 11pt, style=Bold</value>
+  </data>
+  <data name="XrLabel18.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v17.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="XrLine2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>762.796448, 2</value>
+  </data>
+  <data name="XrLine1.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrPageInfo1.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel25.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="XrLabel11.Dpi" type="System.Single, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="XrLabel19.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="XrLabel25.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v17.2">
+    <value>955.9433, 25.83334</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>pt-BR</value>
+  </metadata>
+  <metadata name="ImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="ObjectDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+</root>

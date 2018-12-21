@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="s5taviacao" Class="DataClassesTaraFracionamentoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.50.39;Initial Catalog=s5taviacao;User ID=4t" SettingsObjectName="S5TWinFormAviacao.Settings" SettingsPropertyName="s5taviacaoConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.vTaraFracionamentoTaraFracionamentoView" Member="vTaraFracionamentoTaraFracionamentoViews">
+    <Type Name="vTaraFracionamentoTaraFracionamentoView">
+      <Column Name="pId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="C2_PRODUTO" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="G1_COMP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pEmbalagemDescricao" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="pEmbalagemPeso" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

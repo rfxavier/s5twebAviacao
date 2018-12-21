@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="17.1.5.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="repCnIndEnvaseOverviewSubEnvaseEvento" Margins="58, 49, 35, 36" PageWidth="850" PageHeight="1100" Version="17.1" DataSource="#Ref-0">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" ValueInfo="20170823RX" Name="repParIdTag" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="4" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="35" />
+    <Item2 Ref="5" ControlType="DetailBand" Name="detailBand1" HeightF="20">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRLabel" Name="label6" TextAlignment="TopCenter" SizeF="146.458221,20" LocationFloat="493.541779, 0" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="7" PropertyName="Text" DataMember="tempo_hhmmss" />
+          </DataBindings>
+          <StylePriority Ref="8" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="9" ControlType="XRLabel" Name="label5" TextAlignment="TopCenter" SizeF="132.916656,20" LocationFloat="344.374969, 0" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="10" PropertyName="Text" DataMember="numOcorrencia" />
+          </DataBindings>
+          <StylePriority Ref="11" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="12" ControlType="XRLabel" Name="label4" Text="label4" SizeF="332.916626,20" LocationFloat="0, 0" Font="Arial, 9.75pt" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="13" PropertyName="Text" DataMember="description" />
+          </DataBindings>
+          <StylePriority Ref="14" UseFont="false" />
+        </Item3>
+      </Controls>
+    </Item2>
+    <Item3 Ref="15" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="36" />
+    <Item4 Ref="16" ControlType="GroupHeaderBand" Name="GroupHeader1" HeightF="56.2500458">
+      <GroupFields>
+        <Item1 Ref="17" FieldName="hostname" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="18" ControlType="XRLabel" Name="label3" Text="Duração (hh:mm:ss)" TextAlignment="MiddleCenter" SizeF="146.458282,22.9999981" LocationFloat="493.541779, 33.2500458" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="None">
+          <StylePriority Ref="19" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="20" ControlType="XRLabel" Name="label2" Text="Nº Ocorrências" TextAlignment="MiddleCenter" SizeF="132.916656,22.9999981" LocationFloat="344.374969, 33.2500458" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="None">
+          <StylePriority Ref="21" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="22" ControlType="XRLabel" Name="label8" Text="Evento" TextAlignment="MiddleLeft" SizeF="332.916626,22.9999981" LocationFloat="0, 33.2500458" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="None">
+          <StylePriority Ref="23" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="24" ControlType="XRLabel" Name="label1" Text="label1" SizeF="209.375,23" LocationFloat="0, 8.250046" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="25" PropertyName="Text" DataMember="hostname" />
+          </DataBindings>
+          <StylePriority Ref="26" UseFont="false" />
+        </Item4>
+      </Controls>
+    </Item4>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="27" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="28" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item3 Ref="29" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item4 Ref="30" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="31" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+    <Item6 Ref="32" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsEnvaseEvento" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNFbnZhc2VFdmVudG88L05hbWU+PERhdGFTb3VyY2UgVHlwZT0iQXNwTmV0NXQuZHNJbmR1c3RyaWEsIEFzcE5ldDV0LCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbCIgLz48RGF0YU1lbWJlcj5HZXRFbnZhc2VFdmVudG88L0RhdGFNZW1iZXI+PFBhcmFtZXRlcnM+PFBhcmFtZXRlciBOYW1lPSJwYXJJZFRhZyIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkpKFtQYXJhbWV0ZXJzLnJlcFBhcklkVGFnXSk8L1BhcmFtZXRlcj48L1BhcmFtZXRlcnM+PC9PYmplY3REYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

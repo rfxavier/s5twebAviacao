@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s0="http://192.168.50.35:9595/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://192.168.50.35:9595/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.50.35:9595/">
+      <s:element name="INCLUI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ORCAMENTO" type="s0:GSORCAMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INCLUIRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="INCLUIRESULT" type="s0:GSCONFIRMACAO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GSCONFIRMACAO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRICAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ITENS" type="s0:ARRAYOFGSITEMCONFIRMACAO" />
+          <s:element minOccurs="1" maxOccurs="1" name="STATUS" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSORCAMENTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CLIENTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EMISSAO" type="s:date" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTREGA" type="s:date" />
+          <s:element minOccurs="1" maxOccurs="1" name="ITENS" type="s0:ARRAYOFGSITEMORC" />
+          <s:element minOccurs="1" maxOccurs="1" name="LOJA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERO" type="s:integer" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSERVACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PEDIDOCLIENTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VENDEDOR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSITEMCONFIRMACAO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FILIAL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PEDIDO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GSITEMORC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CAIXAS" type="s:integer" />
+          <s:element minOccurs="0" maxOccurs="1" name="FORMAS" type="s:integer" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSERVACAO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUTO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QUANTIDADE" type="s:integer" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFGSITEMCONFIRMACAO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GSITEMCONFIRMACAO" type="s0:GSITEMCONFIRMACAO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFGSITEMORC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GSITEMORC" type="s0:GSITEMORC" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="INCLUISOAPIN">
+    <part name="parameters" element="s0:INCLUI" />
+  </message>
+  <message name="INCLUISOAPOUT">
+    <part name="parameters" element="s0:INCLUIRESPONSE" />
+  </message>
+  <portType name="GSINCORCSOAP">
+    <operation name="INCLUI">
+      <documentation>Inclui um orçamento.</documentation>
+      <input message="s0:INCLUISOAPIN" />
+      <output message="s0:INCLUISOAPOUT" />
+    </operation>
+  </portType>
+  <binding name="GSINCORCSOAP" type="s0:GSINCORCSOAP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="INCLUI">
+      <soap:operation soapAction="http://192.168.50.35:9595/INCLUI" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="GSINCORC">
+    <documentation>Serviço de Inclusão de Orçamentos.</documentation>
+    <port name="GSINCORCSOAP" binding="s0:GSINCORCSOAP">
+      <soap:address location="http://192.168.50.35:9595/ws/GSINCORC.apw" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>PedidosFaturamento-ImportaTMP</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#x2f;07&#x2f;04 08&#x3a;46&#x3a;01.833</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#x2f;07&#x2f;04 08&#x3a;46&#x3a;01.833</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>aviacao_matheus</name>
+    <server>192.168.50.36</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>protheusprod</database>
+    <port>1521</port>
+    <username>P11</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce408fc3fe88</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>sqlserver</name>
+    <server>SRVBI02</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>s5taviacao</database>
+    <port>1433</port>
+    <username>4t</username>
+    <password>Encrypted 2be98afc86aa7bf85a518a975ccc6bbc9</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input ZZH SD2 Union</from><to>Sort rows PEDIDO CODIGO_PRODUTO</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows PEDIDO CODIGO_PRODUTO</from><to>Row denormaliser PEDIDO CODIGO_PRODUTO</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input ZZH SD2 Union</from><to>Sort rows PEDIDO</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows PEDIDO</from><to>Row denormaliser PEDIDO</to><enabled>Y</enabled> </hop>
+  <hop> <from>Row denormaliser PEDIDO</from><to>Formula STATUS_NAOFATURADO</to><enabled>Y</enabled> </hop>
+  <hop> <from>Row denormaliser PEDIDO CODIGO_PRODUTO</from><to>Formula CORTE_PEDIDO</to><enabled>Y</enabled> </hop>
+  <hop> <from>Formula CORTE_PEDIDO</from><to>Formula STATUS_PARCIALTOTAL</to><enabled>Y</enabled> </hop>
+  <hop> <from>Stream lookup 2</from><to>Formula STATUS FAT PED</to><enabled>N</enabled> </hop>
+  <hop> <from>Formula STATUS FAT PED</from><to>Formula DIA MES ANO Datas</to><enabled>N</enabled> </hop>
+  <hop> <from>Formula DIA MES ANO Datas</from><to>Microsoft Excel Output</to><enabled>N</enabled> </hop>
+  <hop> <from>Formula DIA MES ANO Datas</from><to>Add constants</to><enabled>N</enabled> </hop>
+  <hop> <from>Add constants</from><to>Table output AviacaoPedidosFaturamento</to><enabled>N</enabled> </hop>
+  <hop> <from>Formula STATUS_PARCIALTOTAL</from><to>Stream lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Formula STATUS_NAOFATURADO</from><to>Stream lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Stream lookup</from><to>Formula STATUS</to><enabled>Y</enabled> </hop>
+  <hop> <from>Formula STATUS</from><to>Sort rows PEDIDO CODIGO_PRODUTO 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows PEDIDO CODIGO_PRODUTO 2</from><to>Stream lookup 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input ZZH SD2 Union</from><to>Sort rows PEDIDO CODIGO_PRODUTO 2 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows PEDIDO CODIGO_PRODUTO 2 2</from><to>Stream lookup 2</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Add constants</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>dt1</name>
+        <type>Date</type>
+        <format>dd-MM-yyyy HH&#x3a;mm&#x3a;ss</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>08-11-2014 10&#x3a;23&#x3a;00</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>str1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>root</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dt2</name>
+        <type>Date</type>
+        <format>dd-MM-yyyy HH&#x3a;mm&#x3a;ss</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>08-11-2014 10&#x3a;23&#x3a;00</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>str2</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>root</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>rv</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>                </nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1359</xloc>
+      <yloc>328</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula CORTE_PEDIDO</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>calcSTATUS_CORTEPEDIDO</field_name>
+<formula_string>AND&#x28;ISBLANK&#x28;&#x5b;QUANT_UNIDADE_FAT&#x5d;&#x29;&#x3b;NOT&#x28;ISBLANK&#x28;&#x5b;QUANT_UNIDADE_PED&#x5d;&#x29;&#x29;&#x29;</formula_string>
+<value_type>Boolean</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>calcQUANT_UNIDADE_FAT_NVL</field_name>
+<formula_string>IF&#x28;ISBLANK&#x28;&#x5b;QUANT_UNIDADE_FAT&#x5d;&#x29;&#x3b;0&#x3b;&#x5b;QUANT_UNIDADE_FAT&#x5d;&#x29;</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>calcQUANT_UNIDADE_PED_NVL</field_name>
+<formula_string>IF&#x28;ISBLANK&#x28;&#x5b;QUANT_UNIDADE_PED&#x5d;&#x29;&#x3b;0&#x3b;&#x5b;QUANT_UNIDADE_PED&#x5d;&#x29;</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>482</xloc>
+      <yloc>161</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula DIA MES ANO Datas</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>DTDIA_EMISSAO_PED</field_name>
+<formula_string>MID&#x28;&#x5b;DT_EMISSAO_PED&#x5d;&#x3b;7&#x3b;2&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>DTMES_EMISSAO_PED</field_name>
+<formula_string>MID&#x28;&#x5b;DT_EMISSAO_PED&#x5d;&#x3b;5&#x3b;2&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>DTANO_EMISSAO_PED</field_name>
+<formula_string>MID&#x28;&#x5b;DT_EMISSAO_PED&#x5d;&#x3b;1&#x3b;4&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>DTDIA_EMISSAO_FAT</field_name>
+<formula_string>MID&#x28;&#x5b;DT_EMISSAO_FAT&#x5d;&#x3b;7&#x3b;2&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>DTMES_EMISSAO_FAT</field_name>
+<formula_string>MID&#x28;&#x5b;DT_EMISSAO_PED&#x5d;&#x3b;5&#x3b;2&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>DTANO_EMISSAO_FAT</field_name>
+<formula_string>MID&#x28;&#x5b;DT_EMISSAO_PED&#x5d;&#x3b;1&#x3b;4&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1266</xloc>
+      <yloc>266</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula STATUS FAT PED</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>calcSTATUS_FATPED</field_name>
+<formula_string>IF&#x28;&#x5b;TIPO_OP&#x5d;&#x3d;&#x22;FAT&#x22;&#x3b;&#x22;ND&#x22;&#x3b;&#x5b;calcSTATUS&#x5d;&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1164</xloc>
+      <yloc>243</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula STATUS_NAOFATURADO</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>calcSTATUS_NAOFATURADO</field_name>
+<formula_string>AND&#x28;ISBLANK&#x28;&#x5b;QUANT_UNIDADE_FAT&#x5d;&#x29;&#x3b;NOT&#x28;ISBLANK&#x28;&#x5b;QUANT_UNIDADE_PED&#x5d;&#x29;&#x29;&#x29;</formula_string>
+<value_type>Boolean</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>591</xloc>
+      <yloc>69</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula STATUS_PARCIALTOTAL</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>calcSTATUS_CORTEPEDIDOPARCIALTOTAL</field_name>
+<formula_string>IF&#x28;&#x5b;calcSTATUS_CORTEPEDIDO&#x5d;&#x3b;&#x22;CORTE_PEDIDO&#x22;&#x3b;IF&#x28;&#x5b;calcQUANT_UNIDADE_FAT_NVL&#x5d;&#x3d;&#x5b;calcQUANT_UNIDADE_PED_NVL&#x5d;&#x3b;&#x22;FAT_TOTAL&#x22;&#x3b;&#x22;FAT_PARCIAL&#x22;&#x29;&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>calcTMP</field_name>
+<formula_string>IF&#x28;&#x5b;calcQUANT_UNIDADE_FAT_NVL&#x5d;&#x3d;&#x5b;calcQUANT_UNIDADE_PED_NVL&#x5d;&#x3b;&#x22;FAT_TOTAL&#x22;&#x3b;&#x22;FAT_PARCIAL&#x22;&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>593</xloc>
+      <yloc>187</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Microsoft Excel Output</name>
+    <type>ExcelOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <header>Y</header>
+    <footer>N</footer>
+    <encoding/>
+    <append>N</append>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>C&#x3a;&#x5c;Users&#x5c;4tsistemas&#x5c;Desktop&#x5c;4t Sistemas&#x5c;dw_4t_pedidos_vendas</name>
+      <extention>xls</extention>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+      <create_parent_folder>N</create_parent_folder>
+      <split>N</split>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <sheetname>Sheet1</sheetname>
+      <autosizecolums>N</autosizecolums>
+      <nullisblank>N</nullisblank>
+      <protect_sheet>N</protect_sheet>
+      <password>Encrypted </password>
+      <splitevery>0</splitevery>
+      <usetempfiles>N</usetempfiles>
+      <tempdirectory/>
+      </file>
+    <template>
+      <enabled>N</enabled>
+      <append>N</append>
+      <filename>template.xls</filename>
+    </template>
+    <fields>
+    </fields>
+    <custom>
+    <header_font_name>arial</header_font_name>
+    <header_font_size>10</header_font_size>
+    <header_font_bold>N</header_font_bold>
+    <header_font_italic>N</header_font_italic>
+    <header_font_underline>no</header_font_underline>
+    <header_font_orientation>horizontal</header_font_orientation>
+    <header_font_color>black</header_font_color>
+    <header_background_color>none</header_background_color>
+    <header_row_height>255</header_row_height>
+    <header_alignment>left</header_alignment>
+    <header_image/>
+    <row_font_name>arial</row_font_name>
+    <row_font_size>10</row_font_size>
+    <row_font_color>black</row_font_color>
+    <row_background_color>none</row_background_color>
+      </custom>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1355</xloc>
+      <yloc>236</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Row denormaliser PEDIDO</name>
+    <type>Denormaliser</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <key_field>TIPO_OP</key_field>
+      <group>
+        <field>
+          <name>PEDIDO</name>
+          </field>
+        </group>
+      <fields>
+        <field>
+          <field_name>QUANT_UNIDADE</field_name>
+          <key_value>PED</key_value>
+          <target_name>QUANT_UNIDADE_PED</target_name>
+          <target_type>Number</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        <field>
+          <field_name>QUANT_UNIDADE</field_name>
+          <key_value>FAT</key_value>
+          <target_name>QUANT_UNIDADE_FAT</target_name>
+          <target_type>Number</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        <field>
+          <field_name>DT_EMISSAO</field_name>
+          <key_value>PED</key_value>
+          <target_name>DT_EMISSAO_PED</target_name>
+          <target_type>String</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        <field>
+          <field_name>DT_EMISSAO</field_name>
+          <key_value>FAT</key_value>
+          <target_name>DT_EMISSAO_FAT</target_name>
+          <target_type>String</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>455</xloc>
+      <yloc>102</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Row denormaliser PEDIDO CODIGO_PRODUTO</name>
+    <type>Denormaliser</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <key_field>TIPO_OP</key_field>
+      <group>
+        <field>
+          <name>PEDIDO</name>
+          </field>
+        <field>
+          <name>CODIGO_PRODUTO</name>
+          </field>
+        </group>
+      <fields>
+        <field>
+          <field_name>QUANT_UNIDADE</field_name>
+          <key_value>PED</key_value>
+          <target_name>QUANT_UNIDADE_PED</target_name>
+          <target_type>Number</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        <field>
+          <field_name>QUANT_UNIDADE</field_name>
+          <key_value>FAT</key_value>
+          <target_name>QUANT_UNIDADE_FAT</target_name>
+          <target_type>Number</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>371</xloc>
+      <yloc>205</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows PEDIDO</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>400000</sort_size>
+      <free_memory>95</free_memory>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>PEDIDO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>315</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows PEDIDO CODIGO_PRODUTO</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>400000</sort_size>
+      <free_memory>95</free_memory>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>PEDIDO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>CODIGO_PRODUTO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>248</xloc>
+      <yloc>182</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Stream lookup 2</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>Sort rows PEDIDO CODIGO_PRODUTO 2</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>Y</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>PEDIDO</name>
+        <field>PEDIDO</field>
+      </key>
+      <key>
+        <name>CODIGO_PRODUTO</name>
+        <field>CODIGO_PRODUTO</field>
+      </key>
+      <value>
+        <name>DT_EMISSAO_PED</name>
+        <rename>DT_EMISSAO_PED</rename>
+        <default/>
+        <type>None</type>
+      </value>
+      <value>
+        <name>DT_EMISSAO_FAT</name>
+        <rename>DT_EMISSAO_FAT</rename>
+        <default/>
+        <type>None</type>
+      </value>
+      <value>
+        <name>calcSTATUS</name>
+        <rename>calcSTATUS</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1042</xloc>
+      <yloc>241</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input ZZH SD2 Union</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>aviacao_matheus</connection>
+    <sql>SELECT &#x27;FAT&#x27; AS tipo_op	,&#xd;&#xa;D2_FILIAL AS FILIAL	,&#xd;&#xa;D2_PEDIDO AS PEDIDO	,&#xd;&#xa;D2_DOC AS NOTA_FISCAL	,&#xd;&#xa;D2_SERIE AS SERIE_NF	,&#xd;&#xa;D2_CLIENTE AS COD_CLIENTE	,&#xd;&#xa;D2_LOJA AS LOJA	,&#xd;&#xa;A1_NOME AS DESC_CLIENTE	,&#xd;&#xa;F2_VEND1 AS COD_VENDEDOR	,&#xd;&#xa;A3_NOME AS NOME_VENDEDOR	,&#xd;&#xa;D2_EMISSAO AS DT_EMISSAO	,&#xd;&#xa;A1_GRPVEN AS COD_GRUPO_CLIENTE	,&#xd;&#xa;ACY_DESCRI AS DESC_GRUPO_CLIENTE	,&#xd;&#xa;D2_COD AS CODIGO_PRODUTO	,&#xd;&#xa;B1_DESC AS DESC_PRODUTO	,&#xd;&#xa;B1_PESBRU	,&#xd;&#xa;  SUM&#x28;D2_QUANT&#x29; QUANT_UNIDADE	,&#xd;&#xa;  SUM&#x28;D2_PRCVEN&#x29; PRECO_VENDA	,&#xd;&#xa;  SUM&#x28;C6_UNSVEN&#x29; QUANT_CAIXA	,&#xd;&#xa;  SUM&#x28;C6_QTDPCT&#x29; QTDPCT	,&#xd;&#xa;  SUM&#x28;C6_QTDBRU&#x29; QTDBRU	,&#xd;&#xa;NULL AS NUMERO_ORCAMENTO	,&#xd;&#xa;NULL AS FORMAS	,&#xd;&#xa;0 AS TOTAL_ITEM	,&#xd;&#xa;NULL AS PEDCLI	,&#xd;&#xa;0 AS PRUNIT	&#xd;&#xa;   FROM	&#xd;&#xa;  &#x28;	&#xd;&#xa;     SELECT D2_FILIAL,	&#xd;&#xa;      D2_DOC,	&#xd;&#xa;      D2_SERIE,	&#xd;&#xa;      D2_CLIENTE,	&#xd;&#xa;      D2_LOJA,	&#xd;&#xa;      D2_EMISSAO,	&#xd;&#xa;      D2_PEDIDO,	&#xd;&#xa;      D2_ITEMPV,	&#xd;&#xa;      D2_COD,	&#xd;&#xa;      SUM&#x28;D2_QUANT&#x29; D2_QUANT,	&#xd;&#xa;      SUM&#x28;D2_PRCVEN&#x29; D2_PRCVEN	&#xd;&#xa;       FROM SF2010 SF2	&#xd;&#xa;    INNER JOIN SD2010 SD2	&#xd;&#xa;         ON D2_DOC       &#x3d; F2_DOC	&#xd;&#xa;      AND D2_SERIE       &#x3d; F2_SERIE	&#xd;&#xa;      AND D2_CLIENTE     &#x3d; F2_CLIENTE	&#xd;&#xa;      AND D2_FILIAL      &#x3d; &#x27;01&#x27;	&#xd;&#xa;      AND SD2.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;      WHERE F2_EMISSAO &#x3e;&#x3d; &#x27;20160730&#x27;	&#xd;&#xa;      AND D2_COD BETWEEN &#x27;               &#x27; AND &#x27;zzzzzzzzzzzzzzz&#x27;	&#xd;&#xa;      AND D2_GRUPO BETWEEN &#x27;    &#x27; AND &#x27;zzzz&#x27;	&#xd;&#xa;      AND D2_TP BETWEEN &#x27;PA&#x27; AND &#x27;PA&#x27;	&#xd;&#xa;      AND F2_VEND1 BETWEEN &#x27;      &#x27; AND &#x27;ZZZZZZ&#x27;	&#xd;&#xa;      AND F2_FILIAL      &#x3d; &#x27;01&#x27;	&#xd;&#xa;      AND SF2.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;      --AND D2_PEDIDO IN &#x28;&#x27;622917&#x27;,&#x27;622996&#x27;,&#x27;624153&#x27;,&#x27;621267&#x27;,&#x27;624863&#x27;&#x29;&#xd;&#xa;   GROUP BY D2_FILIAL,	&#xd;&#xa;      D2_DOC,	&#xd;&#xa;      D2_SERIE,	&#xd;&#xa;      D2_CLIENTE,	&#xd;&#xa;      D2_LOJA,	&#xd;&#xa;      D2_EMISSAO,	&#xd;&#xa;      D2_PEDIDO,	&#xd;&#xa;      D2_ITEMPV,	&#xd;&#xa;      D2_COD	&#xd;&#xa;  &#x29;	&#xd;&#xa;INNER JOIN SC6010 SC6	&#xd;&#xa;     ON C6_NUM       &#x3d; D2_PEDIDO	&#xd;&#xa;  AND C6_ITEM        &#x3d; D2_ITEMPV	&#xd;&#xa;  AND C6_PRODUTO     &#x3d; D2_COD	&#xd;&#xa;  AND C6_FILIAL      &#x3d; &#x27;01&#x27;	&#xd;&#xa;  AND SC6.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;INNER JOIN SA1010 SA1	&#xd;&#xa;     ON A1_COD       &#x3d; D2_CLIENTE	&#xd;&#xa;  AND A1_LOJA        &#x3d; D2_LOJA	&#xd;&#xa;  AND A1_FILIAL      &#x3d; &#x27;01&#x27;	&#xd;&#xa;  AND SA1.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;INNER JOIN SF2010 SF2	&#xd;&#xa;     ON F2_DOC       &#x3d; D2_DOC	&#xd;&#xa;  AND F2_SERIE       &#x3d; D2_SERIE	&#xd;&#xa;  AND F2_CLIENTE     &#x3d; D2_CLIENTE	&#xd;&#xa;  AND F2_LOJA        &#x3d; D2_LOJA	&#xd;&#xa;  AND F2_FILIAL      &#x3d; &#x27;01&#x27;	&#xd;&#xa;  AND SF2.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;INNER JOIN SA3010 SA3	&#xd;&#xa;     ON A3_COD       &#x3d; F2_VEND1	&#xd;&#xa;  AND A3_FILIAL      &#x3d; &#x27;  &#x27;	&#xd;&#xa;  AND SA3.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;INNER JOIN SB1010 SB1	&#xd;&#xa;     ON B1_COD       &#x3d; D2_COD	&#xd;&#xa;  AND B1_FILIAL      &#x3d; &#x27;01&#x27;	&#xd;&#xa;  AND SB1.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;LEFT JOIN ACY010 ACY	&#xd;&#xa;     ON ACY_GRPVEN   &#x3d; A1_GRPVEN	&#xd;&#xa;  AND ACY_FILIAL     &#x3d; &#x27;  &#x27;	&#xd;&#xa;  AND ACY.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;GROUP BY D2_FILIAL,	&#xd;&#xa;  D2_DOC,	&#xd;&#xa;  D2_SERIE,	&#xd;&#xa;  D2_CLIENTE,	&#xd;&#xa;  D2_LOJA,	&#xd;&#xa;  A1_NOME,	&#xd;&#xa;  D2_EMISSAO,	&#xd;&#xa;  D2_PEDIDO,	&#xd;&#xa;  D2_COD,	&#xd;&#xa;  B1_DESC,	&#xd;&#xa;  F2_VEND1,	&#xd;&#xa;  A3_NOME,	&#xd;&#xa;  A1_GRPVEN,	&#xd;&#xa;  ACY_DESCRI,	&#xd;&#xa;  B1_PESBRU	&#xd;&#xa;UNION ALL&#xd;&#xa;SELECT &#x27;PED&#x27; AS tipo_op	,&#xd;&#xa;ZZH_FILIAL AS FILIAL	,&#xd;&#xa;ZZH_NUM AS PEDIDO	,&#xd;&#xa;NULL AS NOTA_FISCAL	,&#xd;&#xa;NULL AS SERIE_NF	,&#xd;&#xa;ZZH_CLI AS COD_CLIENTE	,&#xd;&#xa;ZZH_LOJA AS LOJA	,&#xd;&#xa;A1_NOME AS DESC_CLIENTE	,&#xd;&#xa;ZZH_VEND AS COD_VENDEDOR	,&#xd;&#xa;A3_NOME AS NOME_VENDEDOR	,&#xd;&#xa;ZZH_DATEMI AS DT_EMISSAO	,&#xd;&#xa;NULL AS COD_GRUPO_CLIENTE	,&#xd;&#xa;ACY_DESCRI AS DESC_GRUPO_CLIENTE	,&#xd;&#xa;ZZH_PROD AS CODIGO_PRODUTO	,&#xd;&#xa;B1_DESC AS DESC_PRODUTO	,&#xd;&#xa;0 as PESBRU	,&#xd;&#xa;ZZH_QUANT AS QUANT_UNIDADE	,&#xd;&#xa;ZZH_PRECO AS PRECO_VENDA	,&#xd;&#xa;ZZH_CAIXAS AS QUANT_CAIXA	,&#xd;&#xa;0 AS QTDPCT	,&#xd;&#xa;0 AS QTDBRU	,&#xd;&#xa;ZZH_NUMORC AS NUMERO_ORCAMENTO	,&#xd;&#xa;ZZH_FORMAS AS FORMAS	,&#xd;&#xa;ZZH_ITMTOT AS TOTAL_ITEM	,&#xd;&#xa;ZZH_PEDCLI AS PEDCLI	,&#xd;&#xa;ZZH_PRUNIT AS PRUNIT	&#xd;&#xa;   FROM zzh010 zzh	&#xd;&#xa;INNER JOIN sa1010 sa1	&#xd;&#xa;     ON a1_cod       &#x3d; zzh_cli	&#xd;&#xa;  AND a1_loja        &#x3d; zzh_loja	&#xd;&#xa;  AND a1_filial      &#x3d; zzh_filial	&#xd;&#xa;  AND sa1.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;INNER JOIN sa3010 sa3	&#xd;&#xa;     ON a3_cod       &#x3d; zzh_vend	&#xd;&#xa;  AND a3_filial      &#x3d; &#x27;  &#x27;	&#xd;&#xa;  AND sa3.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;INNER JOIN SB1010 SB1	&#xd;&#xa;     ON B1_COD       &#x3d; zzh_prod	&#xd;&#xa;  AND B1_FILIAL      &#x3d; zzh_filial	&#xd;&#xa;  AND SB1.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;LEFT JOIN ACY010 ACY	&#xd;&#xa;     ON ACY_GRPVEN   &#x3d; A1_GRPVEN	&#xd;&#xa;  AND ACY_FILIAL     &#x3d; &#x27;  &#x27;	&#xd;&#xa;  AND ACY.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;  WHERE 0&#x3d;0&#xd;&#xa;  --AND zzh_num      IN &#x28;&#x27;622917&#x27;,&#x27;622996&#x27;,&#x27;624153&#x27;,&#x27;621267&#x27;,&#x27;624863&#x27;&#x29;&#xd;&#xa;  AND ZZH_DATEMI &#x3e;&#x3d; &#x27;20160730&#x27;&#xd;&#xa;  AND zzh.D_E_L_E_T_ &#x3d; &#x27; &#x27;	&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>87</xloc>
+      <yloc>245</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output AviacaoPedidosFaturamento</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>sqlserver</connection>
+    <schema/>
+    <table>AviacaoPedidosFaturamento</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>pTIPO_OP</column_name>
+          <stream_name>TIPO_OP</stream_name>
+        </field>
+        <field>
+          <column_name>pFILIAL</column_name>
+          <stream_name>FILIAL</stream_name>
+        </field>
+        <field>
+          <column_name>pPEDIDO</column_name>
+          <stream_name>PEDIDO</stream_name>
+        </field>
+        <field>
+          <column_name>pNOTA_FISCAL</column_name>
+          <stream_name>NOTA_FISCAL</stream_name>
+        </field>
+        <field>
+          <column_name>pSERIE_NF</column_name>
+          <stream_name>SERIE_NF</stream_name>
+        </field>
+        <field>
+          <column_name>pCOD_CLIENTE</column_name>
+          <stream_name>COD_CLIENTE</stream_name>
+        </field>
+        <field>
+          <column_name>pLOJA</column_name>
+          <stream_name>LOJA</stream_name>
+        </field>
+        <field>
+          <column_name>pDESC_CLIENTE</column_name>
+          <stream_name>DESC_CLIENTE</stream_name>
+        </field>
+        <field>
+          <column_name>pCOD_VENDEDOR</column_name>
+          <stream_name>COD_VENDEDOR</stream_name>
+        </field>
+        <field>
+          <column_name>pNOME_VENDEDOR</column_name>
+          <stream_name>NOME_VENDEDOR</stream_name>
+        </field>
+        <field>
+          <column_name>pDT_EMISSAO</column_name>
+          <stream_name>DT_EMISSAO</stream_name>
+        </field>
+        <field>
+          <column_name>pCOD_GRUPO_CLIENTE</column_name>
+          <stream_name>COD_GRUPO_CLIENTE</stream_name>
+        </field>
+        <field>
+          <column_name>pDESC_GRUPO_CLIENTE</column_name>
+          <stream_name>DESC_GRUPO_CLIENTE</stream_name>
+        </field>
+        <field>
+          <column_name>pCODIGO_PRODUTO</column_name>
+          <stream_name>CODIGO_PRODUTO</stream_name>
+        </field>
+        <field>
+          <column_name>pDESC_PRODUTO</column_name>
+          <stream_name>DESC_PRODUTO</stream_name>
+        </field>
+        <field>
+          <column_name>pB1_PESBRU</column_name>
+          <stream_name>B1_PESBRU</stream_name>
+        </field>
+        <field>
+          <column_name>pQUANT_UNIDADE</column_name>
+          <stream_name>QUANT_UNIDADE</stream_name>
+        </field>
+        <field>
+          <column_name>pPRECO_VENDA</column_name>
+          <stream_name>PRECO_VENDA</stream_name>
+        </field>
+        <field>
+          <column_name>pQUANT_CAIXA</column_name>
+          <stream_name>QUANT_CAIXA</stream_name>
+        </field>
+        <field>
+          <column_name>pQTDPCT</column_name>
+          <stream_name>QTDPCT</stream_name>
+        </field>
+        <field>
+          <column_name>pQTDBRU</column_name>
+          <stream_name>QTDBRU</stream_name>
+        </field>
+        <field>
+          <column_name>pNUMERO_ORCAMENTO</column_name>
+          <stream_name>NUMERO_ORCAMENTO</stream_name>
+        </field>
+        <field>
+          <column_name>pFORMAS</column_name>
+          <stream_name>FORMAS</stream_name>
+        </field>
+        <field>
+          <column_name>pTOTAL_ITEM</column_name>
+          <stream_name>TOTAL_ITEM</stream_name>
+        </field>
+        <field>
+          <column_name>pPEDCLI</column_name>
+          <stream_name>PEDCLI</stream_name>
+        </field>
+        <field>
+          <column_name>pPRUNIT</column_name>
+          <stream_name>PRUNIT</stream_name>
+        </field>
+        <field>
+          <column_name>pDT_EMISSAO_PED</column_name>
+          <stream_name>DT_EMISSAO_PED</stream_name>
+        </field>
+        <field>
+          <column_name>pDT_EMISSAO_FAT</column_name>
+          <stream_name>DT_EMISSAO_FAT</stream_name>
+        </field>
+        <field>
+          <column_name>pSTATUS</column_name>
+          <stream_name>calcSTATUS_FATPED</stream_name>
+        </field>
+        <field>
+          <column_name>pDTDIA_EMISSAO_PED</column_name>
+          <stream_name>DTDIA_EMISSAO_PED</stream_name>
+        </field>
+        <field>
+          <column_name>pDTMES_EMISSAO_PED</column_name>
+          <stream_name>DTMES_EMISSAO_PED</stream_name>
+        </field>
+        <field>
+          <column_name>pDTANO_EMISSAO_PED</column_name>
+          <stream_name>DTANO_EMISSAO_PED</stream_name>
+        </field>
+        <field>
+          <column_name>pDTDIA_EMISSAO_FAT</column_name>
+          <stream_name>DTDIA_EMISSAO_FAT</stream_name>
+        </field>
+        <field>
+          <column_name>pDTMES_EMISSAO_FAT</column_name>
+          <stream_name>DTMES_EMISSAO_FAT</stream_name>
+        </field>
+        <field>
+          <column_name>pDTANO_EMISSAO_FAT</column_name>
+          <stream_name>DTANO_EMISSAO_FAT</stream_name>
+        </field>
+        <field>
+          <column_name>_trackLastWriteTime</column_name>
+          <stream_name>dt1</stream_name>
+        </field>
+        <field>
+          <column_name>_trackCreationTime</column_name>
+          <stream_name>dt2</stream_name>
+        </field>
+        <field>
+          <column_name>_trackLastWriteUser</column_name>
+          <stream_name>str1</stream_name>
+        </field>
+        <field>
+          <column_name>_trackCreationUser</column_name>
+          <stream_name>str2</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1436</xloc>
+      <yloc>373</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Stream lookup</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>Formula STATUS_NAOFATURADO</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>PEDIDO</name>
+        <field>PEDIDO</field>
+      </key>
+      <value>
+        <name>DT_EMISSAO_PED</name>
+        <rename>DT_EMISSAO_PED</rename>
+        <default/>
+        <type>None</type>
+      </value>
+      <value>
+        <name>DT_EMISSAO_FAT</name>
+        <rename>DT_EMISSAO_FAT</rename>
+        <default/>
+        <type>None</type>
+      </value>
+      <value>
+        <name>calcSTATUS_NAOFATURADO</name>
+        <rename>calcSTATUS_NAOFATURADO</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>698</xloc>
+      <yloc>129</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula STATUS</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>calcSTATUS</field_name>
+<formula_string>IF&#x28;&#x5b;calcSTATUS_NAOFATURADO&#x5d;&#x3b;&#x22;NAO_FATURADO&#x22;&#x3b;&#x5b;calcSTATUS_CORTEPEDIDOPARCIALTOTAL&#x5d;&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>805</xloc>
+      <yloc>131</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows PEDIDO CODIGO_PRODUTO 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>400000</sort_size>
+      <free_memory>95</free_memory>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>PEDIDO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>CODIGO_PRODUTO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>919</xloc>
+      <yloc>182</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows PEDIDO CODIGO_PRODUTO 2 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>400000</sort_size>
+      <free_memory>95</free_memory>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>PEDIDO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>CODIGO_PRODUTO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>571</xloc>
+      <yloc>239</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

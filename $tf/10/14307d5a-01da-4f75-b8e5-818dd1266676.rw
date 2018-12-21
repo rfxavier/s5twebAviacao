@@ -1,0 +1,3 @@
+﻿Public Class repCnVendasVendasDiariaVendedor
+
+End Class

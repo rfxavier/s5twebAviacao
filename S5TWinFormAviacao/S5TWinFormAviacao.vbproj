@@ -1,0 +1,1424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71804848-40AE-417E-887F-4CF14B627242}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>S5TWinFormAviacao</RootNamespace>
+    <AssemblyName>4T Sistemas - Laticínios Aviação</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <StartupObject>S5TWebCam.Program</StartupObject>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://bi.laticiniosaviacao.com.br/instaladorBi/</InstallUrl>
+    <UpdateUrl>https://bi.laticiniosaviacao.com.br/instaladorBi/</UpdateUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>4T Sistemas - Laticínios Aviação</ProductName>
+    <PublisherName>4T Sistemas - Laticínios Aviação</PublisherName>
+    <SuiteName>4T Sistemas</SuiteName>
+    <MinimumRequiredVersion>2.0.0.32</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.html</WebPage>
+    <ApplicationRevision>33</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>S5TWinFormAviacao.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A10D912625FAB2B3957FB9BB2449C251CF937B88</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>S5TWebCam_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo4t.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=2.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.2.3\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CodeFluent.Runtime">
+      <HintPath>C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Controls.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.CodeView.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Core.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.3.0.1\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\app\Guilherme\product\11.2.0\client_1\odp.net\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUtils.vb" />
+    <Compile Include="Controllers\FracionamentoController.vb" />
+    <Compile Include="dashClasses\dashLogUsuarios.Designer.vb">
+      <DependentUpon>dashLogUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\dashLogUsuarios.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\DataClassesParametrosFracionamento.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClassesParametrosFracionamento.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\DataClassesTaraFracionamento.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClassesTaraFracionamento.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioP.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoP.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoPF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoPF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoPorFazenda.Designer.vb">
+      <DependentUpon>dash-ResumoDoFechamentoPorFazenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoDoFechamentoPorFazenda.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoSemanalDeProdutividade.Designer.vb">
+      <DependentUpon>dash-ResumoSemanalDeProdutividade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dash-ResumoSemanalDeProdutividade.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaEnvaseEventos.Designer.vb">
+      <DependentUpon>dashCnIndustriaEnvaseEventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnIndustriaEnvaseEventos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoEstoqueMaturacao.Designer.vb">
+      <DependentUpon>dashCnProducaoEstoqueMaturacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoEstoqueMaturacao.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadores.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoIndicadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadoresAnoMenos1.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoIndicadoresAnoMenos1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnProducaoProducaoIndicadoresAnoMenos1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagem.Designer.vb">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagemDashEmail.Designer.vb">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagemDashEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagemDashEmail.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientes.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesComProdutoV2.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientesComProdutoV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesComProdutoV2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesProduto.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientesProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesProduto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesV2.Designer.vb">
+      <DependentUpon>dashCnVendasComparativoClientesV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasComparativoClientesV2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasIndicadoresParaVendedor3Meses.Designer.vb">
+      <DependentUpon>dashCnVendasIndicadoresParaVendedor3Meses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasIndicadoresParaVendedor3Meses.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasMapaVendas.Designer.vb">
+      <DependentUpon>dashCnVendasMapaVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasMapaVendas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoAgrupMSSQL.Designer.vb">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoAgrupMSSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoAgrupMSSQL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoMSSQL.Designer.vb">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoMSSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoMSSQL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashGerencialPorRegiaoGrupoproduto.Designer.vb">
+      <DependentUpon>dashGerencialPorRegiaoGrupoproduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\mssql\dashGerencialPorRegiaoGrupoproduto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoObjDs.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoObjDs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoObjDs.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedor.Designer.vb">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedorSeparado.Designer.vb">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedorSeparado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedorSeparado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedido.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedido.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalhe.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalhe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalhe.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.Designer.vb">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashProdutosLiberados.Designer.vb">
+      <DependentUpon>dashProdutosLiberados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashClasses\oracle\dashProdutosLiberados.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form.Designer.vb">
+      <DependentUpon>Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.vb">
+      <DependentUpon>FormHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSasCarWebService.Designer.vb">
+      <DependentUpon>FormSasCarWebService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSasCarWebService.vb" />
+    <Compile Include="FrmAviacao\Balanca.Designer.vb">
+      <DependentUpon>Balanca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\Balanca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormArgPeriodoProduto.Designer.vb">
+      <DependentUpon>FormArgPeriodoProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormArgPeriodoProduto.vb" />
+    <Compile Include="FrmAviacao\FormArgPeriodo.Designer.vb">
+      <DependentUpon>FormArgPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormArgPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormBalanca.Designer.vb">
+      <DependentUpon>FormBalanca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormBalanca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\DataClassesAviacaoVendas.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClassesAviacaoVendas.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormReportDX.Designer.vb">
+      <DependentUpon>FormReportDX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormReportDX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormTestePaleteMOv.Designer.vb">
+      <DependentUpon>FormTestePaleteMOv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormTestePaleteMOv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormCadParametros.Designer.vb">
+      <DependentUpon>FormCadParametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormCadParametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormCadTaraProduto.Designer.vb">
+      <DependentUpon>FormCadTaraProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormCadTaraProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoReimpressaoOrdem.Designer.vb">
+      <DependentUpon>FormFracionamentoReimpressaoOrdem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoReimpressaoOrdem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoReimpressao.Designer.vb">
+      <DependentUpon>FormFracionamentoReimpressao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoReimpressao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoLotes.Designer.vb">
+      <DependentUpon>FormFracionamentoLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoOrdens.Designer.vb">
+      <DependentUpon>FormFracionamentoOrdens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamentoOrdens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormPivotAnalise.Designer.vb">
+      <DependentUpon>FormPivotAnalise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormPivotAnalise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormPivotAnaliseNovo.Designer.vb">
+      <DependentUpon>FormPivotAnaliseNovo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormPivotAnaliseNovo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamento.Designer.vb">
+      <DependentUpon>FormFracionamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormFracionamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormTestePivot.Designer.vb">
+      <DependentUpon>FormTestePivot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormTestePivot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FormDashExemplo.Designer.vb">
+      <DependentUpon>FormDashExemplo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FormDashExemplo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviacao\FrmExemplo.Designer.vb">
+      <DependentUpon>FrmExemplo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAviacao\FrmExemplo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.vb">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="reportClasses\RelOrdensPesadas.Designer.vb">
+      <DependentUpon>RelOrdensPesadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportClasses\RelOrdensPesadas.vb" />
+    <Compile Include="reportClasses\RelOrdensErroProtheus.Designer.vb">
+      <DependentUpon>RelOrdensErroProtheus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportClasses\RelOrdensErroProtheus.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repEtiquetaOrdem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportClasses\repEtiqueta.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\ServiceFracionamentoProtheusReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceSasIntegra\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="logo4t.ico" />
+    <None Include="Service References\ServiceSasIntegra\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\configuration.svcinfo" />
+    <None Include="Service References\ServiceSasIntegra\configuration91.svcinfo" />
+    <None Include="dashClasses\DataClassesParametrosFracionamento.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClassesParametrosFracionamento.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dashClasses\DataClassesTaraFracionamento.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClassesTaraFracionamento.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceFracionamentoProtheusReference\GSORDEMPESAGEM1.wsdl" />
+    <None Include="Service References\ServiceFracionamentoProtheusReference\S5TWinFormAviacao.ServiceFracionamentoProtheusReference.AJUSTAPESOSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceFracionamentoProtheusReference\S5TWinFormAviacao.ServiceFracionamentoProtheusReference.GSRESORD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceFracionamentoProtheusReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceFracionamentoProtheusReference\configuration.svcinfo" />
+    <None Include="Service References\ServiceFracionamentoProtheusReference\configuration91.svcinfo" />
+    <EmbeddedResource Include="dashClasses\dashLogUsuarios.resx">
+      <DependentUpon>dashLogUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="dashClasses\DataClassesTaraFracionamento.dbml.layout">
+      <DependentUpon>DataClassesTaraFracionamento.dbml</DependentUpon>
+    </None>
+    <None Include="dashClasses\DataClassesParametrosFracionamento.dbml.layout">
+      <DependentUpon>DataClassesParametrosFracionamento.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioP.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXEstagioPF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoP.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPivoPF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPivoPF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXPropriedadePF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXRegiaoDeCortePF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.resx">
+      <DependentUpon>dash-ResumoDoFechamentoDeProdutividadeXVariedadePF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoDoFechamentoPorFazenda.resx">
+      <DependentUpon>dash-ResumoDoFechamentoPorFazenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dash-ResumoSemanalDeProdutividade.resx">
+      <DependentUpon>dash-ResumoSemanalDeProdutividade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnIndustriaEnvaseEventos.resx">
+      <DependentUpon>dashCnIndustriaEnvaseEventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnProducaoEstoqueMaturacao.resx">
+      <DependentUpon>dashCnProducaoEstoqueMaturacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnProducaoProducaoIndicadores.resx">
+      <DependentUpon>dashCnProducaoProducaoIndicadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnProducaoProducaoIndicadoresAnoMenos1.resx">
+      <DependentUpon>dashCnProducaoProducaoIndicadoresAnoMenos1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagem.resx">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnTransporteMovimentacaoDeViagemDashEmail.resx">
+      <DependentUpon>dashCnTransporteMovimentacaoDeViagemDashEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientes.resx">
+      <DependentUpon>dashCnVendasComparativoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientesComProdutoV2.resx">
+      <DependentUpon>dashCnVendasComparativoClientesComProdutoV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientesProduto.resx">
+      <DependentUpon>dashCnVendasComparativoClientesProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasComparativoClientesV2.resx">
+      <DependentUpon>dashCnVendasComparativoClientesV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasIndicadoresParaVendedor3Meses.resx">
+      <DependentUpon>dashCnVendasIndicadoresParaVendedor3Meses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasMapaVendas.resx">
+      <DependentUpon>dashCnVendasMapaVendas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoAgrupMSSQL.resx">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoAgrupMSSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashCnVendasVendasPorClienteProdutoMSSQL.resx">
+      <DependentUpon>dashCnVendasVendasPorClienteProdutoMSSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\mssql\dashGerencialPorRegiaoGrupoproduto.resx">
+      <DependentUpon>dashGerencialPorRegiaoGrupoproduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoObjDs.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoObjDs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\objDatasource\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedor.resx">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnFinanceiroTitulosAbertoVendedorSeparado.resx">
+      <DependentUpon>dashCnFinanceiroTitulosAbertoVendedorSeparado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnProducaoProducaoPedido.resx">
+      <DependentUpon>dashCnProducaoProducaoPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalhe.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalhe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.resx">
+      <DependentUpon>dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashClasses\oracle\dashProdutosLiberados.resx">
+      <DependentUpon>dashProdutosLiberados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form.resx">
+      <DependentUpon>Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FrmAviacao\DataClassesAviacaoVendas.dbml.layout">
+      <DependentUpon>DataClassesAviacaoVendas.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormSasCarWebService.resx">
+      <DependentUpon>FormSasCarWebService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\Balanca.resx">
+      <DependentUpon>Balanca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormArgPeriodoProduto.resx">
+      <DependentUpon>FormArgPeriodoProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormArgPeriodo.resx">
+      <DependentUpon>FormArgPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormBalanca.resx">
+      <DependentUpon>FormBalanca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormReportDX.resx">
+      <DependentUpon>FormReportDX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormTestePaleteMOv.resx">
+      <DependentUpon>FormTestePaleteMOv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormCadParametros.resx">
+      <DependentUpon>FormCadParametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormCadTaraProduto.resx">
+      <DependentUpon>FormCadTaraProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormFracionamentoReimpressaoOrdem.resx">
+      <DependentUpon>FormFracionamentoReimpressaoOrdem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormFracionamentoReimpressao.resx">
+      <DependentUpon>FormFracionamentoReimpressao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormFracionamentoLotes.resx">
+      <DependentUpon>FormFracionamentoLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormFracionamentoOrdens.resx">
+      <DependentUpon>FormFracionamentoOrdens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormPivotAnalise.resx">
+      <DependentUpon>FormPivotAnalise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormPivotAnaliseNovo.resx">
+      <DependentUpon>FormPivotAnaliseNovo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormFracionamento.resx">
+      <DependentUpon>FormFracionamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormTestePivot.resx">
+      <DependentUpon>FormTestePivot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FormDashExemplo.resx">
+      <DependentUpon>FormDashExemplo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAviacao\FrmExemplo.resx">
+      <DependentUpon>FrmExemplo.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FrmAviacao\DataClassesAviacaoVendas.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClassesAviacaoVendas.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="linqClasses\AviacaoCidadebasedataclass.dbml.layout">
+      <DependentUpon>AviacaoCidadebasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoConhecimentoFreteAgrupBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoConhecimentoFreteAgrupBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoConhecimentoFreteBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoConhecimentoFreteBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoPedidosFaturamentoBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoPedidosFaturamentoBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAgrupAnoMenos1Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAgrupAnoMenos1Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAgrupAnoMenos2Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAgrupAnoMenos2Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAgrupBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAgrupBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAnoMenos1Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAnoMenos1Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasAnoMenos2Basedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasAnoMenos2Basedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasBasedataclass.dbml</DependentUpon>
+    </None>
+    <None Include="linqClasses\AviacaoVendasComDevolucaoBasedataclass.dbml.layout">
+      <DependentUpon>AviacaoVendasComDevolucaoBasedataclass.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\RelOrdensPesadas.resx">
+      <DependentUpon>RelOrdensPesadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\RelOrdensErroProtheus.resx">
+      <DependentUpon>RelOrdensErroProtheus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repEtiquetaOrdem.resx">
+      <DependentUpon>repEtiquetaOrdem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportClasses\repEtiqueta.resx">
+      <DependentUpon>repEtiqueta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="imagens\CmdImprimir.Image.psd" />
+    <None Include="imagens\img_controle_prod.png" />
+    <Content Include="linqClasses\AviacaoCidadebasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoCidadebasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoConhecimentoFreteAgrupBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoConhecimentoFreteAgrupBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoConhecimentoFreteBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoConhecimentoFreteBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoPedidosFaturamentoBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoPedidosFaturamentoBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAgrupAnoMenos1Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAgrupAnoMenos1Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAgrupAnoMenos2Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAgrupAnoMenos2Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAgrupBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAgrupBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAnoMenos1Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAnoMenos1Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasAnoMenos2Basedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasAnoMenos2Basedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="linqClasses\AviacaoVendasComDevolucaoBasedataclass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AviacaoVendasComDevolucaoBasedataclass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\DataSources\S5T.AviacaoPivotAnaliseViewGrid.datasource" />
+    <None Include="My Project\DataSources\S5T.AviacaoVendas.datasource" />
+    <None Include="My Project\DataSources\S5T.FracionamentoMovViewGrid.datasource" />
+    <None Include="My Project\DataSources\S5T.LoteFracionamento.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.atualizarSenhaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.caixaPreta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.comandoEmbarquePontoDiarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.comandoTelemetriaRetorno.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.dadosAdicionais.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.deltaTelemetria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.enderecoPosicao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.enviarParametrizacaoTelemetriaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.eventoTelemetria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.grupoAtuador.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.layout.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.layoutAcaoEmbarcadaAVD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.layoutDetalhado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.layoutGrupoPontos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.layoutTecladoVeiculos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.logComando.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.macroTd40.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.macroTd50Tmcd.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.macroTd50TmcdDetalhado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.macroTms3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.mascaraDispositivo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.mensagem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.motorista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.motoristaVeiculo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterClientesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterDadosAdicionaisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterDeltaTelemetriaIntegracaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterEnderecoPosicaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterEventoTelemetriaDescricaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterEventoTelemetriaIntegracaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterGrupoAtuadoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterLayoutAcaoEmbarcadaAVDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterLayoutDetalhadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterLayoutGrupoPontosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterLayoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterLayoutTecladoVeiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMacroTd40Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMacroTd50TmcdDetalhadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMacroTd50TmcdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMacroTms3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMascaraDispositivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMensagemPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMotoristasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterMotoristasVeiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacoteLocalizacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicaoHistoricoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicaoMotoristaHistoricoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicaoMotoristaPorRangeJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicaoMotoristaPorRangeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicaoPorRangeJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicaoPorRangeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesMotoristaJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesMotoristaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesMotoristaRestricaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesRestricaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPacotePosicoesRFNacionalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterPontosReferenciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterSequenciamentoEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterStatusComandoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterStatusComandoTicketSascarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterTelemetriaPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterTipoComandoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterVeiculosJsonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.obterVeiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.pacoteLocalizacao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.pacotePosicao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.pacotePosicaoRFNacional.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.pontoReferencia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.recuperarEventosCaixaPretaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.sequenciamentoEvento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.solicitarEventosCaixaPretaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.statusComando.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.telemetria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.tipoComando.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.tipoEventoTelemetriaDescricao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.veiculo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\S5TWinFormAviacao.ServiceSasIntegra.verificarVeiculoIntegradoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceSasIntegra\SasIntegraWSService.wsdl" />
+    <None Include="Service References\ServiceSasIntegra\SasIntegraWSService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.XtraEditors.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Oracle.DataAccess">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Dashboards\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dashClasses\objDatasource\dashXmls\dashCnProducaoProducaoPedidoObjDs.xml" />
+    <Content Include="dashClasses\objDatasource\dashXmls\dashCnProducaoProducaoPedidoSemDetalheCimaBaixoNeutroObjDs.xml" />
+    <Content Include="imagens\CmdBaixa.Image.png" />
+    <Content Include="imagens\CmdImprimir.Image.png" />
+    <Content Include="imagens\CmdPesquisa.Image.png" />
+    <Content Include="imagens\CostTrackingForm.png" />
+    <Content Include="imagens\Excluir.Image.png" />
+    <Content Include="imagens\icone.ico" />
+    <Content Include="imagens\img_agenda.png" />
+    <Content Include="imagens\img_atalho.png" />
+    <Content Include="imagens\img_cadastro.png" />
+    <Content Include="imagens\img_cadastros.png" />
+    <Content Include="imagens\img_cadastro_pb.png" />
+    <Content Include="imagens\img_cadastro_pbmn.png" />
+    <Content Include="imagens\img_cadeado.png" />
+    <Content Include="imagens\img_cancelar.png" />
+    <Content Include="imagens\img_check.png" />
+    <Content Include="imagens\img_clinica.png" />
+    <Content Include="imagens\img_clinica_pb.png" />
+    <Content Include="imagens\img_config.png" />
+    <Content Include="imagens\img_contabil.png" />
+    <Content Include="imagens\img_desistir.png" />
+    <Content Include="imagens\img_despesas.png" />
+    <Content Include="imagens\img_email.png" />
+    <Content Include="imagens\img_estatisticas.png" />
+    <Content Include="imagens\img_estoque.png" />
+    <Content Include="imagens\img_fechamentomapa.png" />
+    <Content Include="imagens\img_feriados.png" />
+    <Content Include="imagens\img_financeiro.png" />
+    <Content Include="imagens\img_gerencial.png" />
+    <Content Include="imagens\img_infoSistema.png" />
+    <Content Include="imagens\img_login_padrao.jpg" />
+    <Content Include="imagens\img_mensagem.png" />
+    <Content Include="imagens\img_novoregistro.png" />
+    <Content Include="imagens\img_pessoas.png" />
+    <Content Include="imagens\img_rel2.png" />
+    <Content Include="imagens\img_relatorio.png" />
+    <Content Include="imagens\img_relatorioacessados.png" />
+    <Content Include="imagens\img_sair.png" />
+    <Content Include="imagens\img_salvar.png" />
+    <Content Include="imagens\img_seta.gif" />
+    <None Include="imagens\img_transporte.png" />
+    <Content Include="imagens\img_trocarfilial.png" />
+    <Content Include="imagens\Info.png" />
+    <Content Include="imagens\logo_home_clinicaVolteaSorrir.png" />
+    <Content Include="imagens\logo_login_clinicaVolteaSorrir.png" />
+    <Content Include="imagens\paleta de cor.jpg" />
+    <Content Include="imagens\Sair.Image.png" />
+    <Content Include="imagens\seta.png" />
+    <Content Include="imagens\setaDir.png" />
+    <Content Include="imagens\setaDirSel.png" />
+    <Content Include="imagens\setaEsq.png" />
+    <Content Include="imagens\setaEsqSel.png" />
+    <Content Include="imagens\tela splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceFracionamentoProtheusReference\" />
+    <WCFMetadataStorage Include="Service References\ServiceSasIntegra\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\S5TBom\S5TBom.vbproj">
+      <Project>{d654a0b0-1e18-454b-8857-dd300fc0681d}</Project>
+      <Name>S5TBom</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+<Palette Name="GreenRedCustom" ScaleMode="Repeat">
+  <PaletteEntry Color="#00B300" Color2="#00B300" />
+  <PaletteEntry Color="Red" Color2="Red" />
+</Palette>

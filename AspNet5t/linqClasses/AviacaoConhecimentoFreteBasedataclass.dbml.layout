@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 33.125" name="AviacaoConhecimentoFreteBasedataclass">
+  <DataContextMoniker Name="/AviacaoConhecimentoFreteBasedataclassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="24d69e7d-5013-4ee7-b6d6-99a488adb275" absoluteBounds="3.75, 1.5, 2, 31.385317382812502">
+      <DataClassMoniker Name="/AviacaoConhecimentoFreteBasedataclassDataContext/AviacaoConhecimentoFrete" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01f2a103-d76c-485c-aade-8ae5d0a18c1e" absoluteBounds="3.7649999999999997, 1.96, 1.9700000000000002, 30.8253173828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

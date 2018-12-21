@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="pt-BR">
+  <Title Text="FATURAMENTO - LATICÍNIOS" Alignment="Left" Url="C:\Users\sandro\Downloads\logo_aviacao_grande.jpg" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="192.168.50.39_s5taviacao_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="192.168.50.39" />
+          <Parameter Name="database" Value="s5taviacao" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>select "AviacaoVendas"."pNUMERO_NF", "AviacaoVendas"."pSERIE",
+       "AviacaoVendas"."pCLIENTE", "AviacaoVendas"."pFILIAL",
+       "AviacaoVendas"."pLOJA", "AviacaoVendas"."pNOME_CLIENTE",
+       "AviacaoVendas"."pCIDADE_CLIENTE", "AviacaoVendas"."pESTADO",
+       "AviacaoVendas"."pREGIAO", "AviacaoVendas"."pPERCENT_DESCONTO",
+       "AviacaoVendas"."pPORCENT_COMISSAO",
+       "AviacaoVendas"."pCODIGO_VENDEDOR",
+       "AviacaoVendas"."pNOME_VENDEDOR",
+       "AviacaoVendas"."pCIDADE_VENDEDOR",
+       "AviacaoVendas"."pVALOR_COMISSAO",
+       "AviacaoVendas"."pDATA_EMISSAO",
+       "AviacaoVendas"."pDIA_EMISSAO", "AviacaoVendas"."pMES_EMISSAO",
+       "AviacaoVendas"."pMES_EXTENSO", "AviacaoVendas"."pANO_EMISSAO",
+       "AviacaoVendas"."pTRIMESTRE", "AviacaoVendas"."pCODIGO_TRANSP",
+       "AviacaoVendas"."pNOME_TRANSP", "AviacaoVendas"."pREDESPACHO",
+       "AviacaoVendas"."pNOME_REDESPACHO", "AviacaoVendas"."pPRODUTO",
+       "AviacaoVendas"."pGRUPO_PRODUTO",
+       "AviacaoVendas"."pPESO_PRODUTO",
+       "AviacaoVendas"."pQTD_P_CAIXA",
+       "AviacaoVendas"."pQTD_EM_CAIXA", "AviacaoVendas"."pPESO_TOTAL",
+       "AviacaoVendas"."pPESO_BRUTO", "AviacaoVendas"."pDESCRICAO",
+       "AviacaoVendas"."pQUANTIDADE", "AviacaoVendas"."pPRECO_TABELA",
+       "AviacaoVendas"."pVLR_TOTAL_PRODUTO",
+       "AviacaoVendas"."pPRECO_DE_VENDA",
+       "AviacaoVendas"."pVLR_DESCONTO",
+       "AviacaoVendas"."pVLR_BASE_ICM",
+       "AviacaoVendas"."pVLR_TOTAL_NOTA",
+       "AviacaoVendas"."pVLR_SEM_ICMSST", "AviacaoVendas"."pVLR_ICM",
+       "AviacaoVendas"."pVLR_COFINS", "AviacaoVendas"."pVLR_PIS",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO_UNIT",
+       "AviacaoVendas"."pIMPOSTO_TOTAL_NOTA",
+       "AviacaoVendas"."pB1_QE", "AviacaoVendas"."pB1_CONV",
+       "AviacaoVendas"."pPLACA", "AviacaoVendas"."pCFOP",
+       "AviacaoVendas"."pMARCA", "AviacaoVendas"."pGRUPO_CLIENTE",
+       "AviacaoVendas"."pDT_ENTRADA", "AviacaoVendas"."pDIA_ENTRADA",
+       "AviacaoVendas"."pMES_ENTRADA", "AviacaoVendas"."pANO_ENTRADA",
+       "AviacaoVendas"."pDESCON_FINAN",
+       "AviacaoVendas"."pCUSTO_PRODUTO",
+       "AviacaoVendas"."pCUSTO_PROD_QTD",
+       "AviacaoVendas"."pNRO_PEDIDO_CLIENTE",
+       "AviacaoVendas"."pPEDIDO", "AviacaoVendas"."pENDERECO_CLI",
+       "AviacaoVendas"."pBAIRRO_CLIE",
+       "AviacaoVendas"."pULTIMA_COMPRA",
+       "AviacaoVendas"."pCIDADE_CLIENTE_IBGE"
+  from "dbo"."AviacaoVendas" "AviacaoVendas"
+where
+  pDATA_EMISSAO &gt;= DATEADD(year, DATEDIFF(year, 0, GETDATE()), 0) 
+  and pfilial &lt;&gt; 04</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Query">
+            <Field Name="pNUMERO_NF" Type="String" />
+            <Field Name="pSERIE" Type="String" />
+            <Field Name="pCLIENTE" Type="String" />
+            <Field Name="pFILIAL" Type="Int32" />
+            <Field Name="pLOJA" Type="String" />
+            <Field Name="pNOME_CLIENTE" Type="String" />
+            <Field Name="pCIDADE_CLIENTE" Type="String" />
+            <Field Name="pESTADO" Type="String" />
+            <Field Name="pREGIAO" Type="String" />
+            <Field Name="pPERCENT_DESCONTO" Type="Double" />
+            <Field Name="pPORCENT_COMISSAO" Type="Double" />
+            <Field Name="pCODIGO_VENDEDOR" Type="String" />
+            <Field Name="pNOME_VENDEDOR" Type="String" />
+            <Field Name="pCIDADE_VENDEDOR" Type="String" />
+            <Field Name="pVALOR_COMISSAO" Type="Double" />
+            <Field Name="pDATA_EMISSAO" Type="DateTime" />
+            <Field Name="pDIA_EMISSAO" Type="String" />
+            <Field Name="pMES_EMISSAO" Type="String" />
+            <Field Name="pMES_EXTENSO" Type="String" />
+            <Field Name="pANO_EMISSAO" Type="String" />
+            <Field Name="pTRIMESTRE" Type="String" />
+            <Field Name="pCODIGO_TRANSP" Type="String" />
+            <Field Name="pNOME_TRANSP" Type="String" />
+            <Field Name="pREDESPACHO" Type="String" />
+            <Field Name="pNOME_REDESPACHO" Type="String" />
+            <Field Name="pPRODUTO" Type="String" />
+            <Field Name="pGRUPO_PRODUTO" Type="String" />
+            <Field Name="pPESO_PRODUTO" Type="Double" />
+            <Field Name="pQTD_P_CAIXA" Type="String" />
+            <Field Name="pQTD_EM_CAIXA" Type="Double" />
+            <Field Name="pPESO_TOTAL" Type="Double" />
+            <Field Name="pPESO_BRUTO" Type="Double" />
+            <Field Name="pDESCRICAO" Type="String" />
+            <Field Name="pQUANTIDADE" Type="Double" />
+            <Field Name="pPRECO_TABELA" Type="Double" />
+            <Field Name="pVLR_TOTAL_PRODUTO" Type="Double" />
+            <Field Name="pPRECO_DE_VENDA" Type="Double" />
+            <Field Name="pVLR_DESCONTO" Type="Double" />
+            <Field Name="pVLR_BASE_ICM" Type="Double" />
+            <Field Name="pVLR_TOTAL_NOTA" Type="Double" />
+            <Field Name="pVLR_SEM_ICMSST" Type="Double" />
+            <Field Name="pVLR_ICM" Type="Double" />
+            <Field Name="pVLR_COFINS" Type="Double" />
+            <Field Name="pVLR_PIS" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO_UNIT" Type="Double" />
+            <Field Name="pIMPOSTO_TOTAL_NOTA" Type="Double" />
+            <Field Name="pB1_QE" Type="String" />
+            <Field Name="pB1_CONV" Type="String" />
+            <Field Name="pPLACA" Type="String" />
+            <Field Name="pCFOP" Type="String" />
+            <Field Name="pMARCA" Type="String" />
+            <Field Name="pGRUPO_CLIENTE" Type="String" />
+            <Field Name="pDT_ENTRADA" Type="DateTime" />
+            <Field Name="pDIA_ENTRADA" Type="String" />
+            <Field Name="pMES_ENTRADA" Type="String" />
+            <Field Name="pANO_ENTRADA" Type="String" />
+            <Field Name="pDESCON_FINAN" Type="Double" />
+            <Field Name="pCUSTO_PRODUTO" Type="Double" />
+            <Field Name="pCUSTO_PROD_QTD" Type="Double" />
+            <Field Name="pNRO_PEDIDO_CLIENTE" Type="String" />
+            <Field Name="pPEDIDO" Type="String" />
+            <Field Name="pENDERECO_CLI" Type="String" />
+            <Field Name="pBAIRRO_CLIE" Type="String" />
+            <Field Name="pULTIMA_COMPRA" Type="DateTime" />
+            <Field Name="pCIDADE_CLIENTE_IBGE" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+      <CalculatedFields>
+        <CalculatedField Name="cfGrupoProduto" Expression="Trim([pGRUPO_PRODUTO])" DataType="Auto" DataMember="Query" />
+      </CalculatedFields>
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>SQL Data Source 2</Name>
+      <Connection Name="192.168.50.39_s5taviacao_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="192.168.50.39" />
+          <Parameter Name="database" Value="s5taviacao" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>select "AviacaoVendas"."pNUMERO_NF", "AviacaoVendas"."pSERIE",
+       "AviacaoVendas"."pCLIENTE", "AviacaoVendas"."pFILIAL",
+       "AviacaoVendas"."pLOJA", "AviacaoVendas"."pNOME_CLIENTE",
+       "AviacaoVendas"."pCIDADE_CLIENTE", "AviacaoVendas"."pESTADO",
+       "AviacaoVendas"."pREGIAO", "AviacaoVendas"."pPERCENT_DESCONTO",
+       "AviacaoVendas"."pPORCENT_COMISSAO",
+       "AviacaoVendas"."pCODIGO_VENDEDOR",
+       "AviacaoVendas"."pNOME_VENDEDOR",
+       "AviacaoVendas"."pCIDADE_VENDEDOR",
+       "AviacaoVendas"."pVALOR_COMISSAO",
+       "AviacaoVendas"."pDATA_EMISSAO",
+       "AviacaoVendas"."pDIA_EMISSAO", "AviacaoVendas"."pMES_EMISSAO",
+       "AviacaoVendas"."pMES_EXTENSO", "AviacaoVendas"."pANO_EMISSAO",
+       "AviacaoVendas"."pTRIMESTRE", "AviacaoVendas"."pCODIGO_TRANSP",
+       "AviacaoVendas"."pNOME_TRANSP", "AviacaoVendas"."pREDESPACHO",
+       "AviacaoVendas"."pNOME_REDESPACHO", "AviacaoVendas"."pPRODUTO",
+       "AviacaoVendas"."pGRUPO_PRODUTO",
+       "AviacaoVendas"."pPESO_PRODUTO",
+       "AviacaoVendas"."pQTD_P_CAIXA",
+       "AviacaoVendas"."pQTD_EM_CAIXA", "AviacaoVendas"."pPESO_TOTAL",
+       "AviacaoVendas"."pPESO_BRUTO", "AviacaoVendas"."pDESCRICAO",
+       "AviacaoVendas"."pQUANTIDADE", "AviacaoVendas"."pPRECO_TABELA",
+       "AviacaoVendas"."pVLR_TOTAL_PRODUTO",
+       "AviacaoVendas"."pPRECO_DE_VENDA",
+       "AviacaoVendas"."pVLR_DESCONTO",
+       "AviacaoVendas"."pVLR_BASE_ICM",
+       "AviacaoVendas"."pVLR_TOTAL_NOTA",
+       "AviacaoVendas"."pVLR_SEM_ICMSST", "AviacaoVendas"."pVLR_ICM",
+       "AviacaoVendas"."pVLR_COFINS", "AviacaoVendas"."pVLR_PIS",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO",
+       "AviacaoVendas"."pPRECO_FORA_IMPOSTO_UNIT",
+       "AviacaoVendas"."pIMPOSTO_TOTAL_NOTA",
+       "AviacaoVendas"."pB1_QE", "AviacaoVendas"."pB1_CONV",
+       "AviacaoVendas"."pPLACA", "AviacaoVendas"."pCFOP",
+       "AviacaoVendas"."pMARCA", "AviacaoVendas"."pGRUPO_CLIENTE",
+       "AviacaoVendas"."pDT_ENTRADA", "AviacaoVendas"."pDIA_ENTRADA",
+       "AviacaoVendas"."pMES_ENTRADA", "AviacaoVendas"."pANO_ENTRADA",
+       "AviacaoVendas"."pDESCON_FINAN",
+       "AviacaoVendas"."pCUSTO_PRODUTO",
+       "AviacaoVendas"."pCUSTO_PROD_QTD",
+       "AviacaoVendas"."pNRO_PEDIDO_CLIENTE",
+       "AviacaoVendas"."pPEDIDO", "AviacaoVendas"."pENDERECO_CLI",
+       "AviacaoVendas"."pBAIRRO_CLIE",
+       "AviacaoVendas"."pULTIMA_COMPRA",
+       "AviacaoVendas"."pCIDADE_CLIENTE_IBGE"
+  from "dbo"."AviacaoVendas" "AviacaoVendas"
+  where
+  pDATA_EMISSAO &gt;= DATEADD(yy, DATEDIFF(yy,0,getdate()), 0)
+  and pfilial &lt;&gt; 04
+</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 2">
+          <View Name="Query">
+            <Field Name="pNUMERO_NF" Type="String" />
+            <Field Name="pSERIE" Type="String" />
+            <Field Name="pCLIENTE" Type="String" />
+            <Field Name="pFILIAL" Type="Int32" />
+            <Field Name="pLOJA" Type="String" />
+            <Field Name="pNOME_CLIENTE" Type="String" />
+            <Field Name="pCIDADE_CLIENTE" Type="String" />
+            <Field Name="pESTADO" Type="String" />
+            <Field Name="pREGIAO" Type="String" />
+            <Field Name="pPERCENT_DESCONTO" Type="Double" />
+            <Field Name="pPORCENT_COMISSAO" Type="Double" />
+            <Field Name="pCODIGO_VENDEDOR" Type="String" />
+            <Field Name="pNOME_VENDEDOR" Type="String" />
+            <Field Name="pCIDADE_VENDEDOR" Type="String" />
+            <Field Name="pVALOR_COMISSAO" Type="Double" />
+            <Field Name="pDATA_EMISSAO" Type="DateTime" />
+            <Field Name="pDIA_EMISSAO" Type="String" />
+            <Field Name="pMES_EMISSAO" Type="String" />
+            <Field Name="pMES_EXTENSO" Type="String" />
+            <Field Name="pANO_EMISSAO" Type="String" />
+            <Field Name="pTRIMESTRE" Type="String" />
+            <Field Name="pCODIGO_TRANSP" Type="String" />
+            <Field Name="pNOME_TRANSP" Type="String" />
+            <Field Name="pREDESPACHO" Type="String" />
+            <Field Name="pNOME_REDESPACHO" Type="String" />
+            <Field Name="pPRODUTO" Type="String" />
+            <Field Name="pGRUPO_PRODUTO" Type="String" />
+            <Field Name="pPESO_PRODUTO" Type="Double" />
+            <Field Name="pQTD_P_CAIXA" Type="String" />
+            <Field Name="pQTD_EM_CAIXA" Type="Double" />
+            <Field Name="pPESO_TOTAL" Type="Double" />
+            <Field Name="pPESO_BRUTO" Type="Double" />
+            <Field Name="pDESCRICAO" Type="String" />
+            <Field Name="pQUANTIDADE" Type="Double" />
+            <Field Name="pPRECO_TABELA" Type="Double" />
+            <Field Name="pVLR_TOTAL_PRODUTO" Type="Double" />
+            <Field Name="pPRECO_DE_VENDA" Type="Double" />
+            <Field Name="pVLR_DESCONTO" Type="Double" />
+            <Field Name="pVLR_BASE_ICM" Type="Double" />
+            <Field Name="pVLR_TOTAL_NOTA" Type="Double" />
+            <Field Name="pVLR_SEM_ICMSST" Type="Double" />
+            <Field Name="pVLR_ICM" Type="Double" />
+            <Field Name="pVLR_COFINS" Type="Double" />
+            <Field Name="pVLR_PIS" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO" Type="Double" />
+            <Field Name="pPRECO_FORA_IMPOSTO_UNIT" Type="Double" />
+            <Field Name="pIMPOSTO_TOTAL_NOTA" Type="Double" />
+            <Field Name="pB1_QE" Type="String" />
+            <Field Name="pB1_CONV" Type="String" />
+            <Field Name="pPLACA" Type="String" />
+            <Field Name="pCFOP" Type="String" />
+            <Field Name="pMARCA" Type="String" />
+            <Field Name="pGRUPO_CLIENTE" Type="String" />
+            <Field Name="pDT_ENTRADA" Type="DateTime" />
+            <Field Name="pDIA_ENTRADA" Type="String" />
+            <Field Name="pMES_ENTRADA" Type="String" />
+            <Field Name="pANO_ENTRADA" Type="String" />
+            <Field Name="pDESCON_FINAN" Type="Double" />
+            <Field Name="pCUSTO_PRODUTO" Type="Double" />
+            <Field Name="pCUSTO_PROD_QTD" Type="Double" />
+            <Field Name="pNRO_PEDIDO_CLIENTE" Type="String" />
+            <Field Name="pPEDIDO" Type="String" />
+            <Field Name="pENDERECO_CLI" Type="String" />
+            <Field Name="pBAIRRO_CLIE" Type="String" />
+            <Field Name="pULTIMA_COMPRA" Type="DateTime" />
+            <Field Name="pCIDADE_CLIENTE_IBGE" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem2" Name="TOP 10 PRODUTOS (ANO ATUAL) - R$" DataSource="dashboardSqlDataSource1" DataMember="Query" Rotated="true">
+      <DataItems>
+        <Dimension DataMember="pDESCRICAO" SortByMeasure="DataItem1" TopNCount="3" TopNMeasure="DataItem1" UniqueName="DataItem0" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" UniqueName="DataItem1">
+          <NumericFormat FormatType="Currency" Unit="Millions" IncludeGroupSeparator="true" />
+        </Measure>
+        <Dimension DataMember="pDESCRICAO" ColoringMode="None" SortByMeasure="DataItem1" TopNEnabled="true" TopNCount="10" TopNMeasure="DataItem1" UniqueName="DataItem3" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" UniqueName="DataItem2" />
+      </DataItems>
+      <HiddenMeasures>
+        <Measure UniqueName="DataItem2" />
+      </HiddenMeasures>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple SeriesType="StackedBar">
+              <Value UniqueName="DataItem1" />
+              <PointLabelOptions Visible="true" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="FATURAMENTO POR ESTADO (ANO ATUAL) - R$" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="pESTADO" SortOrder="Descending" SortByMeasure="DataItem0" UniqueName="DataItem1" />
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" Name="Faturamento" UniqueName="DataItem0">
+          <NumericFormat FormatType="Currency" Unit="Millions" IncludeGroupSeparator="true" />
+        </Measure>
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem0" />
+              <PointLabelOptions Visible="true" Orientation="RotateLeft" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+    <Pie ComponentName="pieDashboardItem1" Name="FATURAMENTO POR GRUPO DE PRODUTOS (ANO ATUAL) - R$" DataSource="dashboardSqlDataSource1" DataMember="Query" LabelContentType="ArgumentValueAndPercent">
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <DataItems>
+        <Measure DataMember="pVLR_TOTAL_PRODUTO" Name="Faturamento" UniqueName="DataItem0">
+          <NumericFormat FormatType="Currency" Unit="Millions" IncludeGroupSeparator="true" />
+        </Measure>
+        <Dimension DataMember="cfGrupoProduto" UniqueName="DataItem2" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem2" />
+      </Arguments>
+      <Values>
+        <Value UniqueName="DataItem0" />
+      </Values>
+    </Pie>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="62.5">
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="50" />
+        <LayoutItem DashboardItem="chartDashboardItem2" Weight="50" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="chartDashboardItem3" Weight="37.5" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

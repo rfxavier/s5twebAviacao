@@ -1,0 +1,2145 @@
+<build startDate="2018-07-26T11:29:11.7793-03:00" commandLine="&quot;C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe&quot; &quot;C:\sistemas\s5twebAviacao\S5T.model\S5T.cfp&quot; /Log:&quot;C:\sistemas\s5twebAviacao\S5T.model\S5T.build.xml&quot; /hostpid:20792 /Results:&quot;C:\Users\Renato\AppData\Local\Temp\S5T.cfp.oop&quot; /DoNotCreateReportsOnException /DoNotShowReportsOnException /NoFlashOnError " machineName="RENATO-LAPTOP" osVersion="Microsoft Windows NT 6.2.9200.0" currentDirectory="C:\sistemas\s5twebAviacao\S5T.model" user="RENATO-LAPTOP\Renato" clrVersion="4.0.30319.42000" licenseUsage="Build Expirable [Date:30/12/2099 00:00:00][Licensee:Silva Anderson][Maximum Entities:999999]" processorCount="4" workingSet="24571904 bytes" bitness="32bits" wow64="True" optionsFlags="None" parentProcess="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe" endDate="2018-07-26T11:30:45.1228-03:00" totalElapsedTime="00:01:33.3431338" numberOfEntities="124" numberOfEnumerations="10" numberOfRelations="92">
+  <assemblies>
+    <assembly fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/mscorlib.dll" location="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" buildVersion="4.7.3131.0" fileVersion="4.7.3131.0 built by: NET472REL1LAST" productVersion="4.7.3131.0" />
+    <assembly fullName="CodeFluent.Build4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Build4.exe" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="CodeFluent.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Model.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Model.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="CodeFluent.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="CodeFluent.Model.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Model.Common.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Model.Common.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" buildVersion="4.7.3120.0" fileVersion="4.7.3120.0 built by: NET472REL1LAST" productVersion="4.7.3120.0" />
+    <assembly fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll" buildVersion="4.7.3110.0" fileVersion="4.7.3110.0 built by: NET472REL1LAST_C" productVersion="4.7.3110.0" />
+    <assembly fullName="CodeFluent.Producers.CodeDom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.CodeDom.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.CodeDom.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="SoftFluent.License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=330d9b6ea5e30055" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/SoftFluent.License.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\SoftFluent.License.dll" buildVersion="1.0.0.0" fileVersion="3.0.0.0" productVersion="1.0.0.0" />
+    <assembly fullName="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="CodeFluent.Producers.SqlServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.SqlServer.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.SqlServer.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="CodeFluent.Runtime.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Database.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Database.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="SoftFluent.AspNetIdentity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/SoftFluent.AspNetIdentity.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\SoftFluent.AspNetIdentity.dll" fileVersion="1.0.0.0" productVersion="1.0.0.0" />
+    <assembly fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="mscorlib.resources, Version=4.0.0.0, Culture=pt-BR, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/mscorlib.resources/v4.0_4.0.0.0_pt-BR_b77a5c561934e089/mscorlib.resources.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_pt-BR_b77a5c561934e089\mscorlib.resources.dll" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.resources, Version=4.0.0.0, Culture=pt-BR, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.resources/v4.0_4.0.0.0_pt-BR_b77a5c561934e089/System.resources.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_pt-BR_b77a5c561934e089\System.resources.dll" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="CodeFluent.Runtime.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Web.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Web.dll" buildVersion="1.0.61214.0931" fileVersion="1.0.61214.0931" productVersion="1.0.61214.0931" />
+    <assembly fullName="CF_38672002283292361911.tplvb, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" codeBase="file:///C:/Users/Renato/AppData/Local/Temp/CFTemplating.Temp4.0.30319.42000/70931/CF_38672002283292361911.tplvb.dll" location="C:\Users\Renato\AppData\Local\Temp\CFTemplating.Temp4.0.30319.42000\70931\CF_38672002283292361911.tplvb.dll" fileVersion="0.0.0.0" productVersion="0.0.0.0" />
+    <assembly fullName="System.Data.resources, Version=4.0.0.0, Culture=pt-BR, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Data.resources/v4.0_4.0.0.0_pt-BR_b77a5c561934e089/System.Data.resources.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_pt-BR_b77a5c561934e089\System.Data.resources.dll" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+    <assembly fullName="System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Caching/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Caching.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0" productVersion="4.7.3056.0" />
+    <assembly fullName="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Numerics/v4.0_4.0.0.0__b77a5c561934e089/System.Numerics.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll" buildVersion="4.7.3056.0" fileVersion="4.7.3056.0 built by: NET472REL1" productVersion="4.7.3056.0" />
+  </assemblies>
+  <variables>
+    <variable name="CF_BUILD_NUMBER" value="70931" />
+    <variable name="CF_PATTERNS_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\Patterns" />
+    <variable name="CF_TEMPLATES_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\Templates" />
+    <variable name="CF_CURRENT_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler" />
+    <variable name="CF_BUILD_CONFIGURATION" value="RELEASE" />
+  </variables>
+  <generatedFiles>
+    <producer name="Business Object Model (BOM)" generatedFilesCount="228" />
+    <producer name="SQL Server" generatedFilesCount="8" />
+    <producer name="Asp.Net Identity" generatedFilesCount="0" />
+  </generatedFiles>
+  <project>
+    <imports>
+      <cf:import path="Default.Surface.cfp" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" />
+      <cf:import path="Instances.cfp" overwrite="false" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" />
+    </imports>
+    <parts>
+      <part filePath="C:\sistemas\s5twebAviacao\S5T.model\S5T.cfp" isRootModel="true" relativePath="S5T.cfp" />
+      <part filePath="C:\sistemas\s5twebAviacao\S5T.model\Default.Surface.cfp" relativePath="Default.Surface.cfp" />
+      <part filePath="C:\sistemas\s5twebAviacao\S5T.model\Instances.cfp" relativePath="Instances.cfp" />
+    </parts>
+  </project>
+  <producer name="Business Object Model (BOM)">
+    <event type="ProducerStart" elapsedTime="00:00:00.0004369">
+      <name>Business Object Model (BOM)</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ParameterValue" name="AllowExternalCode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AllowSnippets" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ApplicationName" value="default" />
+    <event type="ParameterValue" name="DumpPath" />
+    <event type="ParameterValue" name="FileCopyFilter" value="*.scc, _cf_md.config" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\sistemas\s5twebAviacao\S5TBom\Classes" />
+    <event type="ParameterValue" name="IsTargetRelativeToModelDirectory" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ModelProducerName" />
+    <event type="ParameterValue" name="MustCopyModelFiles" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSkipFileCopyOnError" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="OutputEncoding" value="utf-8" />
+    <event type="ParameterValue" name="OutputEncodingEmitIdentifier" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ProductionFlags" value="Default, Overwrite, RemoveDates" valueType="CodeFluent.Model.ProductionFlags" />
+    <event type="ParameterValue" name="ProductionVerbosity" value="0" valueType="System.Int32" />
+    <event type="ParameterValue" name="SkipExtensions" value="[^\.]*.scc,_cf_md.config" valueType="System.Collections.ArrayList" />
+    <event type="ParameterValue" name="SkipDirectoryExtensions" valueType="System.Collections.ArrayList" />
+    <event type="ParameterValue" name="TargetFramework" value="4.7" />
+    <event type="ParameterValue" name="TargetBaseNamespace" value="S5T" />
+    <event type="ParameterValue" name="TemplateOptions" value="Default" valueType="CodeFluent.Model.Common.Templating.TemplateOptions" />
+    <event type="ParameterValue" name="UseEmptyApplication" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AssemblyCompileDefaultFileExcludeFilter" value="AssemblyInfo.cs, assemblyversion.cs" />
+    <event type="ParameterValue" name="CodeDomProviderOptions" />
+    <event type="ParameterValue" name="FileExtension" value=".vb" />
+    <event type="ParameterValue" name="LanguageCode" value="VisualBasic" valueType="CodeFluent.Model.Code.LanguageCode" />
+    <event type="ParameterValue" name="MustAddDebugInfo" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCompile" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustDelaySign" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustIncludeDebugInformation" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustTreatWarningAsErrors" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="WarningLevel" value="-1" valueType="System.Int32" />
+    <event type="ParameterValue" name="TargetProductionOptions" value="Default" valueType="CodeFluent.Producers.CodeDom.TargetProductionOptions" />
+    <event type="ParameterValue" name="VisualStudioProjectPath" />
+    <event type="ParameterValue" name="IsAssemblyClsCompliant" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddDebuggerDisplayAttribute" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddDictionaryMethods" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddRuntimeDesignAttributes" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddRuntimeResourceCheck" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAppendSchema" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustEmbedModelInRuntimeResource" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceResourcesFiles" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebBasicAuthenticationModule" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebHandler" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebMembershipProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebMembershipUser" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebProfileProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebRoleProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceBitsServer" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebTypes" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyStringArrayMode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ResourceFileFormat" value="ResX" valueType="CodeFluent.Producers.CodeDom.ResourceFileFormat" />
+    <event type="ParameterValue" name="RuntimePrefix" value="_cf_rt" />
+    <event type="ParameterValue" name="RuntimeResourceBaseName" value="S5T" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\sistemas\s5twebAviacao\S5TBom\Classes" />
+    <event type="FileWrite" elapsedTime="00:00:13.3532667">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\_cf_rt.vb</path>
+      <fileType>RuntimeCode</fileType>
+      <size>10235</size>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0249405">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\_cf_rt.vb</path>
+      <size>10235</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0258247">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\_cf_rt.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0086383">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\S5T.pt-BR.ResX</path>
+      <fileType>Resource for Português (Brasil) culture</fileType>
+      <size>6489</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0183410">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\S5T.pt-BR.ResX</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0146310">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\S5T.ResX</path>
+      <fileType>Embedded resource for Idioma Invariável (País Invariável) culture</fileType>
+      <size>5891</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0009876">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\S5T.ResX</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0311596">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppConfig.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppConfig'</fileType>
+      <size>29848</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0027934">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppConfig.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0225433">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppConfigCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppConfigCollection'</fileType>
+      <size>45789</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023391">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppConfigCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0357703">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidos.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidos'</fileType>
+      <size>63681</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0057102">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidos.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0249832">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosCollection'</fileType>
+      <size>68378</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018520">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0192050">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompra.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosCompra'</fileType>
+      <size>40978</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0048600">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompra.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0233753">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompraCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosCompraCollection'</fileType>
+      <size>48701</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022605">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompraCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0223726">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompraMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosCompraMov'</fileType>
+      <size>45324</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022482">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompraMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0219357">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompraMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosCompraMovCollection'</fileType>
+      <size>49310</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025050">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosCompraMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0255940">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosMov'</fileType>
+      <size>75027</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040533">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0237862">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppFvendasPedidosMovCollection'</fileType>
+      <size>54433</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0037712">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppFvendasPedidosMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0185978">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorio.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorio'</fileType>
+      <size>46680</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019895">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorio.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0030388">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioCategoria.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioCategoria'</fileType>
+      <size>1073</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015095">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioCategoria.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0376875">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioCollection'</fileType>
+      <size>81202</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040849">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0207248">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoCaminhao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoCaminhao'</fileType>
+      <size>41234</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018192">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoCaminhao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0231102">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoCaminhaoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoCaminhaoCollection'</fileType>
+      <size>61935</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0030008">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoCaminhaoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0195890">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClienteGrupos.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoClienteGrupos'</fileType>
+      <size>29206</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025102">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClienteGrupos.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0247047">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClienteGruposCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoClienteGruposCollection'</fileType>
+      <size>48077</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0033086">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClienteGruposCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0203365">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClientes.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoClientes'</fileType>
+      <size>38302</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0027306">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClientes.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0288694">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClientesCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoClientesCollection'</fileType>
+      <size>47037</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028191">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoClientesCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0531423">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFrete.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoConhecimentoFrete'</fileType>
+      <size>246909</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021566">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFrete.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0240900">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFreteAgrup.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoConhecimentoFreteAgrup'</fileType>
+      <size>82452</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020981">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFreteAgrup.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0232149">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFreteAgrupCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoConhecimentoFreteAgrupCollection'</fileType>
+      <size>49949</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031051">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFreteAgrupCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0244771">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFreteCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoConhecimentoFreteCollection'</fileType>
+      <size>48909</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022328">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoConhecimentoFreteCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0231473">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoFinanceiro.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoFinanceiro'</fileType>
+      <size>68228</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020120">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoFinanceiro.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0409697">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoFinanceiroCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoFinanceiroCollection'</fileType>
+      <size>47438</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016189">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoFinanceiroCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0206079">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoLocalLinha.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoLocalLinha'</fileType>
+      <size>48602</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0037293">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoLocalLinha.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0243385">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoLocalLinhaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoLocalLinhaCollection'</fileType>
+      <size>73698</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021044">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoLocalLinhaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0208196">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoMotorista.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoMotorista'</fileType>
+      <size>35315</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016130">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoMotorista.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0187950">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoMotoristaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoMotoristaCollection'</fileType>
+      <size>53053</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019899">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoMotoristaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0611696">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPedidosFaturamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoPedidosFaturamento'</fileType>
+      <size>82877</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020578">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPedidosFaturamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0356309">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPedidosFaturamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoPedidosFaturamentoCollection'</fileType>
+      <size>49117</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0084768">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPedidosFaturamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0203377">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPivotAnalise.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoPivotAnalise'</fileType>
+      <size>41591</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0382272">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPivotAnalise.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0398074">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPivotAnaliseCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoPivotAnaliseCollection'</fileType>
+      <size>75377</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0132993">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPivotAnaliseCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0083918">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutoGrupos.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoProdutoGrupos'</fileType>
+      <size>29206</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0514692">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutoGrupos.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0656096">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutoGruposCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoProdutoGruposCollection'</fileType>
+      <size>48077</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0097366">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutoGruposCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0353184">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutos.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoProdutos'</fileType>
+      <size>29998</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022222">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutos.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0239090">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutosCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoProdutosCollection'</fileType>
+      <size>47022</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021163">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoProdutosCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0212582">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoRedespachos.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoRedespachos'</fileType>
+      <size>30421</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0029874">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoRedespachos.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0242677">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoRedespachosCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoRedespachosCollection'</fileType>
+      <size>47646</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025655">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoRedespachosCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0217397">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTitulosClientes.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoTitulosClientes'</fileType>
+      <size>30475</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020562">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTitulosClientes.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0250792">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTitulosClientesCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoTitulosClientesCollection'</fileType>
+      <size>48493</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023209">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTitulosClientesCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0202180">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTransportadores.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoTransportadores'</fileType>
+      <size>30748</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021293">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTransportadores.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0197170">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTransportadoresCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoTransportadoresCollection'</fileType>
+      <size>48493</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0043654">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoTransportadoresCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0338096">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas'</fileType>
+      <size>123449</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015107">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0361448">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3Meses.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas3Meses'</fileType>
+      <size>120881</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018785">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3Meses.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0318849">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos1.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas3MesesAnoMenos1'</fileType>
+      <size>122213</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0037072">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos1.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0257690">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos1Collection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas3MesesAnoMenos1Collection'</fileType>
+      <size>49741</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021704">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos1Collection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0579676">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos2.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas3MesesAnoMenos2'</fileType>
+      <size>122213</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0050374">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos2.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0055415">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos2Collection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas3MesesAnoMenos2Collection'</fileType>
+      <size>49741</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0220147">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesAnoMenos2Collection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0236427">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendas3MesesCollection'</fileType>
+      <size>47869</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021428">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendas3MesesCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0295639">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrup.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAgrup'</fileType>
+      <size>87914</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022289">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrup.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0297543">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos1.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAgrupAnoMenos1'</fileType>
+      <size>87468</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022079">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos1.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0439963">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos1Collection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAgrupAnoMenos1Collection'</fileType>
+      <size>49533</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0063683">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos1Collection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0375358">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos2.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAgrupAnoMenos2'</fileType>
+      <size>87468</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021226">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos2.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0251570">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos2Collection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAgrupAnoMenos2Collection'</fileType>
+      <size>49533</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025592">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupAnoMenos2Collection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0252423">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAgrupCollection'</fileType>
+      <size>47661</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021842">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAgrupCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0521693">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos1.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAnoMenos1'</fileType>
+      <size>121325</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0026208">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos1.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0296899">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos1Collection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAnoMenos1Collection'</fileType>
+      <size>54433</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0027737">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos1Collection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0353294">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos2.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAnoMenos2'</fileType>
+      <size>121325</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021558">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos2.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0250756">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos2Collection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAnoMenos2Collection'</fileType>
+      <size>48493</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0042239">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos2Collection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0054202">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasCollection'</fileType>
+      <size>59932</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0240232">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0400504">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasComDevolucao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasComDevolucao'</fileType>
+      <size>147789</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019812">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasComDevolucao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0041872">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasComDevolucaoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasComDevolucaoCollection'</fileType>
+      <size>49117</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0260040">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasComDevolucaoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0230150">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedores.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendedores'</fileType>
+      <size>31849</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015581">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedores.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0275084">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendedoresCollection'</fileType>
+      <size>47453</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021819">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0136572">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresEmail.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendedoresEmail'</fileType>
+      <size>30844</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0312595">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresEmail.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0284360">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresEmailCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendedoresEmailCollection'</fileType>
+      <size>54376</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0046668">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresEmailCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0261656">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoViagemMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoViagemMov'</fileType>
+      <size>61979</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040730">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoViagemMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0678267">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoViagemMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoViagemMovCollection'</fileType>
+      <size>112248</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019567">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoViagemMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0235037">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BalancaFracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.BalancaFracionamento'</fileType>
+      <size>41646</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019535">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BalancaFracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0248358">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BalancaFracionamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.BalancaFracionamentoCollection'</fileType>
+      <size>48077</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021657">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BalancaFracionamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0024019">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BalancaStatus.vb</path>
+      <fileType>BaseTypeFile for 'S5T.BalancaStatus'</fileType>
+      <size>888</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019346">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BalancaStatus.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0202144">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BevBoleAgri.vb</path>
+      <fileType>BaseTypeFile for 'S5T.BevBoleAgri'</fileType>
+      <size>54691</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0051859">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BevBoleAgri.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0244439">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BevBoleAgriCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.BevBoleAgriCollection'</fileType>
+      <size>46190</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025066">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\BevBoleAgriCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0310889">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Cadastro.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Cadastro'</fileType>
+      <size>100544</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019689">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Cadastro.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0368121">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroCollection'</fileType>
+      <size>112195</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022036">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0304014">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroTipo'</fileType>
+      <size>39325</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023675">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0258823">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroTipoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroTipoCollection'</fileType>
+      <size>61306</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021594">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroTipoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0242974">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Cidade.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Cidade'</fileType>
+      <size>43020</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031316">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Cidade.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0284870">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CidadeCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CidadeCollection'</fileType>
+      <size>64459</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0026796">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CidadeCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0221806">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ControleViagemAg.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ControleViagemAg'</fileType>
+      <size>56440</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020005">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ControleViagemAg.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0326995">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ControleViagemAgCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ControleViagemAgCollection'</fileType>
+      <size>84405</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034516">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ControleViagemAgCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0250946">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CTeControleViagemAg.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CTeControleViagemAg'</fileType>
+      <size>34927</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015071">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CTeControleViagemAg.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0532988">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CTeControleViagemAgCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CTeControleViagemAgCollection'</fileType>
+      <size>57114</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016233">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CTeControleViagemAgCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0206928">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmbalagemFracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmbalagemFracionamento'</fileType>
+      <size>31879</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019436">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmbalagemFracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0255062">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmbalagemFracionamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmbalagemFracionamentoCollection'</fileType>
+      <size>54328</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0037234">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmbalagemFracionamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0312204">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Empresa.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Empresa'</fileType>
+      <size>51810</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0074081">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Empresa.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0060242">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaCodigoRegimeTributario.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaCodigoRegimeTributario'</fileType>
+      <size>972</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020096">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaCodigoRegimeTributario.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0027887">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaCodigoRegimeTributarioNormal.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaCodigoRegimeTributarioNormal'</fileType>
+      <size>1022</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022344">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaCodigoRegimeTributarioNormal.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0352737">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaCollection'</fileType>
+      <size>68626</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020562">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0032967">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaSimplesNacionalCategoria.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaSimplesNacionalCategoria'</fileType>
+      <size>959</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019926">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaSimplesNacionalCategoria.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0203716">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaVisita.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaVisita'</fileType>
+      <size>29599</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0077755">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaVisita.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0240323">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaVisitaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaVisitaCollection'</fileType>
+      <size>46591</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040651">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmpresaVisitaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0270964">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Filial.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Filial'</fileType>
+      <size>51531</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025437">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Filial.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0389411">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialCollection'</fileType>
+      <size>75402</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020697">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0209153">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialConfig.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialConfig'</fileType>
+      <size>36866</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022214">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialConfig.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0279382">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialConfigCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialConfigCollection'</fileType>
+      <size>67560</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016331">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialConfigCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0030313">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialConfigTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialConfigTipo'</fileType>
+      <size>871</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020203">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialConfigTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0027109">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialTipo'</fileType>
+      <size>885</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020539">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0231600">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Fracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Fracionamento'</fileType>
+      <size>43234</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0042492">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Fracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0292795">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FracionamentoCollection'</fileType>
+      <size>46621</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023296">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0234875">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FracionamentoMov'</fileType>
+      <size>48757</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0039103">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0282571">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FracionamentoMovCollection'</fileType>
+      <size>82267</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0052306">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0449658">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoMovViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FracionamentoMovViewGrid'</fileType>
+      <size>16933</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0030162">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoMovViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0033323">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoStatus.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FracionamentoStatus'</fileType>
+      <size>936</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022767">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FracionamentoStatus.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0170227">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FuncionarioVisita.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FuncionarioVisita'</fileType>
+      <size>29935</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0072327">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FuncionarioVisita.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0215398">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FuncionarioVisitaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FuncionarioVisitaCollection'</fileType>
+      <size>47453</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0030052">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FuncionarioVisitaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0200370">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRole.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRole'</fileType>
+      <size>35651</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016703">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRole.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0262213">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRoleClaim.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRoleClaim'</fileType>
+      <size>34220</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016900">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRoleClaim.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0237846">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRoleClaimCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRoleClaimCollection'</fileType>
+      <size>54035</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022573">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRoleClaimCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0259744">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRoleCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRoleCollection'</fileType>
+      <size>53845</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016039">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdRoleCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0392050">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUser.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUser'</fileType>
+      <size>64649</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0070064">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUser.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0194334">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserClaim.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserClaim'</fileType>
+      <size>36878</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017844">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserClaim.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0236530">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserClaimCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserClaimCollection'</fileType>
+      <size>61363</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0030715">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserClaimCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0246667">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserCollection'</fileType>
+      <size>53909</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021582">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0200110">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserLogin.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserLogin'</fileType>
+      <size>35512</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0029941">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserLogin.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0079553">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserLoginCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserLoginCollection'</fileType>
+      <size>55444</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0389035">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IdUserLoginCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0256319">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCamarasFriasEvento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaCamarasFriasEvento'</fileType>
+      <size>52133</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021586">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCamarasFriasEvento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0357557">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCamarasFriasEventoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaCamarasFriasEventoCollection'</fileType>
+      <size>55822</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0067286">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCamarasFriasEventoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0267416">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCremeTempoLimpezaAutomatico.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaCremeTempoLimpezaAutomatico'</fileType>
+      <size>80846</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0044756">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCremeTempoLimpezaAutomatico.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0742133">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCremeTempoLimpezaAutomaticoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaCremeTempoLimpezaAutomaticoCollection'</fileType>
+      <size>57856</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023395">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaCremeTempoLimpezaAutomaticoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0169243">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseContadorProducao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseContadorProducao'</fileType>
+      <size>48450</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021669">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseContadorProducao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0271114">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseContadorProducaoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseContadorProducaoCollection'</fileType>
+      <size>56711</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021349">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseContadorProducaoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0100776">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseEvento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseEvento'</fileType>
+      <size>51539</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0244534">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseEvento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0253308">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseEventoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseEventoCollection'</fileType>
+      <size>54466</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034623">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseEventoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0054534">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseMov'</fileType>
+      <size>52053</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0252344">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0229526">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseMovCollection'</fileType>
+      <size>53773</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023225">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0266551">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvasePesoMedio.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvasePesoMedio'</fileType>
+      <size>120822</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0013720">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvasePesoMedio.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0221372">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvasePesoMedioCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvasePesoMedioCollection'</fileType>
+      <size>55129</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017761">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvasePesoMedioCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0188127">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseSipMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseSipMov'</fileType>
+      <size>40621</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0033821">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseSipMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0097141">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseSipMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseSipMovCollection'</fileType>
+      <size>54466</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0215414">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseSipMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0235851">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseTempoSip.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseTempoSip'</fileType>
+      <size>65110</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022328">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseTempoSip.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0253194">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseTempoSipCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaEnvaseTempoSipCollection'</fileType>
+      <size>54918</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0013218">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaEnvaseTempoSipCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0056181">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteEvento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaLeiteEvento'</fileType>
+      <size>51440</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0170978">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteEvento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0281642">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteEventoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaLeiteEventoCollection'</fileType>
+      <size>54240</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022735">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteEventoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0515249">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeitelhoTempoLimpezaAutomatico.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaLeitelhoTempoLimpezaAutomatico'</fileType>
+      <size>81191</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0013712">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeitelhoTempoLimpezaAutomatico.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0263706">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeitelhoTempoLimpezaAutomaticoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaLeitelhoTempoLimpezaAutomaticoCollection'</fileType>
+      <size>58534</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028819">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeitelhoTempoLimpezaAutomaticoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0056070">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteTempoLimpezaAutomatico.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaLeiteTempoLimpezaAutomatico'</fileType>
+      <size>80846</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0195855">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteTempoLimpezaAutomatico.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0260258">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteTempoLimpezaAutomaticoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaLeiteTempoLimpezaAutomaticoCollection'</fileType>
+      <size>57856</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0026575">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaLeiteTempoLimpezaAutomaticoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0584322">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaSoroDeQueijoTempoLimpezaAutomatico.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaSoroDeQueijoTempoLimpezaAutomatico'</fileType>
+      <size>81651</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0032007">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaSoroDeQueijoTempoLimpezaAutomatico.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0251720">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaSoroDeQueijoTempoLimpezaAutomaticoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IndustriaSoroDeQueijoTempoLimpezaAutomaticoCollection'</fileType>
+      <size>59438</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019373">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\IndustriaSoroDeQueijoTempoLimpezaAutomaticoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0176098">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogFracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LogFracionamento'</fileType>
+      <size>39653</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034109">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogFracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0281504">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogFracionamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LogFracionamentoCollection'</fileType>
+      <size>53958</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015853">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogFracionamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0229561">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoginRegistro.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoginRegistro'</fileType>
+      <size>44385</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019677">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoginRegistro.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0373695">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoginRegistroCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoginRegistroCollection'</fileType>
+      <size>46621</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015288">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoginRegistroCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0256429">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoteControleViagemAg.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoteControleViagemAg'</fileType>
+      <size>32316</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016240">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoteControleViagemAg.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0417839">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoteControleViagemAgCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoteControleViagemAgCollection'</fileType>
+      <size>57360</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0108902">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoteControleViagemAgCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0032205">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoteFracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoteFracionamento'</fileType>
+      <size>5508</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015415">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LoteFracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0104936">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\lwLotesLiberados.vb</path>
+      <fileType>BaseTypeFile for 'S5T.lwLotesLiberados'</fileType>
+      <size>6288</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022356">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\lwLotesLiberados.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0038652">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\lwMovimentacaoDeEstoqueEntradaPorProducao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.lwMovimentacaoDeEstoqueEntradaPorProducao'</fileType>
+      <size>6234</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0043926">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\lwMovimentacaoDeEstoqueEntradaPorProducao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0039644">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\lwOrdemCarregamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.lwOrdemCarregamento'</fileType>
+      <size>7773</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028645">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\lwOrdemCarregamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0182304">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Menu.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Menu'</fileType>
+      <size>36219</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0024193">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Menu.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0244522">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuCollection'</fileType>
+      <size>66159</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020760">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0262786">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuPermissao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuPermissao'</fileType>
+      <size>41926</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0052993">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuPermissao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0323866">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuPermissaoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuPermissaoCollection'</fileType>
+      <size>80793</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034899">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuPermissaoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0039652">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLote.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MovimentacaoLote'</fileType>
+      <size>39221</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0311070">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLote.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0243882">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MovimentacaoLoteCollection'</fileType>
+      <size>67404</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0052084">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0033208">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteViewGridAgrupado.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MovimentacaoLoteViewGridAgrupado'</fileType>
+      <size>4585</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019962">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteViewGridAgrupado.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0209789">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\NFControleViagemAg.vb</path>
+      <fileType>BaseTypeFile for 'S5T.NFControleViagemAg'</fileType>
+      <size>34784</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0032383">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\NFControleViagemAg.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0262095">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\NFControleViagemAgCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.NFControleViagemAgCollection'</fileType>
+      <size>56868</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021570">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\NFControleViagemAgCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0190292">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Pais.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Pais'</fileType>
+      <size>37146</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0045526">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Pais.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0054711">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaisCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaisCollection'</fileType>
+      <size>56474</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0221186">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaisCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0201587">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaleteMov'</fileType>
+      <size>35274</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0014972">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0240548">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaleteMovCollection'</fileType>
+      <size>54408</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021214">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0436782">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteProduto.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaleteProduto'</fileType>
+      <size>33860</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031699">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteProduto.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0222324">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteProdutoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaleteProdutoCollection'</fileType>
+      <size>46606</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0027361">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaleteProdutoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0188522">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ParametrosFracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ParametrosFracionamento'</fileType>
+      <size>31084</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0027346">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ParametrosFracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0268803">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ParametrosFracionamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ParametrosFracionamentoCollection'</fileType>
+      <size>48686</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040047">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ParametrosFracionamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0171187">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Produto.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Produto'</fileType>
+      <size>31986</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0013708">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Produto.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0223296">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ProdutoCollection'</fileType>
+      <size>51034</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0014269">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0332562">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoPrevisao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ProdutoPrevisao'</fileType>
+      <size>34374</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017291">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoPrevisao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0306756">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoPrevisaoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ProdutoPrevisaoCollection'</fileType>
+      <size>67355</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022613">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoPrevisaoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0232283">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\SetorVisita.vb</path>
+      <fileType>BaseTypeFile for 'S5T.SetorVisita'</fileType>
+      <size>29431</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015079">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\SetorVisita.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0234752">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\SetorVisitaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.SetorVisitaCollection'</fileType>
+      <size>46205</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017497">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\SetorVisitaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0269083">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Sistema.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Sistema'</fileType>
+      <size>41730</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0036424">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Sistema.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0341383">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\SistemaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.SistemaCollection'</fileType>
+      <size>60093</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019626">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\SistemaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0026974">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Status.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Status'</fileType>
+      <size>881</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0026915">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Status.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0295268">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\TaraFracionamento.vb</path>
+      <fileType>BaseTypeFile for 'S5T.TaraFracionamento'</fileType>
+      <size>33231</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0014897">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\TaraFracionamento.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0462296">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\TaraFracionamentoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.TaraFracionamentoCollection'</fileType>
+      <size>75574</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015344">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\TaraFracionamentoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0153666">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\TaraFracionamentoView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.TaraFracionamentoView'</fileType>
+      <size>6841</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0055699">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\TaraFracionamentoView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0043251">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UF.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UF'</fileType>
+      <size>41201</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0220566">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UF.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0366438">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UFCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UFCollection'</fileType>
+      <size>63571</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0041789">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UFCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0591445">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Usuario.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Usuario'</fileType>
+      <size>67848</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015596">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Usuario.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0269198">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UsuarioCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UsuarioCollection'</fileType>
+      <size>69233</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020361">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UsuarioCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0039043">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UsuarioStatus.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UsuarioStatus'</fileType>
+      <size>890</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019156">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UsuarioStatus.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0206304">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitaMov.vb</path>
+      <fileType>BaseTypeFile for 'S5T.VisitaMov'</fileType>
+      <size>41569</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022226">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitaMov.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0256098">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitaMovCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.VisitaMovCollection'</fileType>
+      <size>97502</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017426">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitaMovCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0207821">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitanteVisita.vb</path>
+      <fileType>BaseTypeFile for 'S5T.VisitanteVisita'</fileType>
+      <size>51607</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022111">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitanteVisita.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0225895">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitanteVisitaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.VisitanteVisitaCollection'</fileType>
+      <size>61227</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018141">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitanteVisitaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0207367">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\WebSiteMap.vb</path>
+      <fileType>BaseTypeFile for 'S5T.WebSiteMap'</fileType>
+      <size>30852</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025809">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\WebSiteMap.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0321049">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\WebSiteMapCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.WebSiteMapCollection'</fileType>
+      <size>45997</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0100452">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\WebSiteMapCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0339242">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioView'</fileType>
+      <size>8526</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0092677">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0440366">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioUsuarioView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioUsuarioView'</fileType>
+      <size>9173</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0284894">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AppRelatorioUsuarioView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0105346">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoCaminhaoViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoCaminhaoViewGrid'</fileType>
+      <size>6033</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0307890">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoCaminhaoViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0188266">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoLocalLinhaViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoLocalLinhaViewGrid'</fileType>
+      <size>3638</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0155239">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoLocalLinhaViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0053574">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoMotoristaViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoMotoristaViewGrid'</fileType>
+      <size>4258</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020396">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoMotoristaViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0054091">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPivotAnaliseViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoPivotAnaliseViewGrid'</fileType>
+      <size>7482</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0057027">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoPivotAnaliseViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0200086">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasRelVendedor.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasRelVendedor'</fileType>
+      <size>14885</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0029451">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasRelVendedor.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0102344">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos1ViewMarca.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendasAnoMenos1ViewMarca'</fileType>
+      <size>3034</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022763">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendasAnoMenos1ViewMarca.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0038917">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresEmailView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoVendedoresEmailView'</fileType>
+      <size>3723</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040394">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoVendedoresEmailView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0218883">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoViagemMovViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AviacaoViagemMovViewGrid'</fileType>
+      <size>16299</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0035867">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\AviacaoViagemMovViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0199624">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroViewGeral.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroViewGeral'</fileType>
+      <size>22874</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018374">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroViewGeral.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0153524">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroViewGeralTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroViewGeralTipo'</fileType>
+      <size>24254</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0041019">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroViewGeralTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0153714">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroTipoViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroTipoViewGrid'</fileType>
+      <size>3663</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015008">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CadastroTipoViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0033753">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CidadeViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CidadeViewGrid'</fileType>
+      <size>6203</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022798">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\CidadeViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0288248">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ControleViagemAgViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ControleViagemAgViewGrid'</fileType>
+      <size>18671</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0094913">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ControleViagemAgViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0029601">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmbalagemFracionamentoView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmbalagemFracionamentoView'</fileType>
+      <size>3682</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021408">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\EmbalagemFracionamentoView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0044811">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialViewGrid'</fileType>
+      <size>6124</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023039">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0039790">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialViewUsuarios.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialViewUsuarios'</fileType>
+      <size>6200</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015367">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\FilialViewUsuarios.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0318130">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogFracionamentoView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LogFracionamentoView'</fileType>
+      <size>8004</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0014360">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogFracionamentoView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0026947">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuVw.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuVw'</fileType>
+      <size>5693</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0015660">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuVw.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0063008">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuVwPerm.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuVwPerm'</fileType>
+      <size>7465</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0045254">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MenuVwPerm.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0246039">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MovimentacaoLoteViewGrid'</fileType>
+      <size>6821</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0051369">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0148222">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteViewDashboard.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MovimentacaoLoteViewDashboard'</fileType>
+      <size>8372</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017208">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\MovimentacaoLoteViewDashboard.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0026121">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaisViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaisViewGrid'</fileType>
+      <size>4512</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017856">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\PaisViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0025904">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ProdutoViewGrid'</fileType>
+      <size>3726</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0013835">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0055588">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoPrevisaoView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.ProdutoPrevisaoView'</fileType>
+      <size>5678</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018777">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\ProdutoPrevisaoView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0036720">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UFViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UFViewGrid'</fileType>
+      <size>4454</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0038494">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\UFViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0139689">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitaViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.VisitaViewGrid'</fileType>
+      <size>8228</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031794">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitaViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0156681">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitanteVisitaViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.VisitanteVisitaViewGrid'</fileType>
+      <size>13822</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021076">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\VisitanteVisitaViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0031399">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogAcessoUsuariosViewRaw.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LogAcessoUsuariosViewRaw'</fileType>
+      <size>4856</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0026717">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\LogAcessoUsuariosViewRaw.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0443467">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\HttpHandler.vb</path>
+      <size>1624</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0061578">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\HttpHandler.vb</path>
+    </event>
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.MembershipProviderProducer: No directoryUser entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.RoleProviderProducer: No directoryRole entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.ProfileProviderProducer: No directoryUser entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.BasicAuthenticationModuleProducer: No directoryUser entity. Skip production." />
+    <event type="FileWrite" elapsedTime="00:00:00.1121786">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\BitsServer.vb</path>
+      <fileType>CodeFluent.Producers.CodeDom.UI.Web.BitsServerProducer</fileType>
+      <size>3943</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0014451">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\BitsServer.vb</path>
+    </event>
+  </producer>
+  <producer name="SQL Server">
+    <event type="ProducerStart" elapsedTime="00:00:00.0106686">
+      <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ParameterValue" name="AllowSelectDistinct" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AppendSchemaToProcedures" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="CommandTimeout" value="0" valueType="System.Int32" />
+    <event type="ParameterValue" name="ConnectionString" value="Server=RENATO-LAPTOP\SQLEXPRESS;Database=s5taviacao;Integrated Security=true;Application Name=S5T;Password=Manager4s;User ID=4t" />
+    <event type="ParameterValue" name="CurrentCulture" value="pt-BR" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="CurrentUICulture" value="pt-BR" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="DecimalPrecision" value="28" valueType="System.Int32" />
+    <event type="ParameterValue" name="DecimalScale" value="13" valueType="System.Int32" />
+    <event type="ParameterValue" name="DefaultUnicodeInstancePrefix" value="N" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer" />
+    <event type="ParameterValue" name="IdentityIncrement" value="1" valueType="System.Int32" />
+    <event type="ParameterValue" name="IdentitySeed" value="1" valueType="System.Int32" />
+    <event type="ParameterValue" name="IdentityTempColumnName" value="_cf_id_temp" />
+    <event type="ParameterValue" name="InstanceProductionCulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="IsTargetRelativeToModelDirectory" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MaxColumnSize" value="2147483647" valueType="System.Int32" />
+    <event type="ParameterValue" name="MaximumColumnsPerConstraint" value="16" valueType="System.Int32" />
+    <event type="ParameterValue" name="MustCreateBackups" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCreateDatabase" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCreateDiffs" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustDropUnusedColumns" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustForceColumnAlter" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceViews" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceSchemas" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSaveInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSaveBlobInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSkipCrossStoreRelations" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateDatabase" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateProcedures" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateRuntime" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateSchema" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustForceUpdateViews" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLocalTransactions" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyStringArrayMode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyBlobChunkMode" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="OutputEncoding" value="utf-8" />
+    <event type="ParameterValue" name="OutputEncodingEmitIdentifier" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ProcedureProductionCulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="ProductionFlags" value="Default, Overwrite, RemoveDates" valueType="CodeFluent.Model.ProductionFlags" />
+    <event type="ParameterValue" name="ProductionOptionsFlags" value="None" valueType="CodeFluent.Model.ProductionOptionsFlags" />
+    <event type="ParameterValue" name="SaveUserName" value="SYSTEM_USER" />
+    <event type="ParameterValue" name="StoreName" />
+    <event type="ParameterValue" name="TargetVersion" value="Sql2014" valueType="CodeFluent.Producers.SqlServer.TargetVersion" />
+    <event type="FileCopy" elapsedTime="00:00:00.0454055">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_runtime.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_runtime.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0031012">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_runtime.sql</path>
+      <fileType>RuntimeScript</fileType>
+      <size>1922</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000466">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_runtime.sql</path>
+    </event>
+    <event type="ParameterValue" name="SqlServerVersion" value="13.0.1742.0" />
+    <event type="FileCopy" elapsedTime="00:00:09.8736272">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_tables.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_tables.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0046324">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_tables.sql</path>
+      <fileType>TablesScript</fileType>
+      <size>244737</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000608">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_tables.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0569693">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_views.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_views.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0019583">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_views.sql</path>
+      <fileType>ViewsScript</fileType>
+      <size>137301</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000485">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_views.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:39.9186475">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0026129">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</path>
+      <fileType>TablesDiffsScript</fileType>
+      <size>206271</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000592">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:03.9727854">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_procedures.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_procedures.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0025185">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_procedures.sql</path>
+      <fileType>ProceduresScript</fileType>
+      <size>1092317</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000395">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_procedures.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:01.9504115">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0402171">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</path>
+      <fileType>RelationsDropScript</fileType>
+      <size>35565</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000553">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0501071">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_add.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0125182">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</path>
+      <fileType>RelationsAddScript</fileType>
+      <size>15006</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000659">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.1550676">
+      <target>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_instances.sql</target>
+      <source>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_instances.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0148890">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_instances.sql</path>
+      <fileType>InstancesScript</fileType>
+      <size>23188</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001102">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_instances.sql</path>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0030257">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_runtime.sql</path>
+      <fileType>RuntimeScript</fileType>
+      <size>1922</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0841368">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</path>
+      <fileType>RelationsDropScript</fileType>
+      <size>35565</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.5447720">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</path>
+      <fileType>TablesDiffScript</fileType>
+      <size>206271</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:02.8148493">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_views.sql</path>
+      <fileType>ViewsScript</fileType>
+      <size>137301</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:01.0107081">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</path>
+      <fileType>RelationsAddScript</fileType>
+      <size>15006</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.1209335">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_procedures.sql</path>
+      <fileType>ProceduresScript</fileType>
+      <size>1092317</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:03.4570436">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Persistence\SqlServer\S5T_instances.sql</path>
+      <fileType>InstancesScript</fileType>
+      <size>23188</size>
+    </event>
+  </producer>
+  <producer name="Asp.Net Identity">
+    <event type="ProducerStart" elapsedTime="00:00:00.1201391">
+      <name>Asp.Net Identity</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0595443">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\Security\UserStore.vb</path>
+      <fileType>SoftFluent.AspNetIdentity.UserStoreProducer</fileType>
+      <size>46056</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0110174">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\Security\UserStore.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0238083">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\Security\RoleStore.vb</path>
+      <fileType>SoftFluent.AspNetIdentity.RoleStoreProducer</fileType>
+      <size>6273</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0016857">
+      <path>C:\sistemas\s5twebAviacao\S5TBom\Classes\Web\Security\RoleStore.vb</path>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0012049">
+      <name>Business Object Model (BOM)</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0011030">
+      <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0001315">
+      <name>Asp.Net Identity</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+  </producer>
+</build>

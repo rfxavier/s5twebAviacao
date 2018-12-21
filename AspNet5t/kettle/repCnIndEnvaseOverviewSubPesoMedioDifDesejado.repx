@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="17.1.4.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="repCnIndEnvaseOverviewSubPesoMedioDifDesejado" Margins="55, 53, 34, 23" PageWidth="850" PageHeight="1100" Version="17.1" DataSource="#Ref-0">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" ValueInfo="20170807_AUTOGEN" Name="repParIdTag" />
+  </Parameters>
+  <CalculatedFields>
+    <Item1 Ref="4" Name="cfEnvase_a_media_g_un_difdesejado" Expression="[envase_a_contador_producao] / [envase_a_peso_medio_difdesejado_balanca1e2]" />
+    <Item2 Ref="5" Name="cfEnvase_b_media_g_un_difdesejado" Expression="[envase_b_contador_producao] / [envase_b_peso_medio_difdesejado_balanca1e2]" />
+    <Item3 Ref="6" Name="cfEnvase_a_e_b_media_g_un_difdesejado" Expression="[envase_a_e_b_contador_producao] / [envase_aeb_peso_medio_difdesejado_balanca1e2]" />
+    <Item4 Ref="7" Name="cfenvase_a_peso_medio_difdesejado_balanca1kg" Expression="[envase_a_peso_medio_difdesejado_balanca1] / 1000" />
+    <Item5 Ref="8" Name="cfenvase_a_peso_medio_difdesejado_balanca2kg" Expression="[envase_a_peso_medio_difdesejado_balanca2] / 1000" />
+    <Item6 Ref="9" Name="cfenvase_a_peso_medio_difdesejado_balanca1e2kg" Expression="[envase_a_peso_medio_difdesejado_balanca1e2] / 1000" />
+    <Item7 Ref="10" Name="cfenvase_b_peso_medio_difdesejado_balanca1e2kg" Expression="[envase_b_peso_medio_difdesejado_balanca1e2] / 1000" />
+    <Item8 Ref="11" Name="cfenvase_b_peso_medio_difdesejado_balanca1kg" Expression="[envase_b_peso_medio_difdesejado_balanca1] / 1000" />
+    <Item9 Ref="12" Name="cfenvase_b_peso_medio_difdesejado_balanca2kg" Expression="[envase_b_peso_medio_difdesejado_balanca2] / 1000" />
+    <Item10 Ref="13" Name="calculatedField1" DisplayName="cfenvase_a_peso_medio_pote200_difdesejado_balanca1kg" Expression="[envase_a_peso_medio_pote200_difdesejado_balanca1] / 1000" />
+    <Item11 Ref="14" Name="cfenvase_a_peso_medio_pote200_difdesejado_balanca2kg" Expression="[envase_a_peso_medio_pote200_difdesejado_balanca2] / 1000" />
+    <Item12 Ref="15" Name="cfenvase_a_peso_medio_pote200_difdesejado_balanca1e2kg" Expression="[envase_a_peso_medio_pote200_difdesejado_balanca1e2] / 1000" />
+    <Item13 Ref="16" Name="cfenvase_b_peso_medio_pote200_difdesejado_balanca1kg" Expression="[envase_b_peso_medio_pote200_difdesejado_balanca1] / 1000" />
+    <Item14 Ref="17" Name="cfenvase_b_peso_medio_pote200_difdesejado_balanca2kg" Expression="[envase_b_peso_medio_pote200_difdesejado_balanca2] / 1000" />
+    <Item15 Ref="18" Name="cfenvase_b_peso_medio_pote200_difdesejado_balanca1e2kg" Expression="[envase_b_peso_medio_pote200_difdesejado_balanca1e2] / 1000" />
+    <Item16 Ref="19" Name="cfenvase_aeb_peso_medio_pote200_difdesejado_balanca1e2kg" Expression="[envase_aeb_peso_medio_pote200_difdesejado_balanca1e2] / 1000" />
+    <Item17 Ref="20" Name="cfenvase_a_peso_medio_pote500_difdesejado_balanca1kg" Expression="[envase_a_peso_medio_pote500_difdesejado_balanca1] / 1000" />
+    <Item18 Ref="21" Name="cfenvase_a_peso_medio_pote500_difdesejado_balanca2kg" Expression="[envase_a_peso_medio_pote500_difdesejado_balanca2] / 1000" />
+    <Item19 Ref="22" Name="cfenvase_a_peso_medio_pote500_difdesejado_balanca1e2kg" Expression="[envase_a_peso_medio_pote500_difdesejado_balanca1e2] / 1000" />
+    <Item20 Ref="23" Name="cfenvase_b_peso_medio_pote500_difdesejado_balanca1kg" Expression="[envase_b_peso_medio_pote500_difdesejado_balanca1] / 1000" />
+    <Item21 Ref="24" Name="cfenvase_b_peso_medio_pote500_difdesejado_balanca2kg" Expression="[envase_b_peso_medio_pote500_difdesejado_balanca2] / 1000" />
+    <Item22 Ref="25" Name="cfenvase_b_peso_medio_pote500_difdesejado_balanca1e2kg" Expression="[envase_b_peso_medio_pote500_difdesejado_balanca1e2] / 1000" />
+    <Item23 Ref="26" Name="cfenvase_aeb_peso_medio_pote500_difdesejado_balanca1e2kg" Expression="[envase_aeb_peso_medio_pote500_difdesejado_balanca1e2] / 1000" />
+    <Item24 Ref="27" Name="cfenvase_aeb_peso_medio_difdesejado_balanca1e2kg" Expression="[envase_aeb_peso_medio_difdesejado_balanca1e2] / 1000" />
+    <Item25 Ref="28" Name="cfEnvase_a_media_g_un_pote200_difdesejado" Expression="[envase_a_peso_medio_pote200_difdesejado_balanca1e2]&#xA; / [envase_a_contador_producao_pote200]" />
+    <Item26 Ref="29" Name="cfEnvase_b_media_g_un_pote200_difdesejado" Expression="[envase_b_peso_medio_pote200_difdesejado_balanca1e2]&#xA; / [envase_b_contador_producao_pote200]" />
+    <Item27 Ref="30" Name="cfEnvase_a_e_b_media_g_un_pote200_difdesejado" Expression="[envase_aeb_peso_medio_pote200_difdesejado_balanca1e2]&#xA; / [envase_a_e_b_contador_producao_pote200]" />
+    <Item28 Ref="31" Name="cfEnvase_a_media_g_un_pote500_difdesejado" Expression="[envase_a_peso_medio_pote500_difdesejado_balanca1e2] / [envase_a_contador_producao_pote500]" />
+    <Item29 Ref="32" Name="cfEnvase_b_media_g_un_pote500_difdesejado" Expression="[envase_b_peso_medio_pote500_difdesejado_balanca1e2]&#xA; / [envase_b_contador_producao_pote500]" />
+    <Item30 Ref="33" Name="cfEnvase_a_e_b_media_g_un_pote500_difdesejado" Expression="[envase_aeb_peso_medio_pote500_difdesejado_balanca1e2]&#xA; / [envase_a_e_b_contador_producao_pote500]" />
+    <Item31 Ref="34" Name="cfEnvase_a_contador_producao_pote200_e_pote500" Expression="[envase_a_contador_producao_pote200] + [envase_a_contador_producao_pote500]" />
+    <Item32 Ref="35" Name="cfEnvase_a_media_g_un_pote200_e_pote500_difdesejado" Expression="[envase_a_peso_medio_difdesejado_balanca1e2]&#xA; / [cfEnvase_a_contador_producao_pote200_e_pote500]" />
+    <Item33 Ref="36" Name="cfEnvase_b_contador_producao_pote200_e_pote500" Expression="[envase_b_contador_producao_pote200] + [envase_b_contador_producao_pote500]" />
+    <Item34 Ref="37" Name="cfEnvase_b_media_g_un_pote200_e_pote500_difdesejado" Expression="[envase_b_peso_medio_difdesejado_balanca1e2]&#xA; / [cfEnvase_b_contador_producao_pote200_e_pote500]" />
+    <Item35 Ref="38" Name="cfEnvase_a_e_b_contador_producao_pote200_e_pote500" Expression="[cfEnvase_a_contador_producao_pote200_e_pote500] + [cfEnvase_b_contador_producao_pote200_e_pote500]" />
+    <Item36 Ref="39" Name="cfEnvase_a_e_b_media_g_un_pote200_e_pote500_difdesejado" Expression="([cfenvase_aeb_peso_medio_difdesejado_pote200_e_pote500_balanca1e2kg] * 1000) / [cfEnvase_a_e_b_contador_producao_pote200_e_pote500]" />
+    <Item37 Ref="40" Name="cfenvase_aeb_peso_medio_difdesejado_pote200_e_pote500_balanca1e2kg" Expression="[cfenvase_aeb_peso_medio_pote200_difdesejado_balanca1e2kg] + [cfenvase_aeb_peso_medio_pote500_difdesejado_balanca1e2kg]" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="41" ControlType="TopMarginBand" Name="TopMargin" HeightF="34" />
+    <Item2 Ref="42" ControlType="DetailBand" Name="Detail" HeightF="531.9333">
+      <Controls>
+        <Item1 Ref="43" ControlType="XRLabel" Name="label51" Text="POTE 200g + POTE 500g" TextAlignment="MiddleCenter" SizeF="664.2304,23" LocationFloat="0.0001513769, 378.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="44" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="45" ControlType="XRLine" Name="line3" LineWidth="2" SizeF="664.8144,2.000015" LocationFloat="0.2083461, 529.9333" />
+        <Item3 Ref="46" ControlType="XRLabel" Name="label52" Text="Média" TextAlignment="MiddleRight" SizeF="166.7422,27.04175" LocationFloat="284.1134, 502.8917" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="47" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="48" ControlType="XRLabel" Name="label53" Text="Contador Produção" TextAlignment="MiddleRight" SizeF="166.3504,30.04166" LocationFloat="284.1134, 472.85" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="49" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="50" ControlType="XRLabel" Name="label54" TextAlignment="MiddleCenter" SizeF="97.62036,27.04166" LocationFloat="567.533, 502.8916" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left, Right">
+          <DataBindings>
+            <Item1 Ref="51" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_a_e_b_media_g_un_pote200_e_pote500_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="52" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="53" ControlType="XRLabel" Name="label55" TextAlignment="MiddleCenter" SizeF="93.79828,27.04169" LocationFloat="471.9416, 502.8915" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="54" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_b_media_g_un_pote200_e_pote500_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="55" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="56" ControlType="XRLabel" Name="label56" TextAlignment="MiddleCenter" SizeF="94.83051,27.0417" LocationFloat="188.3575, 502.8917" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="57" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_a_media_g_un_pote200_e_pote500_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="58" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="59" ControlType="XRLabel" Name="label57" Text="Média" TextAlignment="MiddleRight" SizeF="163.125,27.04171" LocationFloat="0.2083461, 502.8917" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="60" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="61" ControlType="XRLabel" Name="label58" Text="Contador Produção" TextAlignment="MiddleRight" SizeF="163.125,30.04164" LocationFloat="0.2083461, 472.85" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="62" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="63" ControlType="XRTable" Name="table3" TextAlignment="MiddleCenter" SizeF="664.945,25" LocationFloat="0.2083461, 447.85" Font="Arial, 9.75pt, charSet=0" Borders="All">
+          <Rows>
+            <Item1 Ref="64" ControlType="XRTableRow" Name="tableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="65" ControlType="XRTableCell" Name="tableCell15" Weight="0.94945015835132551" Borders="All">
+                  <DataBindings>
+                    <Item1 Ref="66" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_difdesejado_balanca1kg" />
+                  </DataBindings>
+                  <StylePriority Ref="67" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="68" ControlType="XRTableCell" Name="tableCell16" Weight="0.94999985613144255">
+                  <DataBindings>
+                    <Item1 Ref="69" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_difdesejado_balanca2kg" />
+                  </DataBindings>
+                </Item2>
+                <Item3 Ref="70" ControlType="XRTableCell" Name="tableCell17" Weight="0.93960038248934863" Borders="Left, Top, Bottom">
+                  <DataBindings>
+                    <Item1 Ref="71" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                  <StylePriority Ref="72" UseBorders="false" />
+                </Item3>
+                <Item4 Ref="73" ControlType="XRTableCell" Name="tableCell18" Weight="0.96039932977353648">
+                  <DataBindings>
+                    <Item1 Ref="74" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="envase_b_peso_medio_difdesejado_balanca1" />
+                  </DataBindings>
+                </Item4>
+                <Item5 Ref="75" ControlType="XRTableCell" Name="tableCell19" Weight="0.9399342450937771">
+                  <DataBindings>
+                    <Item1 Ref="76" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="envase_b_peso_medio_difdesejado_balanca2" />
+                  </DataBindings>
+                </Item5>
+                <Item6 Ref="77" ControlType="XRTableCell" Name="tableCell20" Weight="0.94153214425456733">
+                  <DataBindings>
+                    <Item1 Ref="78" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="envase_b_peso_medio_difdesejado_balanca1e2" />
+                  </DataBindings>
+                </Item6>
+                <Item7 Ref="79" ControlType="XRTableCell" Name="tableCell21" Weight="0.968533026458119">
+                  <DataBindings>
+                    <Item1 Ref="80" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_aeb_peso_medio_difdesejado_pote200_e_pote500_balanca1e2kg" />
+                  </DataBindings>
+                </Item7>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="81" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item10>
+        <Item11 Ref="82" ControlType="XRLabel" Name="label59" TextAlignment="MiddleCenter" SizeF="95.03891,30.04163" LocationFloat="188.3575, 472.85" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="83" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="cfEnvase_a_contador_producao_pote200_e_pote500" />
+          </DataBindings>
+          <StylePriority Ref="84" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item11>
+        <Item12 Ref="85" ControlType="XRLabel" Name="label60" TextAlignment="MiddleCenter" SizeF="95.19235,30.04163" LocationFloat="471.9416, 472.85" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="86" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="cfEnvase_b_contador_producao_pote200_e_pote500" />
+          </DataBindings>
+          <StylePriority Ref="87" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item12>
+        <Item13 Ref="88" ControlType="XRLabel" Name="label61" TextAlignment="MiddleCenter" SizeF="97.75226,30.04169" LocationFloat="567.134, 472.8499" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="Left, Right" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="89" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="cfEnvase_a_e_b_contador_producao_pote200_e_pote500" />
+          </DataBindings>
+          <StylePriority Ref="90" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item13>
+        <Item14 Ref="91" ControlType="XRLabel" Name="label62" Text="ENVASE A" TextAlignment="MiddleCenter" SizeF="283.263,23" LocationFloat="0, 401.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top">
+          <StylePriority Ref="92" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item14>
+        <Item15 Ref="93" ControlType="XRLabel" Name="label65" Text="ENVASE B" TextAlignment="MiddleCenter" SizeF="283.0205,23" LocationFloat="284.1136, 401.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top">
+          <StylePriority Ref="94" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item15>
+        <Item16 Ref="95" ControlType="XRLabel" Name="label66" Text="balança 2" TextAlignment="MiddleCenter" SizeF="93.4234,23.79193" LocationFloat="379.9471, 424.0582" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="96" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item16>
+        <Item17 Ref="97" ControlType="XRLabel" Name="label67" Text="balança 1" TextAlignment="MiddleCenter" SizeF="94.86649,23.79184" LocationFloat="0, 424.0582" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+          <StylePriority Ref="98" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item17>
+        <Item18 Ref="99" ControlType="XRLabel" Name="label68" Text="balança 1" TextAlignment="MiddleCenter" SizeF="95.625,23.79181" LocationFloat="284.3221, 424.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+          <StylePriority Ref="100" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item18>
+        <Item19 Ref="101" ControlType="XRLabel" Name="label70" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="92.74149,23.79193" LocationFloat="474.6207, 424.0582" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="102" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item19>
+        <Item20 Ref="103" ControlType="XRLabel" Name="label71" Text="balança 2" TextAlignment="MiddleCenter" SizeF="92.53423,23.79181" LocationFloat="96.75388, 424.0582" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="104" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item20>
+        <Item21 Ref="105" ControlType="XRLabel" Name="label73" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="96.77203,23.79169" LocationFloat="567.6667, 424.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="106" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item21>
+        <Item22 Ref="107" ControlType="XRLabel" Name="label74" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="91.97685,23.79181" LocationFloat="191.2112, 424.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="108" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item22>
+        <Item23 Ref="109" ControlType="XRLabel" Name="label75" Text="ENVASE A+B" TextAlignment="MiddleCenter" SizeF="96.56372,23.00003" LocationFloat="567.8751, 401.0583" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+          <StylePriority Ref="110" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item23>
+        <Item24 Ref="111" ControlType="XRLabel" Name="label26" Text="ENVASE A+B" TextAlignment="MiddleCenter" SizeF="96.56372,46.12495" LocationFloat="567.6667, 211.5417" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+          <StylePriority Ref="112" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item24>
+        <Item25 Ref="113" ControlType="XRLabel" Name="label27" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="95.00002,23" LocationFloat="189.322, 257.6666" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="114" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item25>
+        <Item26 Ref="115" ControlType="XRLabel" Name="label28" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="96.47113,23" LocationFloat="567.7592, 257.6667" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="116" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item26>
+        <Item27 Ref="117" ControlType="XRLabel" Name="label29" Text="Peso Desejado:" TextAlignment="MiddleRight" SizeF="163.125,23.12497" LocationFloat="0, 234.5416" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="118" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item27>
+        <Item28 Ref="119" ControlType="XRLabel" Name="label30" Text="balança 2" TextAlignment="MiddleCenter" SizeF="94.23306,23" LocationFloat="95.05506, 257.6666" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="120" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item28>
+        <Item29 Ref="121" ControlType="XRLabel" Name="label31" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="93.99173,22.99998" LocationFloat="473.3705, 257.6666" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="122" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item29>
+        <Item30 Ref="123" ControlType="XRLabel" Name="label32" TextAlignment="MiddleLeft" SizeF="108.5305,23.12497" LocationFloat="459.1361, 234.5416" Font="Arial, 9.75pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="124" FormatString="{0:#,#0.00} g" PropertyName="Text" DataMember="envase_b_ult_peso_desejado_pote500" />
+          </DataBindings>
+          <StylePriority Ref="125" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item30>
+        <Item31 Ref="126" ControlType="XRLabel" Name="label33" Text="balança 1" TextAlignment="MiddleCenter" SizeF="95,23" LocationFloat="284.3221, 257.6667" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+          <StylePriority Ref="127" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item31>
+        <Item32 Ref="128" ControlType="XRLabel" Name="label34" Text="balança 1" TextAlignment="MiddleCenter" SizeF="94.81277,23" LocationFloat="0, 257.6666" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+          <StylePriority Ref="129" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item32>
+        <Item33 Ref="130" ControlType="XRLabel" Name="label35" Text="balança 2" TextAlignment="MiddleCenter" SizeF="94.04849,23" LocationFloat="379.322, 257.6666" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="131" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item33>
+        <Item34 Ref="132" ControlType="XRLabel" Name="label36" Text="ENVASE B" TextAlignment="BottomCenter" SizeF="283.2968,23" LocationFloat="284.322, 211.5417" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top">
+          <StylePriority Ref="133" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item34>
+        <Item35 Ref="134" ControlType="XRLabel" Name="label37" Text="Peso Desejado:" TextAlignment="MiddleRight" SizeF="163.5027,23.12497" LocationFloat="284.3221, 234.5416" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="135" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item35>
+        <Item36 Ref="136" ControlType="XRLabel" Name="label38" TextAlignment="MiddleLeft" SizeF="112.0093,23.12497" LocationFloat="172.3127, 234.5416" Font="Arial, 9.75pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="137" FormatString="{0:#,#0.00} g" PropertyName="Text" DataMember="envase_a_ult_peso_desejado_pote500" />
+          </DataBindings>
+          <StylePriority Ref="138" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item36>
+        <Item37 Ref="139" ControlType="XRLabel" Name="label39" Text="ENVASE A" TextAlignment="BottomCenter" SizeF="283.9052,23" LocationFloat="0.2083461, 211.5417" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top">
+          <StylePriority Ref="140" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item37>
+        <Item38 Ref="141" ControlType="XRLabel" Name="label40" TextAlignment="MiddleCenter" SizeF="96.9223,30.04163" LocationFloat="568.0776, 306.25" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="Left, Right" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="142" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="envase_a_e_b_contador_producao_pote500" />
+          </DataBindings>
+          <StylePriority Ref="143" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item38>
+        <Item39 Ref="144" ControlType="XRLabel" Name="label41" TextAlignment="MiddleCenter" SizeF="95.19235,30.04163" LocationFloat="472.6826, 306.25" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="145" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="envase_b_contador_producao_pote500" />
+          </DataBindings>
+          <StylePriority Ref="146" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item39>
+        <Item40 Ref="147" ControlType="XRLabel" Name="label42" TextAlignment="MiddleCenter" SizeF="94.3219,30.04163" LocationFloat="189.2829, 306.25" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="148" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="envase_a_contador_producao_pote500" />
+          </DataBindings>
+          <StylePriority Ref="149" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item40>
+        <Item41 Ref="150" ControlType="XRTable" Name="table2" TextAlignment="MiddleCenter" SizeF="664.945,25" LocationFloat="0.2083461, 281.25" Font="Arial, 9.75pt, charSet=0" Borders="All">
+          <Rows>
+            <Item1 Ref="151" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="152" ControlType="XRTableCell" Name="tableCell8" Weight="0.94945015835132551" Borders="All">
+                  <DataBindings>
+                    <Item1 Ref="153" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_pote500_difdesejado_balanca1kg" />
+                  </DataBindings>
+                  <StylePriority Ref="154" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="155" ControlType="XRTableCell" Name="tableCell9" Weight="0.94999985613144255">
+                  <DataBindings>
+                    <Item1 Ref="156" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_pote500_difdesejado_balanca2kg" />
+                  </DataBindings>
+                </Item2>
+                <Item3 Ref="157" ControlType="XRTableCell" Name="tableCell10" Weight="0.94168564831076562" Borders="Left, Top, Bottom">
+                  <DataBindings>
+                    <Item1 Ref="158" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_pote500_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                  <StylePriority Ref="159" UseBorders="false" />
+                </Item3>
+                <Item4 Ref="160" ControlType="XRTableCell" Name="tableCell11" Weight="0.95831406395211949">
+                  <DataBindings>
+                    <Item1 Ref="161" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_b_peso_medio_pote500_difdesejado_balanca1kg" />
+                  </DataBindings>
+                </Item4>
+                <Item5 Ref="162" ControlType="XRTableCell" Name="tableCell12" Weight="0.9399342450937771">
+                  <DataBindings>
+                    <Item1 Ref="163" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_b_peso_medio_pote500_difdesejado_balanca2kg" />
+                  </DataBindings>
+                </Item5>
+                <Item6 Ref="164" ControlType="XRTableCell" Name="tableCell13" Weight="0.94225113829455831">
+                  <DataBindings>
+                    <Item1 Ref="165" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_b_peso_medio_pote500_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                </Item6>
+                <Item7 Ref="166" ControlType="XRTableCell" Name="tableCell14" Weight="0.967814032418128">
+                  <DataBindings>
+                    <Item1 Ref="167" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_aeb_peso_medio_pote500_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                </Item7>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="168" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item41>
+        <Item42 Ref="169" ControlType="XRLabel" Name="label43" Text="Contador Produção" TextAlignment="MiddleRight" SizeF="163.125,30.04164" LocationFloat="0.2083461, 306.25" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="170" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item42>
+        <Item43 Ref="171" ControlType="XRLabel" Name="label44" Text="Média" TextAlignment="MiddleRight" SizeF="163.125,27.04171" LocationFloat="0.2083461, 336.2916" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="172" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item43>
+        <Item44 Ref="173" ControlType="XRLabel" Name="label45" TextAlignment="MiddleCenter" SizeF="95.24725,27.04169" LocationFloat="188.3577, 336.2916" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="174" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_a_media_g_un_pote500_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="175" UseFont="false" UseTextAlignment="false" />
+        </Item44>
+        <Item45 Ref="176" ControlType="XRLabel" Name="label46" TextAlignment="MiddleCenter" SizeF="94.93613,27.04169" LocationFloat="472.6826, 336.2916" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="177" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_b_media_g_un_pote500_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="178" UseFont="false" UseTextAlignment="false" />
+        </Item45>
+        <Item46 Ref="179" ControlType="XRLabel" Name="label47" TextAlignment="MiddleCenter" SizeF="96.86731,27.04169" LocationFloat="568.1326, 336.2916" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left, Right">
+          <DataBindings>
+            <Item1 Ref="180" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_a_e_b_media_g_un_pote500_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="181" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item46>
+        <Item47 Ref="182" ControlType="XRLabel" Name="label48" Text="Contador Produção" TextAlignment="MiddleRight" SizeF="166.1419,30.04163" LocationFloat="284.3219, 306.25" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="183" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item47>
+        <Item48 Ref="184" ControlType="XRLabel" Name="label49" Text="Média" TextAlignment="MiddleRight" SizeF="166.5338,27.04172" LocationFloat="284.3219, 336.2916" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="185" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item48>
+        <Item49 Ref="186" ControlType="XRLine" Name="line2" LineWidth="2" SizeF="664.8144,2.000015" LocationFloat="0.2083461, 363.3333" />
+        <Item50 Ref="187" ControlType="XRLabel" Name="label50" Text="POTE 500g" TextAlignment="MiddleCenter" SizeF="664.2304,23" LocationFloat="0, 188.5417" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="188" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item50>
+        <Item51 Ref="189" ControlType="XRLabel" Name="label21" Text="POTE 200g" TextAlignment="MiddleCenter" SizeF="664.2304,23" LocationFloat="0, 0" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="190" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item51>
+        <Item52 Ref="191" ControlType="XRLine" Name="line1" LineWidth="2" SizeF="664.8144,2.000015" LocationFloat="0.1856562, 174.7916" />
+        <Item53 Ref="192" ControlType="XRLabel" Name="label20" Text="Média" TextAlignment="MiddleRight" SizeF="165.478,27.04173" LocationFloat="285.1695, 147.75" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="193" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item53>
+        <Item54 Ref="194" ControlType="XRLabel" Name="label19" Text="Contador Produção" TextAlignment="MiddleRight" SizeF="165.0862,30.04164" LocationFloat="285.1695, 117.7083" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="195" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item54>
+        <Item55 Ref="196" ControlType="XRLabel" Name="label18" TextAlignment="MiddleCenter" SizeF="96.86731,27.04169" LocationFloat="568.1328, 147.75" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left, Right">
+          <DataBindings>
+            <Item1 Ref="197" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_a_e_b_media_g_un_pote200_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="198" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item55>
+        <Item56 Ref="199" ControlType="XRLabel" Name="label15" TextAlignment="MiddleCenter" SizeF="94.93613,27.04169" LocationFloat="472.6827, 147.75" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="200" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_b_media_g_un_pote200_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="201" UseFont="false" UseTextAlignment="false" />
+        </Item56>
+        <Item57 Ref="202" ControlType="XRLabel" Name="label14" TextAlignment="MiddleCenter" SizeF="94.83051,27.0417" LocationFloat="189.4915, 147.75" Font="Arial, 9.75pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="203" FormatString="{0:#,#0.00} g/un" PropertyName="Text" DataMember="cfEnvase_a_media_g_un_pote200_difdesejado" />
+          </DataBindings>
+          <StylePriority Ref="204" UseFont="false" UseTextAlignment="false" />
+        </Item57>
+        <Item58 Ref="205" ControlType="XRLabel" Name="label12" Text="Média" TextAlignment="MiddleRight" SizeF="163.125,27.04171" LocationFloat="0, 147.75" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="206" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item58>
+        <Item59 Ref="207" ControlType="XRLabel" Name="label11" Text="Contador Produção" TextAlignment="MiddleRight" SizeF="163.125,30.04164" LocationFloat="0, 117.7083" Font="Arial, 9.75pt" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="208" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item59>
+        <Item60 Ref="209" ControlType="XRTable" Name="table1" TextAlignment="MiddleCenter" SizeF="664.945,25" LocationFloat="0.05496979, 92.70834" Font="Arial, 9.75pt, charSet=0" Borders="All">
+          <Rows>
+            <Item1 Ref="210" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="211" ControlType="XRTableCell" Name="tableCell1" Weight="0.94945015835132551" Borders="All">
+                  <DataBindings>
+                    <Item1 Ref="212" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="calculatedField1" />
+                  </DataBindings>
+                  <StylePriority Ref="213" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="214" ControlType="XRTableCell" Name="tableCell2" Weight="0.94999985613144255">
+                  <DataBindings>
+                    <Item1 Ref="215" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_pote200_difdesejado_balanca2kg" />
+                  </DataBindings>
+                </Item2>
+                <Item3 Ref="216" ControlType="XRTableCell" Name="tableCell3" Weight="0.94999985613144267" Borders="Left, Top, Bottom">
+                  <DataBindings>
+                    <Item1 Ref="217" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_a_peso_medio_pote200_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                  <StylePriority Ref="218" UseBorders="false" />
+                </Item3>
+                <Item4 Ref="219" ControlType="XRTableCell" Name="tableCell4" Weight="0.94999985613144244">
+                  <DataBindings>
+                    <Item1 Ref="220" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_b_peso_medio_pote200_difdesejado_balanca1kg" />
+                  </DataBindings>
+                </Item4>
+                <Item5 Ref="221" ControlType="XRTableCell" Name="tableCell5" Weight="0.9399342450937771">
+                  <DataBindings>
+                    <Item1 Ref="222" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_b_peso_medio_pote200_difdesejado_balanca2kg" />
+                  </DataBindings>
+                </Item5>
+                <Item6 Ref="223" ControlType="XRTableCell" Name="tableCell6" Weight="0.95192215744876674">
+                  <DataBindings>
+                    <Item1 Ref="224" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_b_peso_medio_pote200_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                </Item6>
+                <Item7 Ref="225" ControlType="XRTableCell" Name="tableCell7" Weight="0.9581430132639196">
+                  <DataBindings>
+                    <Item1 Ref="226" FormatString="{0:#,#0.00} kg" PropertyName="Text" DataMember="cfenvase_aeb_peso_medio_pote200_difdesejado_balanca1e2kg" />
+                  </DataBindings>
+                </Item7>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="227" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item60>
+        <Item61 Ref="228" ControlType="XRLabel" Name="label13" TextAlignment="MiddleCenter" SizeF="95.03891,30.04163" LocationFloat="189.4915, 117.7083" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="229" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="envase_a_contador_producao_pote200" />
+          </DataBindings>
+          <StylePriority Ref="230" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item61>
+        <Item62 Ref="231" ControlType="XRLabel" Name="label16" TextAlignment="MiddleCenter" SizeF="95.19235,30.04163" LocationFloat="472.6827, 117.7083" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="232" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="envase_b_contador_producao_pote200" />
+          </DataBindings>
+          <StylePriority Ref="233" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item62>
+        <Item63 Ref="234" ControlType="XRLabel" Name="label17" TextAlignment="MiddleCenter" SizeF="96.9223,30.04163" LocationFloat="568.0778, 117.7084" Font="Arial, 9.75pt, charSet=0" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="Left, Right" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="235" FormatString="{0:#,#0} un" PropertyName="Text" DataMember="envase_a_e_b_contador_producao_pote200" />
+          </DataBindings>
+          <StylePriority Ref="236" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item63>
+        <Item64 Ref="237" ControlType="XRLabel" Name="label8" Text="ENVASE A" TextAlignment="BottomCenter" SizeF="284.5305,23" LocationFloat="0, 22.99999" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top">
+          <StylePriority Ref="238" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item64>
+        <Item65 Ref="239" ControlType="XRLabel" Name="label23" TextAlignment="MiddleLeft" SizeF="112.0093,23.12497" LocationFloat="172.5211, 45.99997" Font="Arial, 9.75pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="240" FormatString="{0:#,#0.00} g" PropertyName="Text" DataMember="envase_a_ult_peso_desejado_pote200" />
+          </DataBindings>
+          <StylePriority Ref="241" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item65>
+        <Item66 Ref="242" ControlType="XRLabel" Name="label25" Text="Peso Desejado:" TextAlignment="MiddleRight" SizeF="163.5027,23.12497" LocationFloat="284.5305, 45.99997" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="243" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item66>
+        <Item67 Ref="244" ControlType="XRLabel" Name="label9" Text="ENVASE B" TextAlignment="BottomCenter" SizeF="283.3446,23" LocationFloat="284.5305, 22.99999" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top">
+          <StylePriority Ref="245" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item67>
+        <Item68 Ref="246" ControlType="XRLabel" Name="label5" Text="balança 2" TextAlignment="MiddleCenter" SizeF="94.04849,23" LocationFloat="379.5305, 69.12492" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="247" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item68>
+        <Item69 Ref="248" ControlType="XRLabel" Name="label1" Text="balança 1" TextAlignment="MiddleCenter" SizeF="95.00009,23" LocationFloat="0, 69.12495" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+          <StylePriority Ref="249" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item69>
+        <Item70 Ref="250" ControlType="XRLabel" Name="label4" Text="balança 1" TextAlignment="MiddleCenter" SizeF="95,23" LocationFloat="284.5305, 69.12495" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+          <StylePriority Ref="251" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item70>
+        <Item71 Ref="252" ControlType="XRLabel" Name="label24" TextAlignment="MiddleLeft" SizeF="108.5305,23.12497" LocationFloat="459.3445, 45.99997" Font="Arial, 9.75pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" BorderDashStyle="Solid">
+          <DataBindings>
+            <Item1 Ref="253" FormatString="{0:#,#0.00} g" PropertyName="Text" DataMember="envase_b_ult_peso_desejado_pote200" />
+          </DataBindings>
+          <StylePriority Ref="254" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item71>
+        <Item72 Ref="255" ControlType="XRLabel" Name="label6" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="93.99173,22.99998" LocationFloat="473.627, 69.12494" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="256" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item72>
+        <Item73 Ref="257" ControlType="XRLabel" Name="label2" Text="balança 2" TextAlignment="MiddleCenter" SizeF="94.4754,23" LocationFloat="95.05506, 69.12492" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="258" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item73>
+        <Item74 Ref="259" ControlType="XRLabel" Name="label22" Text="Peso Desejado:" TextAlignment="MiddleRight" SizeF="163.125,23.12497" LocationFloat="0, 45.99997" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,100" Borders="Left">
+          <StylePriority Ref="260" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item74>
+        <Item75 Ref="261" ControlType="XRLabel" Name="label7" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="96.47113,23" LocationFloat="567.9677, 69.12495" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="262" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item75>
+        <Item76 Ref="263" ControlType="XRLabel" Name="label3" Text="balança 1+2" TextAlignment="MiddleCenter" SizeF="95.00002,23" LocationFloat="189.5304, 69.12492" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Top, Bottom">
+          <StylePriority Ref="264" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item76>
+        <Item77 Ref="265" ControlType="XRLabel" Name="label10" Text="ENVASE A+B" TextAlignment="MiddleCenter" SizeF="96.56372,46.12495" LocationFloat="567.8751, 22.99999" Font="Arial, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Right">
+          <StylePriority Ref="266" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item77>
+      </Controls>
+    </Item2>
+    <Item3 Ref="267" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="23" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v17.1" Name="objectDsEnvasePesoMedio" Base64="PE9iamVjdERhdGFTb3VyY2U+PE5hbWU+b2JqZWN0RHNFbnZhc2VQZXNvTWVkaW88L05hbWU+PERhdGFTb3VyY2UgVHlwZT0iQXNwTmV0NXQuZHNJbmR1c3RyaWEsIEFzcE5ldDV0LCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbCIgLz48RGF0YU1lbWJlcj5HZXRFbnZhc2VQZXNvTWVkaW88L0RhdGFNZW1iZXI+PFBhcmFtZXRlcnM+PFBhcmFtZXRlciBOYW1lPSJwYXJJZFRhZyIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkpKFtQYXJhbWV0ZXJzLnJlcFBhcklkVGFnXSk8L1BhcmFtZXRlcj48L1BhcmFtZXRlcnM+PC9PYmplY3REYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
